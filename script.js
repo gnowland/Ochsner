@@ -47,10 +47,8 @@ $("body").delegate('.box','click', function(){
             top: $('#content').scrollTop(),
             left: $('#content').scrollLeft()
         },300);
-        
-    }
-	
-	$('#content').css({'overflow':'hidden'})         
+     parent.css({'overflow':'hidden'});    
+    }      
 
 });
 
@@ -73,7 +71,7 @@ $("body").delegate('.box.active','click', function(){
         },300, function(){
             $('.box.active').remove();
             cloned.removeClass('cloned');
-			$('#content').css({'overflow':'scroll'});
+			parent.css({'overflow':'scroll'});
         });
 		
     

@@ -32,41 +32,44 @@ $("body").delegate('.box','click', function(){
         
         var parent = $(this).parent();
         var pos = $(this).position();
+		var st = parent.scrollTop()
         var clone = $(this).clone().addClass('active');
-        $(this).css({left: pos.left + 'px', top: pos.top + 'px'});
-        
-		$('#content').css({'overflow':'hidden'})
+		
+		$(this).css({left: pos.left + 'px', top: (pos.top + st) + 'px'});
 		
         parent.append(clone);
 
-        clone.css({left: pos.left + 'px', top: pos.top + 'px'}).animate({
+        clone.css({left: pos.left + 'px', top: (pos.top + st) + 'px'}).animate({
             width: '100%', 
             height : '100%',
 			padding : '0',
 			margin : '0',
-            top: $("#content").scrollTop(),
-            left: 0
+            top: $('#content').scrollTop(),
+            left: $('#content').scrollLeft()
         },300);
         
-    }                   
+    }
+	
+	$('#content').css({'overflow':'hidden'})         
 
 });
 
 $("body").delegate('.box.active','click', function(){
 
-        var cloned = $('.box.cloned');
+        var parent = $(this).parent();
+		var cloned = $('.box.cloned');
         var clone = $('this');
-		var h = cloned.outerHeight();
-        var w = cloned.outerWidth();
-		var cp = $('#content').outerWidth(true) - $('#content').width();
-		var margin = (cloned.outerWidth(true) - cloned.width())/2;
+		var h = cloned.outerHeight(true);
+        var w = cloned.outerWidth(true);
+		var st = parent.scrollTop();
+		var mar = (cloned.outerWidth(true) - cloned.width())/2;
 		var pos = cloned.position();
 
         $(this).animate({
             width: w + 'px', 
             height : h + 'px',
-            top: (pos.top + margin) + 'px',
-            left: (pos.left + margin) + 'px'
+            top: (pos.top + mar + st) + 'px',
+            left: (pos.left + mar) + 'px'
         },300, function(){
             $('.box.active').remove();
             cloned.removeClass('cloned');
@@ -76,19 +79,4 @@ $("body").delegate('.box.active','click', function(){
     
 });
 
-});
-
-
-
-//LOGO 3D
-
-$(window).on('mousemove', function(event) {
-    var width = $(window).width();
-    var mouseX = event.pageX - (width * 0.5);
-    var height = $(window).height();
-    var mouseY = event.pageY - (height * 0.5);
-    var xAngle = (mouseY / height) * 90;
-    var yAngle = (mouseX / width) * 90;
-
-    $('.cube')[0].style.webkitTransform = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
 });

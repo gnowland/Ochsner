@@ -59,13 +59,15 @@ body {
 }
 
 #content{
-	width: 97.33333333%;
-	padding: 1.333333333%;
+	width: 99%;
+	padding: .5%;
 	position: absolute;
 	overflow:scroll;
-	border: #000 1px solid;
+	background:#CCC;
 }
 
+
+/*BOXES*/
 .box{
 	z-index: 0;
 	overflow: hidden;
@@ -80,58 +82,13 @@ body {
 	overflow: scroll;
 }
 
-/*BOXES*/
-#box1{
- width: 24%;
+#box{
+ width: 23.75%;
  height:0;
- padding-bottom: 24%;
- margin: 0 0 1.333333333% 0;
- background:blue;
+ padding-bottom: 23.75%;
+ margin: .55%;
  float:left;
- z-index:99;
+ border:#000 1px solid;
 }
 
-#box2{
- width: 24%;
- height:0;
- padding-bottom: 24%;
- margin: 0 .666666666% 1.333333333% 1.333333333%;
- background:green;
- float:left;
-}
-
-#box3{
- width: 24%;
- height:0;
- padding-bottom: 24%;
- margin: 0 1.333% 1.333333333% .666666666%;
- background:brown;
- float:left;
-}
-
-#box4{
- width: 24%;
- height:0;
- padding-bottom: 24%;
- margin: 0 0 1.333333333% 0;
- background:orange;
- float:left;
-}
-
-#box5{
- width: 24%;
- height:0;
- padding-bottom: 24%;
- margin: 0 0 0 0;
- background:yellow;
- float:left;
-}
-
-#box6{
- width: 24%;
- height:0;
- padding-bottom: 24%;
- margin: 0 .666666666% 0 1.333333333%;
- background:pink;
- float:left;
-}
+/*LOGO*/

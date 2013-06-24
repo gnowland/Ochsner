@@ -61,7 +61,7 @@ $("body").delegate('.box.active','click', function(){
 var newsize = function(){
 	var b = $('#content').offset().top;
 	var y = $(window).height();
-	var z = $('#content').outerHeight();
+	var z = $('#content').outerHeight(true);
 	var h = $('#content').height();
 	var w = z - h;
 	var a = y - b;
@@ -70,5 +70,5 @@ var newsize = function(){
 };
 
 $(document).ready(newsize);
-//$(window).load(newsize);  <DOCUMENT READY IS SOONER
+//$(window).load(newsize);  <DOCUMENT READY HAPPENS SOONER
 $(window).resize(newsize);

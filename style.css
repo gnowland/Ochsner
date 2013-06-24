@@ -69,6 +69,11 @@ body {
 
 /*BOXES*/
 .box{
+	width: 24%;
+ 	height:0;
+ 	padding-bottom: 24%;
+ 	margin: .5%;
+ 	float:left;
 	z-index: 0;
 	overflow: hidden;
 }
@@ -82,13 +87,74 @@ body {
 	overflow: scroll;
 }
 
-#box{
- width: 24%;
- height:0;
- padding-bottom: 24%;
- margin: .5%;
- float:left;
- background:#666;
+.box.one {
+	background:#666;
 }
 
-/*LOGO*/
+.box.two {
+	background:#666;
+}
+
+.box.three {
+	background:#666;
+}
+
+.box.four {
+	background:#666;
+}
+
+.box.five {
+	background:#666;
+}
+
+.box.six {
+	background:#666;
+}
+
+/*LOGO -- CSS3*/
+.cube {
+  height: 240px;
+  position: relative;
+  margin: 0 auto;
+  width: 240px;
+  -webkit-transform-style: preserve-3d;
+}
+
+.face {
+  background-color: rgb(50, 50, 50);
+  -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+  height: 240px;
+  opacity: 0.7;
+  position: absolute;
+  width: 240px;
+}
+
+.cube .one  {
+  background-color: rgb(242, 24, 25);
+  -webkit-transform: rotateX(90deg) translateZ(120px);
+}
+
+.cube .two {
+  background-color: rgb(235, 41, 158);
+  -webkit-transform: translateZ(120px);
+}
+
+.cube .three {
+  background-color: rgb(252, 209, 22);
+  -webkit-transform: rotateY(90deg) translateZ(120px);
+}
+
+.cube .four {
+  background-color: rgb(44, 45, 213);
+  -webkit-transform: rotateY(180deg) translateZ(120px);
+}
+
+.cube .five {
+  background-color: rgb(125, 105, 181);
+  -webkit-transform: rotateY(-90deg) translateZ(120px);
+}
+
+.cube .six {
+  background-color: rgb(22, 226, 38);
+  -webkit-transform: rotateX(-90deg) translateZ(120px) rotate(180deg);
+}

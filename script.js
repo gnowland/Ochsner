@@ -34,19 +34,21 @@ $("body").delegate('.box.active','click', function(){
 
         var cloned = $('.box.cloned');
         var clone = $('this');
-        var pos = cloned.position();
+		var h = cloned.outerHeight();
         var w = cloned.outerWidth();
-        var h = cloned.outerHeight();
+		var cp = $('#content').outerWidth(true) - $('#content').width();
+		var margin = (cloned.outerWidth(true) - cloned.width())/2;
+		var pos = cloned.position();
 
         $(this).animate({
             width: w + 'px', 
             height : h + 'px',
-            top: pos.top + 'px',
-            left: pos.left + 'px'
+            top: (pos.top + margin) + 'px',
+            left: (pos.left + margin) + 'px'
         },300, function(){
             $('.box.active').remove();
             cloned.removeClass('cloned');
-			$('#content').css({'overflow':'scroll'})
+			$('#content').css({'overflow':'scroll'});
         });
 		
     

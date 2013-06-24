@@ -78,3 +78,10 @@ $("body").delegate('.box.active','click', function(){
 });
 
 });
+
+
+//PLAX EFFECT
+$(document).ready(function () {
+        $('#shell img').plaxify()
+        $.plax.enable()
+})

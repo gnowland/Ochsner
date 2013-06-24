@@ -10,6 +10,7 @@ html, body{
 body {
 	overflow:hidden;
 	font: 1em "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+	position:relative;
 }
 
 #header {
@@ -73,4 +74,43 @@ body {
 
 .box.six {
 	background:#666;
+}
+
+/*PLAX EFFECT*/
+
+div#shell {
+	display: block;
+	position: relative;
+	margin: 100px auto;
+	width: 318px;
+	height: 318px;
+	z-index: 1;
+}
+
+img#plax-logo {
+	position: absolute;
+	top: 125px;
+	left: 90px;
+	z-index: 3;
+}
+
+img#plax-sphere-1 {
+	position: absolute;
+	z-index: 4;
+	top: 189px;
+	left: 191px;
+}
+
+img#plax-sphere-2 {
+	position: absolute;
+	z-index: 2;
+	top: 49px;
+	left: 53px;
+}
+
+img#plax-sphere-3 {
+	position: absolute;
+	top: 35px;
+	left: 32px;
+	z-index: 1;
 }

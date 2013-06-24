@@ -6,5 +6,4 @@ Ochsner
 /___\ \ | <br />
 &nbsp;(c)2013 &nbsp;<br />
 &nbsp;GIFFORD &nbsp;<br />
-&nbsp;NOWLAND &nbsp;
-</tt>
+&nbsp;NOWLAND &nbsp;</tt>

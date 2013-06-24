@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*RESET*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, 
+pre, form, fieldset, input, textarea, p, blockquote, th, td { 
+	padding: 0;
+	margin: 0;
+ }
+fieldset, img { 
+	border: 0;
+	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+ol, ul {
+	list-style: none;
+	}
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-weight: normal;
+	font-style: normal;
+	}
+caption, th {
+	text-align: left;
+	}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size: 100%;
+	}
+q:before, q:after {
+	content: '';
+	}
+abbr, acronym { 
+	border: 0;
+	}
+	
+img { max-width: 100%; }
+
+/*BODY*/
+html, body{
+	width:100%;
+	height:100%;
+}
+
+body {
+	overflow:hidden;
+	font: 1em "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+}
+
+#header {
+	width: 100%;
+	height: 0;
+	min-height: 40px;
+	padding-bottom: 4%;
+	background-color: #939;
+	border: #000 1px solid;
+	position:relative;
+}
+
+#content{
+	width: 97.33333333%;
+	padding: 1.333333333%;
+	position: absolute;
+	overflow:scroll;
+	border: #000 1px solid;
+}
+
+.box{
+	z-index: 0;
+	overflow: hidden;
+}
+
+.box.active{
+	position: absolute;
+	z-index: 9000;
+}
+
+.box.cloned.active {
+	overflow: scroll;
+}
+
+/*BOXES*/
+#box1{
+ width: 24%;
+ height:0;
+ padding-bottom: 24%;
+ margin: 0 0 1.333333333% 0;
+ background:blue;
+ float:left;
+ z-index:99;
+}
+
+#box2{
+ width: 24%;
+ height:0;
+ padding-bottom: 24%;
+ margin: 0 .666666666% 1.333333333% 1.333333333%;
+ background:green;
+ float:left;
+}
+
+#box3{
+ width: 24%;
+ height:0;
+ padding-bottom: 24%;
+ margin: 0 1.333% 1.333333333% .666666666%;
+ background:brown;
+ float:left;
+}
+
+#box4{
+ width: 24%;
+ height:0;
+ padding-bottom: 24%;
+ margin: 0 0 1.333333333% 0;
+ background:orange;
+ float:left;
+}
+
+#box5{
+ width: 24%;
+ height:0;
+ padding-bottom: 24%;
+ margin: 0 0 0 0;
+ background:yellow;
+ float:left;
+}
+
+#box6{
+ width: 24%;
+ height:0;
+ padding-bottom: 24%;
+ margin: 0 .666666666% 0 1.333333333%;
+ background:pink;
+ float:left;
+}

@@ -1,37 +1,49 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!-- THIS WEBSITE BAKED FROM SCRATCH USING ONLY THE FINEST INGREDIENTS. MADE WITH LOVE/HANDLE WITH CARE.
+ALL RIGHTS RESERVED GIFFORD NOWLAND (c) MMXIII. Contact: http://giffordnowland.com -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>GIFFORD NOWLAND — Ochsner Web Samples</title>
 <link href="reset.css" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" />
-<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700|Quicksand:300,400|Gudea|Montserrat:400,700|Carme|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
-<script type="text/javascript" language="javascript" src="script.js"></script>
-<script type="text/javascript" src="plax.js"></script>
-<script type="text/javascript" src="jquery.fittext.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700|Quicksand:300,400|Gudea|Montserrat:400,700|Carme|Shadows+Into+Light+Two' rel='stylesheet' type='text/css' />
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
 <body>
-
-<!--HEADING-->
-<div id="header">
-	<div id="name" class="first">GIFFORD</div>
- 	<div id="plax">
-      <img src="img/GNlogo_sketchy_back.png" width="461" height="305" data-xrange="10" data-yrange="-5" id="plax-back"/>
-      <img src="img/GNlogo_sketchy_front.png" width="461" height="305" data-xrange="20" data-yrange="5" id="plax-front"/>
+<div id="header"><!--MASTHEAD-->
+ 	<h1 id="name">GIFFORD&nbsp;&nbsp;&nbsp;&nbsp;NOWLAND</h1>
+    <div id="plax">
+      <img src="img/GNlogo_sketchy_back.png" width="461" height="305" data-xrange="10" data-yrange="-5" id="plax-back" alt="GN Logo"/>
+      <img src="img/GNlogo_sketchy_front.png" width="461" height="305" data-xrange="20" data-yrange="5" id="plax-front" alt="GN Logo"/>
     </div>
-    <div id="name" class="last">NOWLAND</div>
-</div>
+<!-- END MASTHEAD --></div>
 
-<!--BODY-->
-<div id="content">
+<div id="content"><!--BODY-->
 	<div class="box one">WHITEHALL</div>
 	<div class="box two">UDRESS</div>
 	<div class="box three">DELRIDE</div>
 	<div class="box four">BOX 4</div>
 	<div class="box five">BOX 5</div>
 	<div class="box six">BOX 6</div>
-</div>
+<!-- END BODY --></div>
+
+<!-- LOAD SCRIPTS -->  
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
+<script type="text/javascript" language="javascript" src="script.js"></script>
+<script type="text/javascript" src="plax.js"></script>
+<script type="text/javascript" src="jquery.fittext.js"></script>
+<!-- INLINE SCRIPTS -->
+<script type="text/javascript">
+	//FITTTEXT:
+		$('#name').fitText(0.8);
+
+	//PLAX:
+	$(document).ready(function () {
+        $('#plax img').plaxify()
+        $.plax.enable()
+    })
+</script>
 </body>
 </html>

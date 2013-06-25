@@ -78,12 +78,3 @@ $("body").delegate('.box.active','click', function(){
 });
 
 });
-
-
-//PLAX EFFECT
-$(document).ready(function () {
-        $('#plax img').plaxify()
-        $.plax.enable()
-})
-
-//FITTEXT

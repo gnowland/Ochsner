@@ -47,7 +47,7 @@ body {
 	height: 1px;
 	padding-bottom: 4%;
 	position: relative;
-	top: 98.06%;
+	top: 98%;
 	left: 10%;
 /*gradient hacks*/
 background: -moz-linear-gradient(left,  rgba(66,66,66,0) 0%, rgba(66,66,66,1) 35%, rgba(66,66,66,1) 65%, rgba(66,66,66,0) 100%);
@@ -63,7 +63,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00424242', e
 }
 img#semicircle {
 	position: absolute;
-	z-index: 2;
+	z-index: 3;
 	top: 56%;
 	left: 0;
 	margin: 0 42.3%;
@@ -73,7 +73,7 @@ img#semicircle {
 
 img#gradient-semicircle {
 	position: absolute;
-	z-index: 2;
+	z-index: 3;
 	top: 98%;
 	left: 0;
 	margin: 0 42.3%;
@@ -140,7 +140,7 @@ div#plax {
     top:0;
     left:0;
     right:0;
-	z-index: 3;
+	z-index: 5;
 	overflow: visible;
 }
 
@@ -163,17 +163,6 @@ img#plax-front {
 	height:140%;
 	width:auto;
 }
-
-img#plax-bump {
-	position: absolute;
-	z-index: 3;
-	top: 0px;
-	left: -10px;
-	margin: .5% 42.3%;
-	height: 150%;
-	width: auto;
-}
-
 
 /*CONTENT*/
 #content{

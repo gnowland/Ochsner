@@ -13,10 +13,13 @@ ALL RIGHTS RESERVED GIFFORD NOWLAND (c) MMXIII. Contact: http://giffordnowland.c
 
 <body>
 <div id="header"><!--MASTHEAD-->
- 	<h1 id="name">GIFFORD&nbsp;&nbsp;&nbsp;&nbsp;NOWLAND</h1>
+ 	<div id="name">
+    <div class="left">GIFFORD</div><!-- no space here
+ --><br class="rwd-break"><div class="right">NOWLAND</div>
+	</div>
     <div id="plax">
       <img src="img/GNlogo_sketchy_back.png" width="461" height="305" data-xrange="10" data-yrange="-5" id="plax-back" alt="GN Logo"/>
-      <img src="img/GNlogo_sketchy_front.png" width="461" height="305" data-xrange="20" data-yrange="5" id="plax-front" alt="GN Logo"/>
+      <img src="img/GNlogo_sketchy_front_.png" width="461" height="305" data-xrange="20" data-yrange="5" id="plax-front" alt="GN Logo"/>
     </div>
 <!-- END MASTHEAD --></div>
 
@@ -37,7 +40,7 @@ ALL RIGHTS RESERVED GIFFORD NOWLAND (c) MMXIII. Contact: http://giffordnowland.c
 <!-- INLINE SCRIPTS -->
 <script type="text/javascript">
 	//FITTTEXT:
-		$('#name').fitText(0.8);
+		$('#name').fitText(1.6, { minFontSize: '23px', maxFontSize: '100px' });
 
 	//PLAX:
 	$(document).ready(function () {

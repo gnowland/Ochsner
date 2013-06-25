@@ -127,7 +127,7 @@ div#plax {
 
 img#plax-back {
 	position: absolute;
-	z-index: 5;
+	z-index: 6;
 	top: 0px;
 	left: 0px;
 	margin: 0 42%;
@@ -137,7 +137,7 @@ img#plax-back {
 
 img#plax-front {
 	position: absolute;
-	z-index: 4;
+	z-index: 5;
 	top: 0px;
 	left: -6px;
 	margin:0 42%;

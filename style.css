@@ -19,6 +19,7 @@ body {
 	min-height: 40px;
 	padding-bottom: 4%;
 	position:relative;
+	background:#CCC;
 }
 
 #content{
@@ -26,7 +27,6 @@ body {
 	padding: .5%;
 	position: absolute;
 	overflow:scroll;
-	background:#CCC;
 }
 
 
@@ -78,23 +78,37 @@ body {
 
 div#plax {
 	display: block;
-	position: relative;
-	margin: 0 auto;
-	width: 461px;
-	height: 305px;
+	position: absolute;
+	max-width: 461px;
+    height:auto;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-right:auto;
+    margin-left:auto;
 	z-index: 1;
+	overflow: visible;
 }
 
 img#plax-back {
 	position: absolute;
 	z-index: 4;
-	top: 49px;
-	left: 53px;
+	top: 0px;
+	left: 0px;
+	margin: 0 40%;
+	height:100%;
+	width:auto;
 }
 
 img#plax-front {
 	position: absolute;
 	z-index: 2;
-	top: 49px;
-	left: 53px;
+	top: 0px;
+	left: -6px;
+	margin:0 40%;
+	height:100%;
+	width:auto;
 }

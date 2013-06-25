@@ -54,24 +54,17 @@ body {
 	float: left;
 	display: block;
 	position: absolute;
-	bottom:0;
-    top:0;
-    left:0;
-    right:0;
 	/*font*/
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
-	text-shadow: #253e45 -1px 1px 0, 
-				 #253e45 -2px 2px 0,
-				 #d45848 -3px 3px 0,
-				 #d45848 -4px 4px 0;
 	font-size: 600%;
 	line-height: 100%;
+	letter-spacing: .3em;
 }
 
 .left {
     text-align: left;
-	padding: 0 0 0 2%;
+	padding: 0 0 0 6%;
 }
 .right {
     text-align: right;
@@ -79,37 +72,22 @@ body {
 }
 .left, .right {
     display: inline-block;
-    width: 48%;
+    width: 46%;
 }
-
-@media screen and (min-width: 533px){
+/*css3 styles*/
+@media screen and (max-width: 880px){
+   #name {letter-spacing:.2em;}
+}
+@media screen and (min-width: 580px){
    #name { padding-top:10px; }
    .rwd-break { display: none; }
 }
-@media screen and (max-width: 533px){
-   #name {padding:1% 3%; width:35%;}
+@media screen and (max-width: 580px){
+   #name {padding:1.5% 6%; width:28%; letter-spacing:.4em;}
 }
-/*#lastname {
-	width: 50%;
-	padding: 0 0 0 56%;
-	float: left;
-	display: block;
-	position: absolute;
-	bottom:0;
-    top:0;
-    left:0;
-    right:0;
-
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
-	text-shadow: #253e45 -1px 1px 0, 
-				 #253e45 -2px 2px 0,
-				 #d45848 -3px 3px 0,
-				 #d45848 -4px 4px 0;
-	font-size: 100px;
-	line-height: 100%;
-}*/
-
+@media screen and (max-width: 465px){
+   #name {padding:1.5% 2%; width:35%; letter-spacing:.3em;}
+}
 
 /*PLAX EFFECT*/
 div#plax {

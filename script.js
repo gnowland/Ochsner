@@ -71,7 +71,7 @@ $("body").delegate('.box.active','click', function(){
         },300, function(){
             $('.box.active').remove();
             cloned.removeClass('cloned');
-			parent.css({'overflow':'scroll'});
+			parent.css({'overflow':'auto'});
         });
 		
     

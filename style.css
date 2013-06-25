@@ -196,7 +196,7 @@ img#plax-front {
 	width: 99%;
 	padding: .5%;
 	position: absolute;
-	overflow:scroll;
+	overflow:auto;
 }
 
 
@@ -218,7 +218,7 @@ img#plax-front {
 }
 
 .box.cloned.active {
-	overflow: scroll;
+	overflow: auto;
 }
 
 .box.one {

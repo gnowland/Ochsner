@@ -85,3 +85,5 @@ $(document).ready(function () {
         $('#plax img').plaxify()
         $.plax.enable()
 })
+
+//FITTEXT

@@ -1,6 +1,23 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/*WEBFONTS:
+font-family: font-weight: "style"
+Carme		 400 "Regular"
+Gudea		 400 "Regular"
+Josefin		 100 "Thin"
+  Sans		 300 "Light"
+			 400 "Regular"
+			 600 "SemiBold"
+			 700 "Bold"
+Montserrat	 400 "Regular"
+			 700 "Bold"
+Quicksand	 300 "Light
+			 400 "Regular"
+Shadows Into 400 "Regular"
+  Light Two
+*/
+
 /*BODY*/
 html, body{
 	width:100%;
@@ -22,6 +39,17 @@ body {
 	background:#CCC;
 }
 
+#name {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+#name .first {
+}
+
+#name .last {
+}
+
 #content{
 	width: 99%;
 	padding: .5%;
@@ -37,13 +65,13 @@ body {
  	padding-bottom: 24%;
  	margin: .5%;
  	float:left;
-	z-index: 0;
+	z-index: 1;
 	overflow: hidden;
 }
 
 .box.active{
 	position: absolute;
-	z-index: 9000;
+	z-index: 2;
 }
 
 .box.cloned.active {
@@ -89,7 +117,7 @@ div#plax {
     margin-bottom:0px;
     margin-right:auto;
     margin-left:auto;
-	z-index: 1;
+	z-index: 3;
 	overflow: visible;
 }
 
@@ -105,7 +133,7 @@ img#plax-back {
 
 img#plax-front {
 	position: absolute;
-	z-index: 2;
+	z-index: 3;
 	top: 0px;
 	left: -6px;
 	margin:0 40%;

@@ -161,9 +161,6 @@ h1.year {
 @media screen and (max-width: 580px){
    #name {padding:1.5% 6%; width:28%; letter-spacing:.4em;}
 }
-@media screen and (max-width: 465px){
-   #name {padding:1.5% 2%; width:35%; letter-spacing:.3em;}
-}
 
 /*PLAX EFFECT*/
 div#plax {

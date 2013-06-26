@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/*WEBFONTS:
+/*WEBFONTS: --------------------------------------------------------------------------- 
 font-family: font-weight: "style"
 Carme		 400 "Regular"
 Gudea		 400 "Regular"
@@ -23,7 +23,7 @@ Josefin Slab 400 "Regular"*
 
 
 
-/*BODY*/
+/*BODY --------------------------------------------------------------------------- */
 html, body{
 	width:100%;
 	height:100%;
@@ -38,7 +38,7 @@ body {
 
 
 
-/*HEADER*/
+/*HEADER --------------------------------------------------------------------------- */
 #header {
 	width: 100%;
 	height: 0;
@@ -117,7 +117,7 @@ h1.year {
 
 
 
-/*NAME*/
+/*NAME --------------------------------------------------------------------------- */
 #name {
 	width: 100%;
 	height: auto;
@@ -149,7 +149,7 @@ h1.year {
     display: inline-block;
     width: 46%;
 }
-/*css3 styles*/
+/*css3 styles --------------------------------------------------------------------------- */
 @media screen and (max-width: 880px){
    #name .right {letter-spacing:.2em;}
    #name .left {letter-spacing:.3em;}
@@ -162,7 +162,9 @@ h1.year {
    #name {padding:1.5% 6%; width:28%; letter-spacing:.4em;}
 }
 
-/*PLAX EFFECT*/
+
+
+/*PLAX EFFECT --------------------------------------------------------------------------- */
 div#plax {
 	display: block;
 	position: absolute;
@@ -196,7 +198,7 @@ img#plax-front {
 	width:auto;
 }
 
-/*CONTENT*/
+/*CONTENT --------------------------------------------------------------------------- */
 #contentwindow{
 	background: url(img/brillant.png) repeat top left scroll;
 	width: 99%;
@@ -208,7 +210,7 @@ img#plax-front {
 
 
 
-/*BOXES*/
+/*BOXES --------------------------------------------------------------------------- */
 .box{
 	width: 24%;
  	height:0;

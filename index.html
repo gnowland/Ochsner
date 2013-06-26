@@ -37,9 +37,8 @@ ALL RIGHTS RESERVED GIFFORD NOWLAND (c) MMXIII. Contact: http://giffordnowland.c
 <div id="contentwindow"><!--BODY ================================================================================================================= -->
 
     <div class="box one"><!--BOX 1-->
-        	<p>LOSO CONTENT, <br />
-            hide this from view. by using an offset or something.</p>
-            <img src="img/work/loso/lososaleskit_page3.png">
+        	<div class="target"><p>LOSO CONTENT, <br />
+            hide this from view. by using an offset or something.</p></div>
 	</div><!--END BOX 1-->
 	
     <div class="box two">WHITEHALL</div>
@@ -54,6 +53,7 @@ ALL RIGHTS RESERVED GIFFORD NOWLAND (c) MMXIII. Contact: http://giffordnowland.c
 <script type="text/javascript" language="javascript" src="script.js"></script>
 <script type="text/javascript" src="plax.js"></script>
 <script type="text/javascript" src="jquery.fittext.js"></script>
+<script type="text/javascript" src="blur.js"></script>
 <!-- INLINE SCRIPTS -->
 <script type="text/javascript">
 	//FITTTEXT:
@@ -64,6 +64,18 @@ ALL RIGHTS RESERVED GIFFORD NOWLAND (c) MMXIII. Contact: http://giffordnowland.c
         $('#plax img').plaxify()
         $.plax.enable()
     })
+	
+	//BLUR
+	$(document).ready(function(){
+    
+    	$('.target').blurjs({
+		source: '.target',
+        radius: 5,
+        overlay: 'rgba(255,255,255,0.4)',
+        optClass: 'blurred',
+        cache:false
+    	});
+	})
 </script>
 </body>
 </html>

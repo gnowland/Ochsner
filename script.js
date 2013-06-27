@@ -52,26 +52,19 @@ $("body").delegate('.box','click', function(){
             top: $('#contentwindow').scrollTop(), //remove the absolute link someday
             left: $('#contentwindow').scrollLeft() //remove the absolute link someday
         },300);
-     parent.css({'overflow':'hidden'});
+     	
+		parent.css({'overflow':'hidden'});
 	 
-		$('.content').hide().delay(200).fadeIn('slow');  //remove the absolute link someday
-		
-		
-		
-		var bi = $('.boximage'); //remove the absolute link someday
-		var biparent = bi.parent();
-		var biclone = bi.clone().addClass('active');
-		var biwidth = $('.box').width(); //remove the absolute link someday
-		var biheight = $('.box').height(); //remove the absolute link someday
-		
-		bi.css({width: biwidth + 'px', height: biwidth + 'px', });
-		biparent().append(biclone);
-		biclone.css({width: biwidth + 'px', height: biheight + 'px',});
+		$('.content').hide().delay(200).fadeIn(200);  //remove the absolute link someday
+		var biwh = $('.box').width()
+		$('.boximage').css({width: biwh + 'px', height: biwh + 'px', }); //remove the absolute link someday
 
     } 
 });
 
 $("body").delegate('.box.active','click', function(){
+
+		$('.content').fadeOut(100);  //remove the absolute link someday
 
         var parent = $(this).parent();
 		var cloned = $('.box.cloned');

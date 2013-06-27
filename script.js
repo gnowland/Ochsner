@@ -49,24 +49,24 @@ $("body").delegate('.box','click', function(){
             height : '100%',
 			padding : '0',
 			margin : '0',
-            top: $('#contentwindow').scrollTop(),
-            left: $('#contentwindow').scrollLeft()
+            top: $('#contentwindow').scrollTop(), //remove the absolute link someday
+            left: $('#contentwindow').scrollLeft() //remove the absolute link someday
         },300);
      parent.css({'overflow':'hidden'});
 	 
-		$('.box.active .content').hide().delay(200).fadeIn('slow'); 
+		$('.content').hide().delay(200).fadeIn('slow');  //remove the absolute link someday
 		
 		
 		
-		var bi = jQuery('.boximage');
+		var bi = $('.boximage'); //remove the absolute link someday
 		var biparent = bi.parent();
 		var biclone = bi.clone().addClass('active');
-		var biwidth = jQuery('.box').outerWidth();
-		var biheight = jQuery('.box').outerHeight();
+		var biwidth = $('.box').width(); //remove the absolute link someday
+		var biheight = $('.box').height(); //remove the absolute link someday
 		
-		bi.css({width: biwidth + 'px', height: biwidth + 'px'});
+		bi.css({width: biwidth + 'px', height: biwidth + 'px', });
 		biparent().append(biclone);
-		biclone.css({width: biwidth + 'px', height: biheight + 'px', margin:'.5%'});
+		biclone.css({width: biwidth + 'px', height: biheight + 'px',});
 
     } 
 });
@@ -92,7 +92,7 @@ $("body").delegate('.box.active','click', function(){
             cloned.removeClass('cloned');
 			cloned.addClass('uncloned');
 			cloned.css({visibility: 'visible'});
-			parent.css({'overflow':'auto'});
+			parent.css({overflow:'auto'});
         });
 });
 

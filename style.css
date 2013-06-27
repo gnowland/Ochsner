@@ -282,18 +282,17 @@ img#plax-front {
 	background-size: 100%;
 }
 
-.boximage {
-
-
-}
-
-.box.one .boximage {
-	background-image: url(img/boxes/whitehall.jpg);
+.box.active .boximage {
 	float: left;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	border: 1px solid #fff;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+
+}
+
+.one .boximage {
+	background-image: url(img/boxes/whitehall.jpg);
 }
 
 .timeline{

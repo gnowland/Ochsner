@@ -154,15 +154,32 @@ h1.year {
    #name .right {letter-spacing:.2em;}
    #name .left {letter-spacing:.3em;}
 }
-@media screen and (min-width: 580px){
+@media screen and (max-width: 1005px){
+	  .box { 
+	  	width: 32% !important; 
+		padding-bottom: 32% !important;
+	  }
+}
+@media screen and (max-width: 580px){
+   #name {padding:1.5% 3%; letter-spacing:.4em;}
+      .box { 
+	  	width: 48% !important; 
+		padding-bottom: 48% !important;
+	  }
+}
+
+@media screen and (min-width: 409px){
    #name { padding-top:10px; }
    .rwd-break { display: none; }
 }
-@media screen and (max-width: 580px){
+
+@media screen and (max-width: 409px){
    #name {padding:1.5% 6%; width:28%; letter-spacing:.4em;}
+      .box { 
+	  	width: 97% !important; 
+		padding-bottom: 97% !important;
+	  }
 }
-
-
 
 /*PLAX EFFECT --------------------------------------------------------------------------- */
 div#plax {
@@ -211,12 +228,14 @@ img#plax-front {
 /*BOXES --------------------------------------------------------------------------- */
 .box{
 	width: 24%;
- 	height:0;
- 	padding-bottom: 24%;
- 	margin: .5%;
- 	float:left;
+	height: 0;
+	padding-bottom: 24%;
+	margin: .4%;
+	float: left;
 	z-index: 1;
 	overflow: hidden;
+	border: 1px solid #fff;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 .box.active{
@@ -228,6 +247,7 @@ img#plax-front {
 .box.cloned.active {
 	overflow: auto;
 	border: none;
+	-webkit-box-shadow: none;
 }
 
 .uncloned {

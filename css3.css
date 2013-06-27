@@ -17,17 +17,17 @@
 }
 
 @media screen and (max-width: 880px){
-   #name {padding: 1.5% 0!important; letter-spacing:.3em!important;}
+   #name {padding-top: 1%!important; letter-spacing:.3em!important;}
    #plax {margin-left:-3.8%!important;}
    img#semicircle, img#gradient-semicircle {margin-left: 38.5%!important;}
-   .year {margin-left:41.5%!important;margin-top:-.5%!important; font-size: 6px!important;}
+   .year {margin-left:41.5%!important;margin-top:-.2%!important; font-size: 6px!important;}
 }
 
 @media screen and (max-width: 580px){
-   #name { padding:1.5% 10%!important; width:28%!important; letter-spacing:.4em!important; }
+   #name { padding-top:1.5%!important; padding-left: 10%!important; width:28%!important; letter-spacing:.4em!important; }
    #plax {padding-left:48%!important;}
    img#semicircle, img#gradient-semicircle {margin-left: 59%!important;}
-   .year {margin-left:62%!important; margin-top:-.5%!important; font-size: 5px!important;}
+   .year {margin-left:62%!important; margin-top:-.2%!important; font-size: 5px!important;}
 /*      .box.uncloned { 
 	  	width: 48% !important; 
 		padding-bottom: 48% !important;

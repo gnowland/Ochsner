@@ -39,12 +39,26 @@ body {
 h1 {
 font-family: 'Josefin Sans', sans-serif;
 font-weight: 700;
-font-size: 2em;
+font-size: 2.4em;
 border-bottom: 1px solid #000;
-letter-spacing: .1em;
+letter-spacing: .07em;
 line-height: .5em;
+text-shadow: 0px 1px 2px  rgba(0, 0, 0, 0.4);
+}
+h4 {
+font-family: 'Josefin Slab', serif;
+line-height: 1.5em;
+font-weight: 100;
+font-style: italic;
+font-size: .9em;
+text-align: center;
+border-bottom: 1px solid #000;
+text-shadow: 0px 0px 1px  rgba(0, 0, 0, 0.4);
 }
 
+p {
+	text-align:justify;
+}
 
 
 /*HEADER --------------------------------------------------------------------------- */
@@ -93,7 +107,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00333333', e
 #name {
 	width: 100%;
 	height: auto;
-	padding: 0;
+	padding: 1% 0;
 	float: left;
 	display: block;
 	position: absolute;
@@ -165,7 +179,7 @@ img#plax-front {
 	z-index: 3;
 	top: 121%;
 	left: 0;
-	margin: -.5% 45% 0 45%;
+	margin: 0 45%;
 	padding: 0 20px;
 	font-size: 7px;
 	font-family: 'Josefin Slab', Georgia, Times, serif;

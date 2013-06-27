@@ -37,7 +37,7 @@ $("body").delegate('.box','click', function(){
 		var biwinwh = ($(window).width())-($('.box').width());
 		$('#leftcol').css({width: biwh + 'px' }); //remove the absolute link someday
 		$('.boximage').css({height: biwh + 'px', width: biwh + 'px' });
-		$('#rightcol').css({width: (biwinwh - 10) + 'px', 'margin-left': (biwh + 10) + 'px' });
+		$('#rightcol').css({width: (biwinwh - 20) + 'px', 'margin-left': (biwh + 10) + 'px' });
 		$('.gallery').css({height: biwh + 'px' });
 		
         var parent = $(this).parent();

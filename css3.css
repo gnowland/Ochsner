@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*css3 styles --------------------------------------------------------------------------- */
+@media screen and (max-width:9999999px){
+/*		  .box.uncloned { 
+			width: 24%;
+			padding-bottom: 24%;}
+	  }*/
+}
+@media screen and (max-width: 1005px){
+/*	  
+		.box.uncloned { 
+	  	width: 32% !important; 
+		padding-bottom: 32% !important;
+	  }*/
+}
+
+@media screen and (max-width: 880px){
+   #name {padding: 1.5% 0!important; letter-spacing:.3em!important;}
+   #plax {margin-left:-3.8%!important;}
+   img#semicircle, img#gradient-semicircle {margin-left: 38.5%!important;}
+   .year {margin-left:41.5%!important;margin-top:-.5%!important; font-size: 6px!important;}
+}
+
+@media screen and (max-width: 580px){
+   #name { padding:1.5% 10%!important; width:28%!important; letter-spacing:.4em!important; }
+   #plax {padding-left:48%!important;}
+   img#semicircle, img#gradient-semicircle {margin-left: 59%!important;}
+   .year {margin-left:62%!important; margin-top:-.5%!important; font-size: 5px!important;}
+/*      .box.uncloned { 
+	  	width: 48% !important; 
+		padding-bottom: 48% !important;
+	  }*/
+}
+
+@media screen and (min-width: 580px){
+   .rwd-break { display: none!important; }
+}
+
+@media screen and (max-width: 409px){
+/*      .box.uncloned { 
+	  	width: 97% !important; 
+		padding-bottom: 97% !important;
+	  }*/
+}

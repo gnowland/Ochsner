@@ -36,6 +36,15 @@ body {
 	position:relative;
 }
 
+h1 {
+font-family: 'Josefin Sans', sans-serif;
+font-weight: 700;
+font-size: 2em;
+border-bottom: 1px solid #000;
+letter-spacing: .1em;
+line-height: .5em;
+}
+
 
 
 /*HEADER --------------------------------------------------------------------------- */
@@ -78,43 +87,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00333333', e
     background-repeat:no-repeat;
 }
 
-img#semicircle {
-	position: absolute;
-	z-index: 3;
-	top: 56%;
-	left: 0;
-	margin: 0 42.3%;
-	height: 92%;
-	width: auto;
-}
-
-img#gradient-semicircle {
-	position: absolute;
-	z-index: 3;
-	top: 98%;
-	left: 0;
-	margin: 0 42.3%;
-	height: 42%;
-	width: auto;
-}
-
-h1.year {
-	width: 30px;
-	height: 14px;
-	position: absolute;
-	float: left;
-	z-index: 3;
-	top: 121%;
-	left: 0;
-	margin: 0 45.5%;
-	padding: 0 20px;
-	font-size: 7px;
-	font-family: 'Josefin Slab', Georgia, Times, serif;
-	font-weight: 100;
-	font-style: italic;
-	color: #adadad;
-}
-
 
 
 /*NAME --------------------------------------------------------------------------- */
@@ -149,45 +121,7 @@ h1.year {
     display: inline-block;
     width: 46%;
 }
-/*css3 styles --------------------------------------------------------------------------- */
-@media screen and (max-width:9999999px){
-/*		  .box.uncloned { 
-			width: 24%;
-			padding-bottom: 24%;
-	  }*/
-}
-}
 
-@media screen and (max-width: 880px){
-   #name .right {letter-spacing:.2em;}
-   #name .left {letter-spacing:.3em;}
-}
-@media screen and (max-width: 1005px){
-/*	  .box.uncloned { 
-	  	width: 32% !important; 
-		padding-bottom: 32% !important;
-	  }*/
-}
-@media screen and (max-width: 580px){
-   #name {padding:1.5% 3%; letter-spacing:.4em;}
-/*      .box.uncloned { 
-	  	width: 48% !important; 
-		padding-bottom: 48% !important;
-	  }*/
-}
-
-@media screen and (min-width: 409px){
-   #name { padding-top:10px; }
-   .rwd-break { display: none; }
-}
-
-@media screen and (max-width: 409px){
-   #name {padding:1.5% 6%; width:28%; letter-spacing:.4em;}
-/*      .box.uncloned { 
-	  	width: 97% !important; 
-		padding-bottom: 97% !important;
-	  }*/
-}
 
 /*PLAX EFFECT --------------------------------------------------------------------------- */
 div#plax {
@@ -221,6 +155,43 @@ img#plax-front {
 	margin:0 42%;
 	height:140%;
 	width:auto;
+}
+
+.year {
+	width: 30px;
+	height: 14px;
+	position: absolute;
+	float: left;
+	z-index: 3;
+	top: 121%;
+	left: 0;
+	margin: -.5% 45% 0 45%;
+	padding: 0 20px;
+	font-size: 7px;
+	font-family: 'Josefin Slab', Georgia, Times, serif;
+	font-weight: 100;
+	font-style: italic;
+	color: #adadad;
+}
+
+img#semicircle {
+	position: absolute;
+	z-index: 3;
+	top: 56%;
+	left: 0;
+	margin: 0 42%;
+	height: 92%;
+	width: auto;
+}
+
+img#gradient-semicircle {
+	position: absolute;
+	z-index: 3;
+	top: 98%;
+	left: 0;
+	margin: 0 42%;
+	height: 42%;
+	width: auto;
 }
 
 /*CONTENT --------------------------------------------------------------------------- */
@@ -262,7 +233,7 @@ img#plax-front {
 	background: #cacaca;
 }
 
-.uncloned .content, .uncloned .boximage {
+.uncloned .content, .uncloned .boximage, .uncloned #gallery {
 	visibility:hidden;
 }
 
@@ -271,7 +242,7 @@ img#plax-front {
 }
 
 .content {
-	max-width: 35em;
+	max-width: 45em;
 	margin:	0 auto;
 	padding: 1%;
 }
@@ -288,7 +259,6 @@ img#plax-front {
 	background-size: 100%;
 	border: 1px solid #fff;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-
 }
 
 .one .boximage {
@@ -296,4 +266,10 @@ img#plax-front {
 }
 
 .timeline{
+}
+
+#gallery {
+	height:200px;
+	width:100%;
+	background:#696;
 }

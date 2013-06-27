@@ -150,22 +150,30 @@ h1.year {
     width: 46%;
 }
 /*css3 styles --------------------------------------------------------------------------- */
+@media screen and (max-width:9999999px){
+/*		  .box.uncloned { 
+			width: 24%;
+			padding-bottom: 24%;
+	  }*/
+}
+}
+
 @media screen and (max-width: 880px){
    #name .right {letter-spacing:.2em;}
    #name .left {letter-spacing:.3em;}
 }
 @media screen and (max-width: 1005px){
-	  .box { 
+/*	  .box.uncloned { 
 	  	width: 32% !important; 
 		padding-bottom: 32% !important;
-	  }
+	  }*/
 }
 @media screen and (max-width: 580px){
    #name {padding:1.5% 3%; letter-spacing:.4em;}
-      .box { 
+/*      .box.uncloned { 
 	  	width: 48% !important; 
 		padding-bottom: 48% !important;
-	  }
+	  }*/
 }
 
 @media screen and (min-width: 409px){
@@ -175,10 +183,10 @@ h1.year {
 
 @media screen and (max-width: 409px){
    #name {padding:1.5% 6%; width:28%; letter-spacing:.4em;}
-      .box { 
+/*      .box.uncloned { 
 	  	width: 97% !important; 
 		padding-bottom: 97% !important;
-	  }
+	  }*/
 }
 
 /*PLAX EFFECT --------------------------------------------------------------------------- */
@@ -227,9 +235,9 @@ img#plax-front {
 
 /*BOXES --------------------------------------------------------------------------- */
 .box{
-	width: 24%;
+	width: 23.6%;
+	padding-bottom: 23.6%;
 	height: 0;
-	padding-bottom: 24%;
 	margin: .4%;
 	float: left;
 	z-index: 1;
@@ -251,11 +259,11 @@ img#plax-front {
 }
 
 .uncloned {
-	background-attachment: scroll;
-	background-image: url(img/work/whitehall/sitepix/home.png);
-	background-repeat: no-repeat;
-	background-position: -250px -80px;
-	background-size: 750px;
+	background: #cacaca;
+}
+
+.uncloned .content{
+	visibility:hidden;
 }
 
 .content {
@@ -264,13 +272,10 @@ img#plax-front {
 	padding: 1%;
 }
 
-/*.box.one.uncloned {
-	background-attachment: scroll;
-	background-image: url(img/work/whitehall/sitepix/home.png);
+.box.one.uncloned {
+	background-image: url(img/boxes/whitehall.jpg);
 	background-repeat: no-repeat;
-	background-position: -250px -80px;
-	background-size: 750px;
-	border: 10px #eee solid;
+	background-size: 100%;
 }*/
 
 .box.uncloned .content {

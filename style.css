@@ -217,7 +217,6 @@ img#plax-front {
  	float:left;
 	z-index: 1;
 	overflow: hidden;
-	border: 10px #cecece solid;
 }
 
 .box.active{

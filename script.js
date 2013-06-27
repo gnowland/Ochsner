@@ -38,7 +38,7 @@ $("body").delegate('.box','click', function(){
 		var st = parent.scrollTop()
         var clone = $(this).clone().addClass('active');
 		
-		$(this).css({left: pos.left + 'px', top: (pos.top + st) + 'px'});
+		$(this).css({left: pos.left + 'px', top: (pos.top + st) + 'px', visibility: 'hidden' });
 		
         parent.append(clone);
 
@@ -71,11 +71,12 @@ $("body").delegate('.box.active','click', function(){
             width: w + 'px', 
             height : h + 'px',
             top: (pos.top + mar + st) + 'px',
-            left: (pos.left + mar) + 'px'
+            left: (pos.left + mar) + 'px',
         },300, function(){
             $('.box.active').remove();
             cloned.removeClass('cloned');
 			cloned.addClass('uncloned');
+			cloned.css({visibility: 'visible'});
 			parent.css({'overflow':'auto'});
         });
 });

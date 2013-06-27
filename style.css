@@ -262,7 +262,11 @@ img#plax-front {
 	background: #cacaca;
 }
 
-.uncloned .content{
+.uncloned .content, .uncloned .boximage {
+	visibility:hidden;
+}
+
+.box.uncloned .content, .box.uncloned .boximage {
 	visibility:hidden;
 }
 
@@ -276,10 +280,20 @@ img#plax-front {
 	background-image: url(img/boxes/whitehall.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
-}*/
+}
 
-.box.uncloned .content {
-	visibility:hidden;
+.boximage {
+
+
+}
+
+.box.one .boximage {
+	background-image: url(img/boxes/whitehall.jpg);
+	float: left;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border: 1px solid #fff;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 .timeline{

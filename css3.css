@@ -11,36 +11,36 @@
 @media screen and (max-width: 1005px){
 /*	  
 		.box.uncloned { 
-	  	width: 32% !important; 
-		padding-bottom: 32% !important;
+	  	width: 32% ; 
+		padding-bottom: 32% ;
 	  }*/
 }
 
 @media screen and (max-width: 880px){
-   #name {padding-top: 1%!important; letter-spacing:.3em!important;}
-   #plax {margin-left:-3.8%!important;}
-   img#semicircle, img#gradient-semicircle {margin-left: 38.5%!important;}
-   .year {margin-left:41.5%!important;margin-top:-.2%!important; font-size: 6px!important;}
+   #name {padding-top: 1%; letter-spacing:.3em;}
+   #plax {margin-left:-3.8%;}
+   img#semicircle, img#gradient-semicircle {margin-left: 38.5%;}
+   .year {margin-left:41.5%;margin-top:-.2%; font-size: 6px;}
 }
 
 @media screen and (max-width: 580px){
-   #name { padding-top:1.5%!important; padding-left: 10%!important; width:28%!important; letter-spacing:.4em!important; }
-   #plax {padding-left:48%!important;}
-   img#semicircle, img#gradient-semicircle {margin-left: 59%!important;}
-   .year {margin-left:62%!important; margin-top:-.2%!important; font-size: 5px!important;}
+   #name { padding-top:1.5%; padding-left: 10%; width:28%; letter-spacing:.4em; }
+   #plax {padding-left:48%;}
+   img#semicircle, img#gradient-semicircle {margin-left: 59%;}
+   .year {margin-left:62%; margin-top:-.2%; font-size: 5px;}
 /*      .box.uncloned { 
-	  	width: 48% !important; 
-		padding-bottom: 48% !important;
+	  	width: 48% ; 
+		padding-bottom: 48% ;
 	  }*/
 }
 
 @media screen and (min-width: 580px){
-   .rwd-break { display: none!important; }
+   .rwd-break { display: none; }
 }
 
 @media screen and (max-width: 409px){
 /*      .box.uncloned { 
-	  	width: 97% !important; 
-		padding-bottom: 97% !important;
+	  	width: 97% ; 
+		padding-bottom: 97% ;
 	  }*/
 }

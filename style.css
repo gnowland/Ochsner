@@ -40,24 +40,38 @@ h1 {
 font-family: 'Josefin Sans', sans-serif;
 font-weight: 700;
 font-size: 2.4em;
-border-bottom: 1px solid #000;
+text-align:left;
 letter-spacing: .07em;
-line-height: .5em;
+line-height: .6em;
 text-shadow: 0px 1px 2px  rgba(0, 0, 0, 0.4);
 }
 h4 {
 font-family: 'Josefin Slab', serif;
-line-height: 1.5em;
+line-height: 1em;
 font-weight: 100;
 font-style: italic;
 font-size: .9em;
-text-align: center;
+text-align: left;
 border-bottom: 1px solid #000;
 text-shadow: 0px 0px 1px  rgba(0, 0, 0, 0.4);
+padding-left:1.4em;
 }
 
 p {
 	text-align:justify;
+}
+
+.timeline {
+	background:#aaa;
+	width:50%;
+	font-family:'Gudea', sans-serif;
+	font-size:1em;
+	font-weight:bold;
+}
+
+.timeline p.date {
+	background:#F00;
+
 }
 
 
@@ -229,6 +243,7 @@ img#gradient-semicircle {
 	overflow: hidden;
 	border: 1px solid #fff;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	background: #cacaca;
 }
 
 .box.active{
@@ -243,15 +258,17 @@ img#gradient-semicircle {
 	-webkit-box-shadow: none;
 }
 
-.uncloned {
-	background: #cacaca;
+#leftcol {
+	float:left;
 }
 
-.uncloned .content, .uncloned .boximage, .uncloned #gallery {
-	visibility:hidden;
+#rightcol {
+	float: left;
+	position:absolute;
+	top:0;
 }
 
-.box.uncloned .content, .box.uncloned .boximage {
+.uncloned .content, .uncloned .boximage, .uncloned .gallery, .uncloned .sprite{
 	visibility:hidden;
 }
 
@@ -259,6 +276,7 @@ img#gradient-semicircle {
 	max-width: 45em;
 	margin:	0 auto;
 	padding: 1%;
+	display:inline-block;
 }
 
 .box.one.uncloned {
@@ -273,17 +291,124 @@ img#gradient-semicircle {
 	background-size: 100%;
 	border: 1px solid #fff;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	display:block;
 }
 
 .one .boximage {
 	background-image: url(img/boxes/whitehall.jpg);
 }
 
-.timeline{
+.gallery {
+	width:90%;
+	margin-bottom: 1%;
+	background:#696;
+	display:inline-block;
 }
 
-#gallery {
-	height:200px;
-	width:100%;
-	background:#696;
+/*SPRITE --------------------------------------------------------------------------- */
+.box .sprite {
+float: left;
+background-image: none;
+clear: both;
+width: 80%;
+margin: 3% 8%;
+padding: 0 2%;
+background: rgb(185, 185, 185);
+}
+
+.sprite .joomla {
+background-image: url(img/langsprite.png);
+background-position: -360px -107px;
+width: 126px;
+height: 32px;
+}
+.sprite .php {
+background-image: url(img/langsprite.png);
+background-position: -212px -125px;
+width: 70px;
+height: 39px;
+}
+.sprite .google {
+background-image: url(img/langsprite.png);
+background-position: -352px -73px;
+width: 135px;
+height: 30px;
+}
+.sprite .mysql {
+background-image: url(img/langsprite.png);
+background-position: -208px -76px;
+width: 84px;
+height: 45px;
+}
+.sprite .html {
+background-image: url(img/langsprite.png);
+background-position: -4px -4px;
+width: 60px;
+height: 84px;
+}
+.sprite .css {
+background-image: url(img/langsprite.png);
+background-position: -4px -92px;
+width: 60px;
+height: 84px;
+}
+.sprite .javascript {
+background-image: url(img/langsprite.png);
+background-position: -69px -4px;
+width: 65px;
+height: 66px;
+}
+.sprite .jquery {
+background-image: url(img/langsprite.png);
+background-position: -364px -4px;
+width: 122px;
+height: 33px;
+}
+.sprite .dreamweaver {
+background-image: url(img/langsprite.png);
+background-position: -137px -73px;
+width: 65px;
+height: 66px;
+}
+.sprite .photoshop {
+background-image: url(img/langsprite.png);
+background-position: -273px -2px;
+width: 67px;
+height: 68px;
+}
+.sprite .illustrator {
+background-image: url(img/langsprite.png);
+background-position: -68px -73px;
+width: 68px;
+height: 66px;
+}
+.sprite .msvs {
+background-image: url(img/langsprite.png);
+background-position: -356px -179px;
+width: 144px;
+height: 27px;
+}
+
+.sprite ul h3{
+font-family: 'Montserrat', sans-serif;
+font-size: 1em;
+font-weight: 100;
+background: rgb(52, 99, 80);
+color: #fff;
+padding: 1% 0;
+text-align:center;
+font-variant: small-caps;
+box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.sprite li {
+margin:3%;
+}
+
+.sprite li.col1{
+float: left;
+}
+
+.sprite li.col2 {
+float: right;
 }

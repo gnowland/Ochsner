@@ -33,7 +33,12 @@ $("body").delegate('.box','click', function(){
         $(this).removeClass('uncloned');
 		$(this).addClass('cloned');
 		
-		
+		var biwh = $('.box').width()
+		var biwinwh = ($(window).width())-($('.box').width());
+		$('#leftcol').css({width: biwh + 'px' }); //remove the absolute link someday
+		$('.boximage').css({height: biwh + 'px', width: biwh + 'px' });
+		$('#rightcol').css({width: (biwinwh - 10) + 'px', 'margin-left': (biwh + 10) + 'px' });
+		$('.gallery').css({height: biwh + 'px' });
 		
         var parent = $(this).parent();
         var pos = $(this).position();
@@ -55,16 +60,15 @@ $("body").delegate('.box','click', function(){
      	
 		parent.css({'overflow':'hidden'});
 	 
-		$('.content').hide().delay(200).fadeIn(200);  //remove the absolute link someday
-		var biwh = $('.box').width()
-		$('.boximage').css({width: biwh + 'px', height: biwh + 'px', }); //remove the absolute link someday
+		$('.fade').hide().delay(200).fadeIn(200);  //remove the absolute link someday
+		
 
     } 
 });
 
 $("body").delegate('.box.active','click', function(){
 
-		$('.content').fadeOut(100);  //remove the absolute link someday
+		$('.fade').fadeOut(100);  //remove the absolute link someday
 
         var parent = $(this).parent();
 		var cloned = $('.box.cloned');

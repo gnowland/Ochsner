@@ -22,14 +22,17 @@ $(window).resize(newsize);
 
 
 //BOX ANIMATION
+//$('#btn').click(function(e){ 
+
 
 $(window).load(function(){
 $("body").delegate('.box','click', function(){
 
     if ($('.box.active').length <= 0){ 
         
-        $(this).addClass('cloned');
-        
+        $(this).removeClass('uncloned');
+		$(this).addClass('cloned');
+		
         var parent = $(this).parent();
         var pos = $(this).position();
 		var st = parent.scrollTop()
@@ -47,9 +50,10 @@ $("body").delegate('.box','click', function(){
             top: $('#contentwindow').scrollTop(),
             left: $('#contentwindow').scrollLeft()
         },300);
-     parent.css({'overflow':'hidden'});    
+     parent.css({'overflow':'hidden'});
+	 
     }      
-
+$('.box.active .content').hide().delay(300).fadeIn('slow'); 
 });
 
 $("body").delegate('.box.active','click', function(){
@@ -71,10 +75,9 @@ $("body").delegate('.box.active','click', function(){
         },300, function(){
             $('.box.active').remove();
             cloned.removeClass('cloned');
+			cloned.addClass('uncloned');
 			parent.css({'overflow':'auto'});
         });
-		
-    
 });
 
 });

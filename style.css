@@ -208,8 +208,6 @@ img#plax-front {
 	min-width: 400px;
 }
 
-
-
 /*BOXES --------------------------------------------------------------------------- */
 .box{
 	width: 24%;
@@ -224,32 +222,54 @@ img#plax-front {
 .box.active{
 	position: absolute;
 	z-index: 2;
+	background: url(img/white_carbonfiber.png) scroll repeat left top;
 }
 
 .box.cloned.active {
 	overflow: auto;
 }
 
-.box.one {
+.uncloned {
+	background-attachment: scroll;
+	background-image: url(img/work/whitehall/sitepix/home.png);
+	background-repeat: no-repeat;
+	background-position: -250px -80px;
+	background-size: 750px;
+	border: 10px #eee solid;
+}
+.content {
+	max-width: 35em;
+	margin:	0 auto;
+	padding: 1%;
+}
 
+/*.box.one.uncloned {
+	background-attachment: scroll;
+	background-image: url(img/work/whitehall/sitepix/home.png);
+	background-repeat: no-repeat;
+	background-position: -250px -80px;
+	background-size: 750px;
+	border: 10px #eee solid;
+}*/
+
+.box.one.uncloned .content {
+	visibility:hidden;
 }
 
 .box.two {
-	background:#CCC;
 }
 
 .box.three {
-	background:#CCC;
 }
 
 .box.four {
-	background:#CCC;
 }
 
 .box.five {
-	background:#CCC;
 }
 
 .box.six {
-	background:#CCC;
+}
+
+.timeline{
 }

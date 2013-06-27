@@ -53,7 +53,7 @@ $("body").delegate('.box','click', function(){
      parent.css({'overflow':'hidden'});
 	 
     }      
-$('.box.active .content').hide().delay(300).fadeIn('slow'); 
+$('.box.active .content').hide().delay(200).fadeIn('slow'); 
 });
 
 $("body").delegate('.box.active','click', function(){

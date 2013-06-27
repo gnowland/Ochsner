@@ -217,6 +217,7 @@ img#plax-front {
  	float:left;
 	z-index: 1;
 	overflow: hidden;
+	border: 10px #cecece solid;
 }
 
 .box.active{
@@ -227,6 +228,7 @@ img#plax-front {
 
 .box.cloned.active {
 	overflow: auto;
+	border: none;
 }
 
 .uncloned {
@@ -235,8 +237,8 @@ img#plax-front {
 	background-repeat: no-repeat;
 	background-position: -250px -80px;
 	background-size: 750px;
-	border: 10px #eee solid;
 }
+
 .content {
 	max-width: 35em;
 	margin:	0 auto;
@@ -252,23 +254,8 @@ img#plax-front {
 	border: 10px #eee solid;
 }*/
 
-.box.one.uncloned .content {
+.box.uncloned .content {
 	visibility:hidden;
-}
-
-.box.two {
-}
-
-.box.three {
-}
-
-.box.four {
-}
-
-.box.five {
-}
-
-.box.six {
 }
 
 .timeline{

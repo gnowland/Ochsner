@@ -36,3 +36,5 @@ abbr, acronym {
 	}
 	
 img { max-width: 100%; }
+
+.non-semantic-protector { position: relative; z-index: 1; }

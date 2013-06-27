@@ -38,7 +38,7 @@ body {
 
 .content {
 	width: 98%;
-	margin:	0 auto;
+	margin:	3% auto;
 	padding: 1%;
 	display:inline-block;
 }
@@ -68,6 +68,22 @@ p {
 	text-align:justify;
 }
 
+#bodycells {
+	width:100%;
+	float:left;
+	display:table;
+}
+
+.cell{
+	width: 23%;
+	padding: 0;
+	margin: 1%;
+	float:left;
+	padding-top:2%;
+	display:table-cell;
+}
+
+
 .timeline {
 width: 30%;
 font-family: 'Gudea', sans-serif;
@@ -84,6 +100,7 @@ border-bottom-right-radius: 400px;
 -webkit-border-bottom-left-radius: 400px;
 -moz-border-bottom-left-radius: 400px;
 border-bottom-left-radius: 400px;
+box-shadow: -2px 1px 5px rgba(0, 0, 0, 0.4);
 }
 
 .timeline span.label {
@@ -100,7 +117,6 @@ border-bottom-left-radius: 400px;
 -webkit-border-top-right-radius: 400px;
 -moz-border-top-right-radius: 400px;
 border-top-right-radius: 400px;
-
 text-align:left;
 font-weight: 400;
 box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.4);
@@ -331,21 +347,56 @@ img#gradient-semicircle {
 }
 
 .gallery {
-	width:100%;
-	margin-bottom: 1%;
-	background:#696;
-	display:inline-block;
+float: left;
+background:#696;
+width: 96%;
+height: 20%;
+margin: 2% 2%;
+display:inline-block;
+}
+
+/*RIBBON --------------------------------------------------------------------------- */
+.ribbon {
+font-family: 'Montserrat', sans-serif;
+font-size: 1.1em;
+font-weight: 100;
+letter-spacing: .4em;
+font-variant: small-caps;
+width: 17.9em;
+position: relative;
+background: rgb(52, 99, 80);
+color: #fff;
+text-align: center;
+padding: 0.7em 0;
+margin: 0 0 0.3em -1.35em;
+box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+position: absolute;
+display: block;
+border-style: solid;
+border-color: rgb(79, 128, 101) transparent transparent transparent;
+bottom: -.96em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
 }
 
 /*SPRITE --------------------------------------------------------------------------- */
+
 .box .sprite {
 float: left;
-background-image: none;
+background-image: url(img/tweed.png);
 clear: both;
 width: 80%;
 margin: 8% 8%;
 padding: 1% 2%;
-background: rgb(185, 185, 185);
 border-top-right-radius:1em;
 -webkit-border-top-right-radius: 1em;
 -moz-border-top-right-radius: 1em;
@@ -425,19 +476,6 @@ background-image: url(img/langsprite.png);
 background-position: -356px -179px;
 width: 144px;
 height: 27px;
-}
-
-.sprite ul h3{
-font-family: 'Montserrat', sans-serif;
-font-size: 1em;
-font-weight: 100;
-background: rgb(52, 99, 80);
-color: #fff;
-padding: 1% 0;
-text-align:center;
-font-variant: small-caps;
-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
-margin-top: -4%;
 }
 
 .sprite li {

@@ -38,7 +38,6 @@ $("body").delegate('.box','click', function(){
 		$('#leftcol').css({width: biwh + 'px' }); //remove the absolute link someday
 		$('.boximage').css({height: biwh + 'px', width: biwh + 'px' });
 		$('#rightcol').css({width: (biwinwh - 20) + 'px', 'margin-left': (biwh + 10) + 'px' });
-		$('.gallery').css({height: biwh + 'px' });
 		
         var parent = $(this).parent();
         var pos = $(this).position();
@@ -61,7 +60,7 @@ $("body").delegate('.box','click', function(){
 		parent.css({'overflow':'hidden'});
 	 
 		$('.fade').hide().delay(200).fadeIn(200);  //remove the absolute link someday
-		
+		$('.boximage').delay(800).slideUp(600);
 
     } 
 });

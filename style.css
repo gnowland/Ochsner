@@ -1,28 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/*WEBFONTS: --------------------------------------------------------------------------- 
-font-family: font-weight: "style"
-Carme		 400 "Regular"
-Gudea		 400 "Regular"
-Josefin Sans 100 "Thin"
-			 300 "Light"
-			 400 "Regular"
-			 600 "SemiBold"
-			 700 "Bold"
-Montserrat	 400 "Regular"
-			 700 "Bold"
-Quicksand	 300 "Light
-			 400 "Regular"
-Shadows Into 400 "Regular"
-  Light Two
-Josefin Slab 400 "Regular"*
-			 100 "Thin Italic"
-			 400 "Italic"*
-*/
-
-
-
 /*BODY --------------------------------------------------------------------------- */
 html, body{
 	width:100%;
@@ -32,7 +10,7 @@ html, body{
 body {
 	background: url(img/brillant.png) repeat top left scroll;
 	overflow:hidden;
-	font: 1em "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+	font: .8em "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
 	position:relative;
 }
 
@@ -43,91 +21,62 @@ body {
 	display:inline-block;
 }
 
+.cell {
+	width: 43%;
+	height: auto;
+	margin: 1%;
+	display:block;
+}
+
+.cell.cleft{float:left;clear:left;}
+.cell.cright{float:right;clear:right;}
+
 h1 {
 font-family: 'Josefin Sans', sans-serif;
 font-weight: 700;
-font-size: 2.4em;
+font-size: 4em;
 text-align:left;
 letter-spacing: .07em;
 line-height: .6em;
 text-shadow: 0px 1px 2px  rgba(0, 0, 0, 0.4);
 }
+
+h2 {
+	font-family: 'Arvo', sans-serif;
+	font-size: 2.5em;
+	font-weight: 700;
+	color: #000;
+}
+
 h4 {
 font-family: 'Josefin Slab', serif;
 line-height: 1em;
 font-weight: 100;
 font-style: italic;
-font-size: .9em;
+font-size: 1.2em;
 text-align: left;
 border-bottom: 1px solid #000;
 text-shadow: 0px 0px 1px  rgba(0, 0, 0, 0.4);
-padding-left:1.4em;
+padding-left:1%;
 }
 
 p {
 	text-align:justify;
+	font-family: 'Habibi', sans-serif;
+	font-size: 1.2em;
+	font-weight:400;
 }
-
-#bodycells {
-	width:100%;
-	float:left;
-	display:table;
-}
-
-.cell{
-	width: 23%;
-	padding: 0;
-	margin: 1%;
-	float:left;
-	padding-top:2%;
-	display:table-cell;
-}
-
 
 .timeline {
-width: 30%;
-font-family: 'Gudea', sans-serif;
-font-size: .7em;
-padding: 1px;
-margin-right: 1%;
-position: absolute;
-right: 0;
-background: rgb(133, 133, 133);
-font-family: 'Gudea', sans-serif;
--webkit-border-bottom-right-radius: 400px;
--moz-border-bottom-right-radius: 400px;
-border-bottom-right-radius: 400px;
--webkit-border-bottom-left-radius: 400px;
--moz-border-bottom-left-radius: 400px;
-border-bottom-left-radius: 400px;
-box-shadow: -2px 1px 5px rgba(0, 0, 0, 0.4);
+	position:absolute;
+	position: absolute;
+	right: 0;
+	margin: -1.5% 1%;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 300;
 }
 
-.timeline span.label {
-background: rgb(40, 40, 40);
-color: rgb(189, 189, 189);
-margin-left: -1px;
-padding: 1px 3px 1px 6px;
--webkit-border-bottom-right-radius: 400px;
--moz-border-bottom-right-radius: 400px;
-border-bottom-right-radius: 400px;
--webkit-border-bottom-left-radius: 400px;
--moz-border-bottom-left-radius: 400px;
-border-bottom-left-radius: 400px;
--webkit-border-top-right-radius: 400px;
--moz-border-top-right-radius: 400px;
-border-top-right-radius: 400px;
-text-align:left;
-font-weight: 400;
-box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.4);
-}
-
-
-.timeline span.daterange{
-	margin-left:12%;
-	color: rgb(224, 224, 224);
-	font-weight: 400;
-}
 
 
 /*HEADER --------------------------------------------------------------------------- */
@@ -403,6 +352,9 @@ border-top-right-radius:1em;
 border-top-left-radius:1em;
 -webkit-border-top-left-radius: 1em;
 -moz-border-top-left-radius: 1em;
+-moz-box-shadow:    inset 0 0 10px #000000;
+-webkit-box-shadow: inset 0 0 10px #000000;
+box-shadow:         inset 0 0 10px #000000;
 }
 
 .sprite .joomla {

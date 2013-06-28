@@ -26,7 +26,7 @@ $(window).resize(newsize);
 
 
 $(window).load(function(){
-$('#contentwindow').delegate('.box','click', function(){
+$('Body').delegate('.box','click', function(){
 
     if ($('.box.active').length <= 0){ 
         
@@ -83,7 +83,7 @@ $('#contentwindow').delegate('.box','click', function(){
     } 
 });
 
-$('#contentwindow').delegate('.box.active .boximage','click', function(){
+$('Body').delegate('.box.active .boximage','click', function(){
 		
 				
 		$('.boximage').animate({

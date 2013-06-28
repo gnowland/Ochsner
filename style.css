@@ -42,13 +42,7 @@ letter-spacing: .06em;
 line-height: .8em;
 text-shadow: 0px 1px 2px  rgba(0, 0, 0, 0.4);
 padding-left:1%;
-}
-
-h2 {
-	font-family: 'Arvo', sans-serif;
-	font-size: 2.5em;
-	font-weight: 400;
-	color: #000;
+color:#FFF;
 }
 
 h4 {
@@ -62,6 +56,17 @@ border-bottom: 1px solid #000;
 text-shadow: 0px 0px 1px  rgba(0, 0, 0, 0.4);
 padding-left:2%;
 }
+
+h2 {
+font-family: 'Arvo', sans-serif;
+font-size: 2.5em;
+font-weight: 400;
+color: #000;
+}
+
+.mission h2 {color:rgb(26, 26, 104);}
+.strategy h2 {color:rgb(20, 80, 65);}
+
 
 p {
 	text-align:justify;
@@ -240,7 +245,7 @@ img#gradient-semicircle {
 }
 
 /*BOXES --------------------------------------------------------------------------- */
-.box{
+.box {
 	width: 23.6%;
 	padding-bottom: 23.6%;
 	height: 0;
@@ -251,7 +256,6 @@ img#gradient-semicircle {
 	border: 1px solid #fff;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 	background: #cacaca;
-	cursor:pointer;
 }
 
 .box.active{
@@ -279,11 +283,18 @@ img#gradient-semicircle {
 .uncloned .content, .uncloned .boximage, .uncloned .gallery, .uncloned .sprite{
 	visibility:hidden;
 }
+.uncloned {	cursor:pointer;}
 
 .box.one.uncloned {
 	background-image: url(img/boxes/whitehall.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
+}
+
+.box.two.uncloned {
+	background-image:url(img/boxes/loso.jpg);
+	background-repeat:no-repeat;
+	background-size:100%;
 }
 
 .box.active .boximage {
@@ -450,10 +461,22 @@ float: right;
 
 /* GALLERY --------------------------------------------------------------------------- */
 
-#pg { position: relative; height: 585px; background: #000; }
+#pg { position: relative; height: 50px; background: #000; } /*GET BOX HEIGHT FOR GALLERY HEIGHT!!!*/
 #pg li { position: relative; list-style: none; width: 175px; height: 117px; overflow: hidden; float: left; z-index: 2; opacity: .3; }
 #pg li.active { opacity: 1; }
 #pg li.selected { opacity: 1; z-index: 99; -moz-box-shadow: 0px 0px 10px #fff; -webkit-box-shadow: 0px 0px 10px #fff; }
 #pg li img { display: block; width: 100%; }
 #pg li p { color: white; margin: 10px 0; font-size: 12px; }
 
+/* KEEP THIS AT BOTTOM!!!! */
+.uncloned #lock {
+z-index: -999!important;
+position: absolute!important;
+display: none!important;
+}
+
+.cloned.active #lock {
+	z-index: !important;
+	position: !important;
+	display: !important;
+}

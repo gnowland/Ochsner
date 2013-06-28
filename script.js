@@ -26,11 +26,12 @@ $(window).resize(newsize);
 
 
 $(window).load(function(){
-$('Body').delegate('.box','click', function(){
+$('#contentwindow').delegate('.box','click', function(){
 
     if ($('.box.active').length <= 0){ 
         
-        $(this).removeClass('uncloned');
+        
+		$(this).removeClass('uncloned');
 		$(this).addClass('cloned');
 		
 		var biwh = $('.box').width()
@@ -83,7 +84,7 @@ $('Body').delegate('.box','click', function(){
     } 
 });
 
-$('Body').delegate('.box.active .boximage','click', function(){
+$('#contentwindow').delegate('.box.active .boximage','click', function(){
 		
 				
 		$('.boximage').animate({
@@ -116,7 +117,7 @@ $('Body').delegate('.box.active .boximage','click', function(){
 			cloned.css({visibility: 'visible'});
 			parent.css({overflow:'auto'});
         });
-
+	
 });
 
 });

@@ -75,7 +75,7 @@ $("body").delegate('.box','click', function(){
 			width: '70%',
 			'margin-left': '15%',
 			'margin-top': '5%',
-			'margin-bottom': '-57%'
+			'margin-bottom': '-75%'
  			 }, 600, function() { 
     		// Animation complete.
   		}); 
@@ -92,7 +92,7 @@ $("body").delegate('.box.active','click', function(){
 			margin:0
  			 }, 600);
 			 
-		$('.fade').delay(800).fadeOut(100);  //remove the absolute link someday 
+		$('.fade').delay(600).fadeOut(100);  //remove the absolute link someday 
 
         var parent = $(this).parent();
 		var cloned = $('.box.cloned');
@@ -103,7 +103,7 @@ $("body").delegate('.box.active','click', function(){
 		var mar = (cloned.outerWidth(true) - cloned.width())/2;
 		var pos = cloned.position();
 
-        $(this).delay(800).animate({
+        $(this).delay(600).animate({
             width: w + 'px', 
             height : h + 'px',
             top: (pos.top + mar + st) + 'px',

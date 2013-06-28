@@ -22,7 +22,7 @@ body {
 }
 
 .cell {
-	width: 43%;
+	width: 48%;
 	height: auto;
 	margin: 1%;
 	display:block;
@@ -30,15 +30,17 @@ body {
 
 .cell.cleft{float:left;clear:left;}
 .cell.cright{float:right;clear:right;}
+.cell.cfull{width:auto;clear:both;}
 
 h1 {
-font-family: 'Josefin Sans', sans-serif;
-font-weight: 700;
+font-family: 'Marcellus', serif;
+font-weight: 400;
 font-size: 4em;
 text-align:left;
-letter-spacing: .07em;
-line-height: .6em;
+letter-spacing: .06em;
+line-height: .8em;
 text-shadow: 0px 1px 2px  rgba(0, 0, 0, 0.4);
+padding-left:1%;
 }
 
 h2 {
@@ -57,7 +59,7 @@ font-size: 1.2em;
 text-align: left;
 border-bottom: 1px solid #000;
 text-shadow: 0px 0px 1px  rgba(0, 0, 0, 0.4);
-padding-left:1%;
+padding-left:2%;
 }
 
 p {

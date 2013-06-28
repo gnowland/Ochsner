@@ -26,7 +26,7 @@ $(window).resize(newsize);
 
 
 $(window).load(function(){
-$("body").delegate('.box','click', function(){
+$('#contentwindow').delegate('.box','click', function(){
 
     if ($('.box.active').length <= 0){ 
         
@@ -70,12 +70,12 @@ $("body").delegate('.box','click', function(){
 		$('.fade').hide().delay(200).fadeIn(200);  //remove the absolute link someday
 	
 	
-		$('.boximage').delay(700).animate({
+		$('.boximage').delay(600).animate({
 			height: 'auto',
 			width: '70%',
 			'margin-left': '15%',
 			'margin-top': '5%',
-			'margin-bottom': '-75%'
+			'margin-bottom': '-90%'
  			 }, 600, function() { 
     		// Animation complete.
   		}); 
@@ -83,27 +83,28 @@ $("body").delegate('.box','click', function(){
     } 
 });
 
-$("body").delegate('.box.active','click', function(){
+$('#contentwindow').delegate('.box.active .boximage','click', function(){
 		
+				
 		$('.boximage').animate({
 			width : $('.box').width() + 'px',
 			height: $('.box').width() + 'px',
 			padding:0,
 			margin:0
- 			 }, 600);
+ 			 }, 500);
 			 
-		$('.fade').delay(600).fadeOut(100);  //remove the absolute link someday 
+		$('.fade').delay(600).fadeOut(400);  //remove the absolute link someday 
 
-        var parent = $(this).parent();
+        var parent = $('.box.active').parent();
 		var cloned = $('.box.cloned');
-        var clone = $('this');
+        var clone = $('.box.active');
 		var h = cloned.outerHeight(true);
         var w = cloned.outerWidth(true);
 		var st = parent.scrollTop();
 		var mar = (cloned.outerWidth(true) - cloned.width())/2;
 		var pos = cloned.position();
 
-        $(this).delay(600).animate({
+        $('.box.active').delay(600).animate({
             width: w + 'px', 
             height : h + 'px',
             top: (pos.top + mar + st) + 'px',
@@ -115,6 +116,7 @@ $("body").delegate('.box.active','click', function(){
 			cloned.css({visibility: 'visible'});
 			parent.css({overflow:'auto'});
         });
+
 });
 
 });

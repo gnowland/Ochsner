@@ -30,6 +30,7 @@ body {
 
 .cell.cleft{float:left;clear:left;}
 .cell.cright{float:right;clear:right;}
+.cell.divider {background-color: rgb(236, 235, 235);height:2px;width:100%;-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);box-shadow: 0 1px 3px rgba(0,0,0,0.5);}
 .cell.cfull{width:auto;clear:both;}
 
 h1 {
@@ -250,6 +251,7 @@ img#gradient-semicircle {
 	border: 1px solid #fff;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 	background: #cacaca;
+	cursor:pointer;
 }
 
 .box.active{
@@ -291,6 +293,7 @@ img#gradient-semicircle {
 	border: 1px solid #fff;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 	display:block;
+	cursor:pointer;
 }
 
 .one .boximage {
@@ -309,17 +312,18 @@ display:inline-block;
 /*RIBBON --------------------------------------------------------------------------- */
 .ribbon {
 font-family: 'Montserrat', sans-serif;
-font-size: 1.1em;
+font-size: 107%;
 font-weight: 100;
 letter-spacing: .4em;
 font-variant: small-caps;
-width: 17.9em;
+width: 17%;
 position: relative;
 background: rgb(52, 99, 80);
 color: #fff;
 text-align: center;
 padding: 0.7em 3.14em;
 margin: 0 0 0.3em -1.35em;
+-webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
 box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
 }
 .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {

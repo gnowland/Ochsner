@@ -30,7 +30,7 @@ $('#contentwindow').delegate('.box','click', function(){
 
     if ($('.box.active').length <= 0){ 
         
-        
+        $('.onloadfadein img:last-child').css({'visibility': 'hidden'});
 		$(this).removeClass('uncloned');
 		$(this).addClass('cloned');
 		
@@ -114,8 +114,9 @@ $('#contentwindow').delegate('.box.active .boximage','click', function(){
             $('.box.active').remove();
             cloned.removeClass('cloned');
 			cloned.addClass('uncloned');
-			cloned.css({visibility: 'visible'});
-			parent.css({overflow:'auto'});
+			cloned.css({'visibility': 'visible'});
+			parent.css({'overflow':'auto'});
+			$('.onloadfadein img:last-child').css({'visibility': 'visible'});
         });
 	
 });

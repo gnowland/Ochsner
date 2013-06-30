@@ -307,18 +307,6 @@ img#gradient-semicircle {
 }
 .uncloned {	cursor:pointer;}
 
-.box.one.uncloned {
-	background-image: url(img/boxes/whitehall.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-}
-
-.box.two.uncloned {
-	background-image:url(img/boxes/loso.jpg);
-	background-repeat:no-repeat;
-	background-size:100%;
-}
-
 .box.active .boximage {
 	float: left;
 	background-repeat: no-repeat;
@@ -335,9 +323,8 @@ img#gradient-semicircle {
 
 .gallery {
 float: left;
-background:#696;
 width: 96%;
-height: 20%;
+height: 50%;
 margin: 2% 2%;
 display:inline-block;
 }
@@ -483,12 +470,6 @@ float: right;
 
 /* GALLERY --------------------------------------------------------------------------- */
 
-#pg { position: relative; height: 50px; background: #000; } /*GET BOX HEIGHT FOR GALLERY HEIGHT!!!*/
-#pg li { position: relative; list-style: none; width: 175px; height: 117px; overflow: hidden; float: left; z-index: 2; opacity: .3; }
-#pg li.active { opacity: 1; }
-#pg li.selected { opacity: 1; z-index: 99; -moz-box-shadow: 0px 0px 10px #fff; -webkit-box-shadow: 0px 0px 10px #fff; }
-#pg li img { display: block; width: 100%; }
-#pg li p { color: white; margin: 10px 0; font-size: 12px; }
 
 /* KEEP THIS AT BOTTOM!!!! */
 .uncloned #lock {

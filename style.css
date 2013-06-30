@@ -321,17 +321,9 @@ img#gradient-semicircle {
 	background-image: url(img/boxes/whitehall.jpg);
 }
 
-.gallery {
-float: left;
-width: 96%;
-height: 50%;
-margin: 2% 2%;
-display:inline-block;
-}
-
 /*RIBBON --------------------------------------------------------------------------- */
 .ribbon {
-font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat', sans-serif!important;
 font-size: 107%;
 font-weight: 100;
 letter-spacing: .4em;
@@ -467,8 +459,6 @@ float: left;
 .sprite li.col2 {
 float: right;
 }
-
-/* GALLERY --------------------------------------------------------------------------- */
 
 
 /* KEEP THIS AT BOTTOM!!!! */

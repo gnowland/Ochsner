@@ -343,6 +343,8 @@ img#gradient-semicircle {
 	padding:1%;
 }
 
+.sitelink {word-wrap:break-word;}
+
 /*RIBBON --------------------------------------------------------------------------- */
 .ribbon {
 font-family: 'Montserrat', sans-serif!important;

@@ -315,7 +315,7 @@ img#gradient-semicircle {
 
 #rightcol {
 	float: left;
-	position:absolute;
+	position:relative;
 	top:0;
 }
 
@@ -341,6 +341,7 @@ img#gradient-semicircle {
 .gallery {
 	position:relative;
 	padding:1%;
+	clear:both;
 }
 
 .sitelink {word-wrap:break-word;}
@@ -349,16 +350,19 @@ img#gradient-semicircle {
 .ribbon {
 font-family: 'Montserrat', sans-serif!important;
 font-size: 107%;
-font-weight: 100;
-letter-spacing: .4em;
+line-height: 74%;
+letter-spacing: 0.4em;
 font-variant: small-caps;
-width: 17%;
 position: relative;
 background: rgb(52, 99, 80);
 color: #fff;
+padding-right: 7%;
+padding-left: 7%;
+padding-top: 3%;
+padding-bottom: 4%;
+width: 100%;
 text-align: center;
-padding: 0.7em 3.14em;
-margin: 0 0 0.3em -1.35em;
+margin: 0 0 5% -7%;
 -webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
 box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
 }
@@ -383,6 +387,8 @@ bottom: -.96em;
 
 .box .sprite {
 float: left;
+display:inline-block;
+position:relative;
 background-image: url(img/tweed.png);
 clear: both;
 width: 80%;
@@ -398,92 +404,94 @@ border-top-left-radius:1em;
 -webkit-box-shadow: inset 0 0 10px #000000;
 box-shadow:         inset 0 0 10px #000000;
 }
+.sprite li {
+margin:4%;
+vertical-align: middle;
+background-image: url(img/langsprite.png);
+height:0;
+display:inline-block;
+}
 
 .sprite .joomla {
-background-image: url(img/langsprite.png);
-background-position: -360px -107px;
-width: 126px;
-height: 32px;
+background-position: 97% -67%;
+width: 52%;
+padding-bottom: 12%;
+background-size: 370%;
 }
 .sprite .php {
-background-image: url(img/langsprite.png);
-background-position: -212px -125px;
-width: 70px;
-height: 39px;
+background-position: 49% 57%;
+width: 27%;
+padding-bottom: 15%;
+background-size: 700%;
 }
 .sprite .google {
-background-image: url(img/langsprite.png);
-background-position: -352px -73px;
-width: 135px;
-height: 30px;
+background-position: 100% 32%;
+width: 55%;
+padding-bottom: 14%;
+background-size: 340%;
 }
 .sprite .mysql {
-background-image: url(img/langsprite.png);
-background-position: -208px -76px;
-width: 84px;
-height: 45px;
+background-position: 49% 36%;
+width: 27.3%;
+padding-bottom: 14%;
+background-size: 600%;
+vertical-align: top;
 }
-.sprite .html {
-background-image: url(img/langsprite.png);
-background-position: -4px -4px;
-width: 60px;
-height: 84px;
+.sprite .html5 {
+background-position: 0% 0%;
+width: 24%;
+padding-bottom: 33%;
+background-size: 790%;
 }
-.sprite .css {
-background-image: url(img/langsprite.png);
-background-position: -4px -92px;
-width: 60px;
-height: 84px;
+.sprite .css3 {
+background-position: 1% 50%;
+width: 23%;
+padding-bottom: 33%;
+background-size: 830%;
 }
 .sprite .javascript {
-background-image: url(img/langsprite.png);
-background-position: -69px -4px;
-width: 65px;
-height: 66px;
+background-position: 16% 2%;
+width: 24%;
+padding-bottom: 24%;
+background-size: 770%;
 }
 .sprite .jquery {
-background-image: url(img/langsprite.png);
-background-position: -364px -4px;
-width: 122px;
-height: 33px;
+background-position: 96% 0%;
+width: 46%;
+padding-bottom: 13%;
+background-size: 400%;
 }
 .sprite .dreamweaver {
-background-image: url(img/langsprite.png);
-background-position: -137px -73px;
-width: 65px;
-height: 66px;
+background-position: 32% 37%;
+width: 25%;
+padding-bottom: 25%;
+background-size: 750%;
 }
 .sprite .photoshop {
-background-image: url(img/langsprite.png);
-background-position: -273px -2px;
-width: 67px;
-height: 68px;
+background-position: 63% 0%;
+width: 25%;
+padding-bottom: 25%;
+display: inline-block;
+background-size: 750%;
 }
 .sprite .illustrator {
-background-image: url(img/langsprite.png);
-background-position: -68px -73px;
-width: 68px;
-height: 66px;
+background-position: 16% 37%;
+width: 25%;
+padding-bottom: 25%;
+background-size: 750%;
 }
 .sprite .msvs {
-background-image: url(img/langsprite.png);
-background-position: -356px -179px;
-width: 144px;
-height: 27px;
+background-position: 100% 76%;
+width: 54%;
+padding-bottom: 10%;
+background-size: 340%;
 }
-
-.sprite li {
-margin:3%;
+.sprite .ajax {
+background-position: 53% 96%;
+width: 30%;
+padding-bottom: 13%;
+background-size: 600%;
 }
-
-.sprite li.col1{
-float: left;
-}
-
-.sprite li.col2 {
-float: right;
-}
-
 
 /* KEEP THIS AT BOTTOM!!!! */
 .uncloned #lock {

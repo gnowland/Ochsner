@@ -35,15 +35,15 @@ $('#contentwindow').delegate('.box','click', function(){
 		$(this).addClass('cloned');
 		
 		var biwh = $('.box').width()
-		var biwinwh = ($(window).width())-($('.box').width());
-		var pctheightl = (biwinwh / $(window).width())*100; 
-		//width, but whatever
+		var biwinwh = $(window).width()-biwh;
+		var pctheightl = (($(window).width() - biwinwh) / $(window).width()) * 100; 
+		var pctheightr = 100 - pctheightl;
 		var cellwidth = ($('#rightcol').width()/$(window).width())*100;
 		
-		$('#leftcol').css({width: biwh + 'px' }); //remove the absolute link someday
-		$('.boximage').css({height: biwh + 'px', width: biwh + 'px' });
-		$('#rightcol').css({width: (biwinwh - 20) + 'px', 'margin-left': (biwh + 10) + 'px' });
-		$('.ribbon').css({width: (pctheightl + 5.7) + '%' });
+		$('#leftcol').css({width: pctheightl + '%' }); //remove the absolute link someday
+		$('.boximage').css({'padding-bottom': pctheightl + '%', 'width': biwh + 'px' });
+		$('#rightcol').css({width: pctheightr + '%' });
+		//$('.ribbon').css({width: (pctheightl + 5.7) + '%' });
 		//$('.cell').css({width: cellwidth + '%'});
 		
 		

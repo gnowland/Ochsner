@@ -29,21 +29,22 @@ $(window).load(function(){
 $('#contentwindow').delegate('.box','click', function(){
 
     if ($('.box.active').length <= 0){ 
-	        
+	    
         $('.box.onloadfadein').children('img').css({'display': 'none', 'visibility': 'hidden'});
 		$(this).removeClass('uncloned');
 		$(this).addClass('cloned');
 		
-		var biwh = $('.box').width()
+		var biwh = $('.box').width();
 		var biwinwh = $(window).width()-biwh;
 		var pctheightl = (($(window).width() - biwinwh) / $(window).width()) * 100; 
 		var pctheightr = 100 - pctheightl;
 		var cellwidth = ($('#rightcol').width()/$(window).width())*100;
+		var pb = pctheightr + pctheightl;
 		
 		$('#leftcol').css({width: pctheightl + '%' }); //remove the absolute link someday
-		$('.boximage').css({'padding-bottom': pctheightl + '%', 'width': biwh + 'px' });
+		$('.boximage').css({width: biwh + 'px', height: 0 + 'px', 'padding-bottom': pb +'%'});
 		$('#rightcol').css({width: pctheightr + '%' });
-		//$('.ribbon').css({width: (pctheightl + 5.7) + '%' });
+		$('.ribbon').css({width: (100+(pctheightl/2)) + '%' });
 		//$('.cell').css({width: cellwidth + '%'});
 		
 		
@@ -68,10 +69,10 @@ $('#contentwindow').delegate('.box','click', function(){
      	
 		parent.css({'overflow':'hidden'});
 	 
-		$('.fade').hide().delay(200).fadeIn(200);  //remove the absolute link someday
+		$('.fade').hide().delay(250).fadeIn(200);  //remove the absolute link someday
 	
 	
-		$('.boximage').delay(600).animate({
+		$('.boximage').delay(700).animate({
 			height: 'auto',
 			width: '70%',
 			'margin-left': '15%',
@@ -110,7 +111,7 @@ $('#contentwindow').delegate('.box.active .boximage','click', function(){
 		var mar = (cloned.outerWidth(true) - cloned.width())/2;
 		var pos = cloned.position();
 
-        $('.box.active').delay(600).animate({
+        $('.box.active').delay(800).animate({
             width: w + 'px', 
             height : h + 'px',
             top: (pos.top + mar + st) + 'px',

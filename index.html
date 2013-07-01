@@ -13,12 +13,18 @@ Contact: http://giffordnowland.com
 <link href="style.css" rel="stylesheet" type="text/css" />
 <link href="css3.css" rel="stylesheet" type="text/css" />
 <link href="photogrid.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="shadowbox.css">
-<script type="text/javascript" src="shadowbox.js"></script>
+
+<!-- SHADOWBOX -->
+<link rel="stylesheet" type="text/css" href="shadowbox/shadowbox.css">
+<script type="text/javascript" src="shadowbox/shadowbox.js"></script>
 <script type="text/javascript">
-Shadowbox.init();
+Shadowbox.init({
+    // skip the automatic setup again, we do this later manually
+    skipSetup: true
+});
 </script>
-<!--Google WebFonts-->
+
+<!--GOOGLE WEBFONTS -->
 <link href='http://fonts.googleapis.com/css?family=Cinzel:400,700,900|Acme|Arvo:400,700|Marcellus|Habibi|Cabin:400,700,400italic|Josefin+Slab:400,100italic,400italic,700|Josefin+Sans:100,300,400,600,700|Quicksand:300,400|Lato:100,400,900|Crete+Round|Gudea|Montserrat:400,700|Carme' rel='stylesheet' type='text/css' />
 <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
@@ -59,21 +65,21 @@ Shadowbox.init();
         <div id="rightcol">
         <div class="gallery fade"><!-- IMAGE GALLERY -->
  			<!-- Define all of the tiles: -->
-            <div class="gallerybox">
-              <div class="galleryboxInner">
-                <img src="img/work/whitehall/gallery/home1.jpg" rel="shadowbox" />
+            <div class="gallerybox"  rel="shadowbox">
+              <div class="galleryboxInner"  rel="shadowbox">
+                <img src="img/work/whitehall/gallery/home1.jpg" class="shadowbox" />
                 <div class="titleBox">Homepage (1 of 3)</div>
               </div>
             </div>
             <div class="gallerybox">
               <div class="galleryboxInner">
-                <img src="img/work/whitehall/gallery/home3.jpg" rel="shadowbox" />
+                <img src="img/work/whitehall/gallery/home3.jpg" class="shadowbox" />
                 <div class="titleBox">Homepage (2 of 3)</div>
               </div>
             </div>
             <div class="gallerybox">
               <div class="galleryboxInner">
-                <img src="img/work/whitehall/gallery/home2.jpg" rel="shadowbox" />
+                <img src="img/work/whitehall/gallery/home2.jpg" class="shadowbox" />
                 <div class="titleBox">Homepage (3 of 3)</div>
               </div>
             </div>

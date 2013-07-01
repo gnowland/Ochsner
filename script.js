@@ -29,7 +29,7 @@ $(window).load(function(){
 $('#contentwindow').delegate('.box','click', function(){
 
     if ($('.box.active').length <= 0){ 
-        
+	        
         $('.onloadfadein img:last-child').css({'display': 'none', 'visibility': 'hidden'});
 		$(this).removeClass('uncloned');
 		$(this).addClass('cloned');
@@ -79,10 +79,15 @@ $('#contentwindow').delegate('.box','click', function(){
 			'margin-bottom': '-90%'
  			 }, 600, function() { 
     		// Animation complete.
-  		}); 
-
-    } 
-});
+			}); 
+			
+		//	Shadowbox.clearCache();
+		//	Shadowbox.setup();
+	    Shadowbox.setup("img.shadowbox", {
+    		});
+			
+    } //CLOSE ifboxactive
+}); //CLOSE window load
 
 $('#contentwindow').delegate('.box.active .boximage','click', function(){
 		
@@ -116,7 +121,7 @@ $('#contentwindow').delegate('.box.active .boximage','click', function(){
 			cloned.addClass('uncloned');
 			cloned.css({'visibility': 'visible'});
 			parent.css({'overflow':'auto'});
-			$('.onloadfadein img:last-child').css({'visibility': 'visible'});
+			$('.onloadfadein img:last-child').css({'display': 'inherit', 'visibility': 'visible'});
         });
 	
 });

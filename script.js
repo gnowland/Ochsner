@@ -73,7 +73,6 @@ $('#contentwindow').delegate('.box','click', function(){
 	
 	
 		$('.boximage').delay(700).animate({
-			height: 'auto',
 			width: '70%',
 			'margin-left': '15%',
 			'margin-top': '5%',

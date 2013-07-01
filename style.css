@@ -14,6 +14,11 @@ body {
 	position:relative;
 }
 
+.removeimage {
+	display:none;
+	visibility:hidden;
+}
+
 .content {
 	width: 98%;
 	margin:	3% auto;

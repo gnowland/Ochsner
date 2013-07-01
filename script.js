@@ -30,7 +30,7 @@ $('#contentwindow').delegate('.box','click', function(){
 
     if ($('.box.active').length <= 0){ 
         
-        $('.onloadfadein img:last-child').css({'visibility': 'hidden'});
+        $('.onloadfadein img:last-child').css({'display': 'none', 'visibility': 'hidden'});
 		$(this).removeClass('uncloned');
 		$(this).addClass('cloned');
 		

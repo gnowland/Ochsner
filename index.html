@@ -18,9 +18,11 @@ Contact: http://giffordnowland.com
 <link rel="stylesheet" type="text/css" href="shadowbox/shadowbox.css">
 <script type="text/javascript" src="shadowbox/shadowbox.js"></script>
 <script type="text/javascript">
-Shadowbox.init({
-    // skip the automatic setup again, we do this later manually
-    skipSetup: true
+//SHADOWBOX
+	Shadowbox.init({
+    language: 'en'
+  , players:  ['img', 'html', 'iframe', 'qt', 'wmp', 'swf', 'flv', 'gdoc']
+  , skipSetup: true // delay running setup until you are ready
 });
 </script>
 
@@ -52,6 +54,7 @@ Shadowbox.init({
 
     <div class="box one uncloned onloadfadein" data-src="img/boxes/whitehall.jpg"><!--BOX 1 (WHITEHALL)-->
     <div id="lock">
+    	<div id="flyincontainer">
         <div id="leftcol">
         <div class="boximage"></div>
         <div class="sprite fade">
@@ -65,21 +68,24 @@ Shadowbox.init({
         <div id="rightcol">
         <div class="gallery fade"><!-- IMAGE GALLERY -->
  			<!-- Define all of the tiles: -->
-            <div class="gallerybox"  rel="shadowbox">
-              <div class="galleryboxInner"  rel="shadowbox">
-                <img src="img/work/whitehall/gallery/home1.jpg" class="shadowbox" />
+            <div class="gallerybox">
+              <div class="galleryboxInner">
+                <a href="img/work/whitehall/gallery/home1.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Homepage (1 of 3)" >
+                <img src="img/work/whitehall/gallery/home1.jpg" /></a>
                 <div class="titleBox">Homepage (1 of 3)</div>
               </div>
             </div>
             <div class="gallerybox">
               <div class="galleryboxInner">
-                <img src="img/work/whitehall/gallery/home3.jpg" class="shadowbox" />
+              <a href="img/work/whitehall/gallery/home3.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Homepage (2 of 3)" >
+                <img src="img/work/whitehall/gallery/home3.jpg" /></a>
                 <div class="titleBox">Homepage (2 of 3)</div>
               </div>
             </div>
             <div class="gallerybox">
               <div class="galleryboxInner">
-                <img src="img/work/whitehall/gallery/home2.jpg" class="shadowbox" />
+              <a href="img/work/whitehall/gallery/home2.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Homepage (1 of 3)" >
+                <img src="img/work/whitehall/gallery/home2.jpg" /></a>
                 <div class="titleBox">Homepage (3 of 3)</div>
               </div>
             </div>
@@ -119,6 +125,7 @@ Shadowbox.init({
     	</div>
         </div>
     </div>
+    </div>
 	</div><!--END BOX 1-->
 
     
@@ -155,6 +162,7 @@ Shadowbox.init({
 
 <!-- INLINE SCRIPTS -->
 <script type="text/javascript">
+
 	//FITTTEXT:
 	$('#name').fitText(1.8, { minFontSize: '23px', maxFontSize: '80px' });
 
@@ -172,7 +180,6 @@ Shadowbox.init({
         				};
         			$(this).append(img);            
         			img.src = src;
-					$('.onloadfadein img:last-child').addClass('removeimg');
 					}
 		});
 		

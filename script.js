@@ -30,7 +30,7 @@ $('#contentwindow').delegate('.box','click', function(){
 
     if ($('.box.active').length <= 0){ 
 	        
-        $('.onloadfadein img:last-child').css({'display': 'none', 'visibility': 'hidden'});
+        $('.box.onloadfadein').children('img').css({'display': 'none', 'visibility': 'hidden'});
 		$(this).removeClass('uncloned');
 		$(this).addClass('cloned');
 		
@@ -53,7 +53,7 @@ $('#contentwindow').delegate('.box','click', function(){
 		var st = parent.scrollTop()
         var clone = $(this).clone().addClass('active');
 			
-		$(this).css({left: pos.left + 'px', top: (pos.top + st) + 'px', visibility: 'hidden' });
+		$(this).css({left: pos.left + 'px', top: (pos.top + st) + 'px', visibility: 'hidden' }).addClass('inactive');
 		
         parent.append(clone);
 
@@ -81,10 +81,10 @@ $('#contentwindow').delegate('.box','click', function(){
     		// Animation complete.
 			}); 
 			
-		//	Shadowbox.clearCache();
-		//	Shadowbox.setup();
-	    Shadowbox.setup("img.shadowbox", {
-    		});
+			//SHADOWBOX FIXING
+			$('.box.inactive .galleryboxInner a').attr('rel', 'noshadowbox')			
+			Shadowbox.clearCache();
+			Shadowbox.setup();
 			
     } //CLOSE ifboxactive
 }); //CLOSE window load
@@ -117,13 +117,13 @@ $('#contentwindow').delegate('.box.active .boximage','click', function(){
             left: (pos.left + mar) + 'px',
         },300, function(){
             $('.box.active').remove();
-            cloned.removeClass('cloned');
+            cloned.removeClass('cloned').removeClass('inactive');
 			cloned.addClass('uncloned');
 			cloned.css({'visibility': 'visible'});
 			parent.css({'overflow':'auto'});
-			$('.onloadfadein img:last-child').css({'display': 'inherit', 'visibility': 'visible'});
+			$('.box.onloadfadein').children('img').css({'display': 'inherit', 'visibility': 'visible'});
         });
-	
+//	Shadowbox.clearCache();
 });
 
 });

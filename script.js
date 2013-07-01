@@ -46,8 +46,7 @@ $('#contentwindow').delegate('.box','click', function(){
 		$('#rightcol').css({width: pctheightr + '%' });
 		$('.ribbon').css({width: (100+(pctheightl/2)) + '%' });
 		//$('.cell').css({width: cellwidth + '%'});
-		
-		
+	
 		
         var parent = $(this).parent();
         var pos = $(this).position();
@@ -85,6 +84,13 @@ $('#contentwindow').delegate('.box','click', function(){
 			$('.box.inactive .galleryboxInner a').attr('rel', 'noshadowbox')			
 			Shadowbox.clearCache();
 			Shadowbox.setup();
+			
+			
+			//GALLERY FIXING
+			var picnum = $('.active .scroller li').length;
+			var scrollerw = 200 * picnum;
+			
+			$('ul.scroller').css({'width': scrollerw + 'px'});
 			
     } //CLOSE ifboxactive
 }); //CLOSE window load

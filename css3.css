@@ -3,17 +3,17 @@
 
 /*css3 styles --------------------------------------------------------------------------- */
 @media screen and (max-width:9999999px){
-/*		  .box.uncloned { 
+		  .box.uncloned { 
 			width: 24%;
 			padding-bottom: 24%;}
-	  }*/
 }
-@media screen and (max-width: 1005px){
-/*	  
+@media screen and (max-width: 1122px){
+   .timeline { margin-top: 0; }
+}
+@media screen and (max-width: 1005px){	  
 		.box.uncloned { 
 	  	width: 32% ; 
-		padding-bottom: 32% ;
-	  }*/
+		padding-bottom: 32% ;}
 }
 
 @media screen and (max-width: 880px){
@@ -23,15 +23,20 @@
    .year {margin-left:41.5%;margin-top:-.2%; font-size: 6px;}
 }
 
+@media screen and (max-width: 619px){
+   .cell {width:97%;}
+   .cell.cright {float:left;}
+   .cell.divider {display:none;}
+}
+
 @media screen and (max-width: 580px){
    #name { padding-top:1.5%; padding-left: 10%; width:28%; letter-spacing:.4em; }
    #plax {padding-left:48%;}
    img#semicircle, img#gradient-semicircle {margin-left: 59%;}
    .year {margin-left:62%; margin-top:-.2%; font-size: 5px;}
-/*      .box.uncloned { 
+   .box.uncloned { 
 	  	width: 48% ; 
-		padding-bottom: 48% ;
-	  }*/
+		padding-bottom: 48% ;}
 }
 
 @media screen and (min-width: 580px){
@@ -39,8 +44,9 @@
 }
 
 @media screen and (max-width: 409px){
-/*      .box.uncloned { 
+     .box.uncloned { 
 	  	width: 97% ; 
-		padding-bottom: 97% ;
-	  }*/
+		padding-bottom: 97% ;}
+	  h1 {font-size:3.5em;}
+	  h4 {font-size:1.1em;}
 }

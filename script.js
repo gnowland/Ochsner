@@ -81,16 +81,9 @@ $('#contentwindow').delegate('.box','click', function(){
 			}); 
 			
 			//SHADOWBOX FIXING
-			$('.box.inactive .galleryboxInner a').attr('rel', 'noshadowbox')			
+			$('.box.inactive ul.gallery.fade li a').attr('rel', 'noshadowbox')			
 			Shadowbox.clearCache();
 			Shadowbox.setup();
-			
-			
-			//GALLERY FIXING
-			var picnum = $('.active .scroller li').length;
-			var scrollerw = 200 * picnum;
-			
-			$('ul.scroller').css({'width': scrollerw + 'px'});
 			
     } //CLOSE ifboxactive
 }); //CLOSE window load

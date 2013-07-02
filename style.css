@@ -21,9 +21,9 @@ body {
 
 .content {
 	width: 98%;
-	margin:	3% auto;
+	margin: 0 auto 1% auto;
 	padding: 1%;
-	display:inline-block;
+	display:inline-block
 }
 
 .cell {
@@ -338,6 +338,22 @@ img#gradient-semicircle {
 	background-image: url(img/boxes/whitehall.jpg);
 }
 
+.gallery {
+	position:relative;
+	padding: 1.6% 1%;
+	clear:both;
+	width: 97%;
+	overflow: auto;
+	display: block;
+	white-space:nowrap;
+}
+.gallery ul{
+
+}
+.gallery li{
+	display:inline;
+}
+
 .sitelink {word-wrap:break-word;}
 
 /*RIBBON --------------------------------------------------------------------------- */
@@ -483,6 +499,7 @@ width: 30%;
 padding-bottom: 13%;
 background-size: 600%;
 }
+
 
 /* KEEP THIS AT BOTTOM!!!! */
 .uncloned #lock {

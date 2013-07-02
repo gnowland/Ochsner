@@ -41,9 +41,9 @@ $('#contentwindow').delegate('.box','click', function(){
 		var cellwidth = ($('#rightcol').width()/$(window).width())*100;
 		var pb = pctheightr + pctheightl;
 		
-		$('#leftcol').css({width: pctheightl + '%' }); //remove the absolute link someday
+		$(this).find('#leftcol').css({width: pctheightl + '%' }); //remove the absolute link someday
 		$('.boximage').css({width: biwh + 'px', height: 0 + 'px', 'padding-bottom': pb +'%'});
-		$('#rightcol').css({width: pctheightr + '%' });
+		$(this).find('#rightcol').css({width: pctheightr + '%' });
 		$('.ribbon').css({width: (100+(pctheightl/2)) + '%' });
 		//$('.cell').css({width: cellwidth + '%'});
 	
@@ -84,13 +84,6 @@ $('#contentwindow').delegate('.box','click', function(){
 			$('.box.inactive .gallery a').attr('rel', 'noshadowbox')			
 			Shadowbox.clearCache();
 			Shadowbox.setup();
-			
-			
-			//GALLERY FIXING
-			var picnum = $('.active .scroller li').length;
-			var scrollerw = 200 * picnum;
-			
-			$('ul.scroller').css({'width': scrollerw + 'px'});
 			
     } //CLOSE ifboxactive
 }); //CLOSE window load

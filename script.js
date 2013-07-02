@@ -81,7 +81,7 @@ $('#contentwindow').delegate('.box','click', function(){
 			}); 
 			
 			//SHADOWBOX FIXING
-			$('.box.inactive .galleryboxInner a').attr('rel', 'noshadowbox')			
+			$('.box.inactive .gallery a').attr('rel', 'noshadowbox')			
 			Shadowbox.clearCache();
 			Shadowbox.setup();
 			

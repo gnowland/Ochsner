@@ -12,19 +12,7 @@ Contact: http://giffordnowland.com
 <link href="reset.css" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" />
 <link href="css3.css" rel="stylesheet" type="text/css" />
-<link href="photogrid.css" rel="stylesheet" type="text/css" />
-
-<!-- SHADOWBOX -->
 <link rel="stylesheet" type="text/css" href="shadowbox/shadowbox.css">
-<script type="text/javascript" src="shadowbox/shadowbox.js"></script>
-<script type="text/javascript">
-//SHADOWBOX
-	Shadowbox.init({
-    language: 'en'
-  , players:  ['img', 'html', 'iframe', 'qt', 'wmp', 'swf', 'flv', 'gdoc']
-  , skipSetup: true // delay running setup until you are ready
-});
-</script>
 
 <!--GOOGLE WEBFONTS -->
 <link href='http://fonts.googleapis.com/css?family=Cinzel:400,700,900|Acme|Arvo:400,700|Marcellus|Habibi|Cabin:400,700,400italic|Josefin+Slab:400,100italic,400italic,700|Josefin+Sans:100,300,400,600,700|Quicksand:300,400|Lato:100,400,900|Crete+Round|Gudea|Montserrat:400,700|Carme' rel='stylesheet' type='text/css' />
@@ -33,7 +21,7 @@ Contact: http://giffordnowland.com
 <!--[if gte IE 9]><style type="text/css"> .gradient {filter: none;}</style><![endif]-->
 </head>
 
-<body class="no-touch">
+<body>
 <div id="header" class="gradient-background gradient"><!--MASTHEAD-->
  	<div id="name">
     <div class="left">GIFFORD </div><!-- no space here
@@ -66,74 +54,27 @@ Contact: http://giffordnowland.com
         www.whitehallandcompany.com</a></div></div>
         </div>
         <div id="rightcol">
-        <div class="gallery fade"><!-- IMAGE GALLERY -->
-        <ul class="scroller">
- 			<!-- Define all of the tiles: -->
-            <li class="gallerybox">
-              <div class="galleryboxInner">
-                <a href="img/work/whitehall/gallery/home1.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Homepage (1 of 3)" >
-                <img src="img/work/whitehall/gallery/home1_thumb.jpg" /></a>
-                <div class="titleBox">Homepage (1 of 3)</div>
-              </div>
-            </li>
-            <li class="gallerybox">
-              <div class="galleryboxInner">
-              <a href="img/work/whitehall/gallery/home3.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Homepage (2 of 3)" >
-                <img src="img/work/whitehall/gallery/home3_thumb.jpg" /></a>
-                <div class="titleBox">Homepage (2 of 3)</div>
-              </div>
-            </li>
-            <li class="gallerybox">
-              <div class="galleryboxInner">
-              <a href="img/work/whitehall/gallery/home2.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Homepage (3 of 3)" >
-                <img src="img/work/whitehall/gallery/home2_thumb.jpg" /></a>
-                <div class="titleBox">Homepage (3 of 3)</div>
-              </div>
-            </li>
-            <li class="gallerybox">
-              <div class="galleryboxInner">
-                <a href="img/work/whitehall/gallery/advisory.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Advisory" >
-                <img src="img/work/whitehall/gallery/advisory_thumb.jpg" /></a>
-                <div class="titleBox">Advisory</div>
-              </div>
-            </li>
-            <li class="gallerybox">
-              <div class="galleryboxInner">
-              <a href="img/work/whitehall/gallery/equity.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Equity Solutions" >
-                <img src="img/work/whitehall/gallery/equity_thumb.jpg" /></a>
-                <div class="titleBox">Equity</div>
-              </div>
-            </li>
-            <li class="gallerybox">
-              <div class="galleryboxInner">
-                <a href="img/work/whitehall/gallery/careers.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Careers" >
-                <img src="img/work/whitehall/gallery/careers_thumb.jpg" /></a>
-                <div class="titleBox">Careers</div>
-              </div>
-            </li>
-            <li class="gallerybox">
-              <div class="galleryboxInner">
-              <a href="img/work/whitehall/gallery/mtm.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Monitoring the Markets (webpage)" >
-                <img src="img/work/whitehall/gallery/mtm_thumb.jpg" /></a>
-                <div class="titleBox">Monitoring the Markets (webpage)</div>
-              </div>
-            </li>
-            <li class="gallerybox">
-              <div class="galleryboxInner">
-              <a href="img/work/whitehall/gallery/mtmemail.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Monitoring the Markets (email)" >
-                <img src="img/work/whitehall/gallery/mtmemail_thumb.jpg" /></a>
-                <div class="titleBox">Monitoring the Markets (email)</div>
-              </div>
-            </li>
-            <li class="gallerybox">
-              <div class="galleryboxInner">
-              <a href="img/work/whitehall/gallery/mtm3.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Monitoring the Markets (document)" >
-                <img src="img/work/whitehall/gallery/mtm3_thumb.jpg" /></a>
-                <div class="titleBox">Monitoring the Markets (document)</div>
-              </div>
-            </li>
-        </ul>    
-        </div><!-- END GALLERY -->
+        <ul class="gallery fade"><!-- IMAGE GALLERY -->
+            <li><a href="img/work/whitehall/gallery/home1.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Homepage (1 of 3)" >
+            <img src="img/work/whitehall/gallery/home1_thumb.jpg" width="200" height="150" /></a></li>
+            <li><a href="img/work/whitehall/gallery/home3.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Homepage (2 of 3)" >
+            <img src="img/work/whitehall/gallery/home3_thumb.jpg" /></a></li>
+            <li><a href="img/work/whitehall/gallery/home2.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Homepage (3 of 3)" >
+            <img src="img/work/whitehall/gallery/home2_thumb.jpg" /></a></li>
+            <li><a href="img/work/whitehall/gallery/advisory.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Advisory" >
+            <img src="img/work/whitehall/gallery/advisory_thumb.jpg" /></a></li>
+            <li><a href="img/work/whitehall/gallery/equity.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Equity Solutions" >
+            <img src="img/work/whitehall/gallery/equity_thumb.jpg" /></a></li>
+            <li><a href="img/work/whitehall/gallery/careers.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Careers" >
+            <img src="img/work/whitehall/gallery/careers_thumb.jpg" /></a></li>
+            <li><a href="img/work/whitehall/gallery/mtm.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Monitoring the Markets (webpage)" >
+            <img src="img/work/whitehall/gallery/mtm_thumb.jpg" /></a></li>
+            <li><a href="img/work/whitehall/gallery/mtmemail.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Monitoring the Markets (email)" >
+            <img src="img/work/whitehall/gallery/mtmemail_thumb.jpg" /></a></li>
+            <li><a href="img/work/whitehall/gallery/mtm3.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Monitoring the Markets (document)" >
+            <img src="img/work/whitehall/gallery/mtm3_thumb.jpg" /></a></li>
+        </ul>
+        <!-- END GALLERY -->
         <div class="content fade">
         	<div class="title">
 		    <h1>Whitehall &amp; Company</h1>
@@ -203,10 +144,17 @@ Contact: http://giffordnowland.com
 <script type="text/javascript" language="javascript" src="script.js"></script>
 <script type="text/javascript" src="plax.js"></script>
 <script type="text/javascript" src="jquery.fittext.js"></script>
+<script type="text/javascript" src="shadowbox/shadowbox.js"></script>
 
 <!-- INLINE SCRIPTS -->
 <script type="text/javascript">
-
+	//SHADOWBOX
+	Shadowbox.init({
+		language: 'en'
+	  , players:  ['img', 'html', 'iframe', 'qt', 'wmp', 'swf', 'flv', 'gdoc']
+	  , skipSetup: true // delay running setup until you are ready
+	});
+	
 	//FITTTEXT:
 	$('#name').fitText(1.8, { minFontSize: '23px', maxFontSize: '80px' });
 
@@ -231,22 +179,6 @@ Contact: http://giffordnowland.com
         $('#plax img').plaxify()
         $.plax.enable()
 		
-		//GALLERY	
-		$(function(){
-     		// See if this is a touch device
-     		if ('ontouchstart' in window)
-     		{
-        	// Set the correct body class
-        	$('body').removeClass('no-touch').addClass('touch');
-       
-        	// Add the touch toggle to show text
-        	$('div.galleryboxInner img').click(function(){
-           	$(this).closest('.galleryboxInner').toggleClass('touchFocus');
-        		});
-     		}
-  		});
-		
-	
 		
     });//END ONPAGELOAD
 

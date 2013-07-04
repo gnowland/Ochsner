@@ -366,6 +366,10 @@ img#gradient-semicircle {
 	background-image: url(img/boxes/udress.jpg);
 }
 
+.five .boximage {
+	background-image: url(img/boxes/csbs.jpg);
+}
+
 .gallerywrap{
 padding: 1.1% 1% 0.3% 1%;
 background: rgba(0, 0, 0, 0.15);

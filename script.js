@@ -29,6 +29,8 @@ $(window).load(function(){
 $('#contentwindow').delegate('.box','click', function(){
 
     if ($('.box.active').length <= 0){ 
+		
+		$(this).reveal
 	    
         $('.box.onloadfadein').children('img').css({'display': 'none', 'visibility': 'hidden'});
 		$(this).removeClass('uncloned');
@@ -37,7 +39,7 @@ $('#contentwindow').delegate('.box','click', function(){
 		var biwh = $('.box').width();
 		var biwinwh = $(window).width()-biwh;
 		var pctheightl = (($(window).width() - biwinwh) / $(window).width()) * 100; 
-		var pctheightr = 100 - pctheightl;
+		var pctheightr = (100 - pctheightl)-1;
 		var cellwidth = ($('#rightcol').width()/$(window).width())*100;
 		var pb = pctheightr + pctheightl;
 		

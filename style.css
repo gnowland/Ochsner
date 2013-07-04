@@ -99,6 +99,14 @@ font-variant: small-caps;
 color: #000;
 }
 
+h3 {
+	font-family: 'Habibi', sans-serif;
+	font-size: 1.2em;
+	font-weight: 800;
+	font-style: italic;
+	text-decoration: underline;
+}
+
 .cell.head h2{ text-shadow:rgba(255,255,255, 0.5);}
 .mission h2 {color: rgb(26, 26, 104);}
 .strategy h2 {color: rgb(20, 80, 65);}
@@ -294,7 +302,7 @@ img#gradient-semicircle {
 	overflow: hidden;
 	border: 1px solid #fff;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-	background: #fff;
+	background-color: #E3E3E3;
 }
 
 .box.active{
@@ -304,6 +312,7 @@ img#gradient-semicircle {
 	background-image: url(img/light_toast.png);
 	background-repeat: repeat;
 	background-position: left top;
+	background-color:#E3E3E3;
 }
 
 .box.cloned.active {
@@ -337,6 +346,10 @@ img#gradient-semicircle {
 	cursor:pointer;
 }
 
+.zero .boximage {
+	background-image:url(img/boxes/contact.jpg);
+}
+
 .one .boximage {
 	background-image: url(img/boxes/whitehall.jpg);
 }
@@ -345,6 +358,13 @@ img#gradient-semicircle {
 	background-image: url(img/boxes/loso.jpg);
 }
 
+.three .boximage {
+	background-image: url(img/boxes/delride.jpg);
+}
+
+.four .boximage {
+	background-image: url(img/boxes/udress.jpg);
+}
 
 .gallerywrap{
 padding: 1.1% 1% 0.3% 1%;

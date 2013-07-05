@@ -8,7 +8,7 @@ html, body{
 }
 
 body {
-	background: url(img/brillant.png) repeat top left scroll;
+	background: url(img/white_carbonfiber.png) repeat top left scroll;
 	overflow:hidden;
 	font: .8em "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
 	position:relative;
@@ -283,7 +283,7 @@ img#gradient-semicircle {
 
 /*CONTENT --------------------------------------------------------------------------- */
 #contentwindow{
-	background: url(img/brillant.png) repeat top left scroll;
+	background: url(img/white_carbonfiber.png) repeat top left scroll;
 	width: 99%;
 	padding: .5%;
 	position: absolute;
@@ -302,14 +302,14 @@ img#gradient-semicircle {
 	overflow: hidden;
 	border: 1px solid #fff;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-	background-color: #FFF;
+	background-color: #E2E2E2;
 }
 
 .box.active{
 	position: absolute;
 	z-index: 2;
 	background-attachment: scroll;
-	background-image: url(img/light_toast.png);
+	background-image: url(img/brillant.png);
 	background-repeat: repeat;
 	background-position: left top;
 	background-color:#E3E3E3;
@@ -476,7 +476,7 @@ display:inline-block;
 }
 
 .sprite .joomla {
-background-position: 97% -67%;
+background-position: 97% 47%;
 width: 52%;
 padding-bottom: 12%;
 background-size: 370%;
@@ -517,6 +517,12 @@ width: 23%;
 padding-bottom: 33%;
 background-size: 830%;
 }
+.sprite .wiki {
+background-position: 1% 92%;
+width: 29%;
+padding-bottom: 29%;
+background-size: 830%;
+}
 .sprite .javascript {
 background-position: 16% 2%;
 width: 24%;
@@ -535,8 +541,28 @@ width: 25%;
 padding-bottom: 25%;
 background-size: 750%;
 }
+.sprite .aftereffects {
+background-position: 96% 102%;
+width: 25%;
+padding-bottom: 25%;
+background-size: 860%;
+}
 .sprite .photoshop {
 background-position: 63% 0%;
+width: 25%;
+padding-bottom: 25%;
+display: inline-block;
+background-size: 750%;
+}
+.sprite .flash {
+background-position: 47% 0%;
+width: 25%;
+padding-bottom: 25%;
+display: inline-block;
+background-size: 750%;
+}
+.sprite .indesign {
+background-position: 31% 0%;
 width: 25%;
 padding-bottom: 25%;
 display: inline-block;
@@ -583,6 +609,18 @@ background-position: 15% 71%;
 width: 26%;
 padding-bottom: 24%;
 background-size: 750%;
+}
+.sprite .wordpress {
+background-position: 100% 63%;
+width: 61%;
+padding-bottom: 17%;
+background-size: 330%;
+}
+.sprite .facebook {
+background-position: 77% 91%;
+width: 46%;
+padding-bottom: 13%;
+background-size: 480%;
 }
 /* KEEP THIS AT BOTTOM!!!! */
 .uncloned #lock {

@@ -73,6 +73,11 @@ $('#contentwindow').delegate('.box','click', function(){
         },300);
      	
 		parent.css({'overflow':'hidden'});
+		
+			//SHADOWBOX FIXING
+			$('.box.inactive .gallery a').attr('rel', 'noshadowbox')			
+			Shadowbox.clearCache();
+			Shadowbox.setup();
 	 
 		$('.fade').hide().delay(250).fadeIn(200);  //remove the absolute link someday
 	
@@ -86,12 +91,6 @@ $('#contentwindow').delegate('.box','click', function(){
  			 }, 600, function() {
     		// Animation complete.
 			}); 
-			
-
-			//SHADOWBOX FIXING
-			$('.box.inactive .gallery a').attr('rel', 'noshadowbox')			
-			Shadowbox.clearCache();
-			Shadowbox.setup();
 			
     } //CLOSE ifboxactive
 }); //CLOSE window load

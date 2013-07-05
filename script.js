@@ -15,10 +15,9 @@ var newsize = function(){
 	$('#contentwindow').css({'height':(a-w) + 'px'});
 };
 
+//RUN FUNCTIONS:
 $(document).ready(newsize);
-//$(window).load(newsize);  DOCUMENT READY HAPPENS SOONER
 $(window).resize(newsize);
-
 
 
 //BOX ANIMATION
@@ -44,7 +43,7 @@ $('#contentwindow').delegate('.box','click', function(){
 		var pb = pctheightr + pctheightl;
 		
 		$(this).find('#leftcol').css({width: pctheightl + '%' }); //remove the absolute link someday
-		$('.boximage').css({width: biwh + 'px', height: 0 + 'px', 'padding-bottom': pb +'%'});
+		$('.boximage').css({width: biwh + 'px', height: biwh + 'px'});
 		$(this).find('#rightcol').css({width: pctheightr + '%' });
 		$('.ribbon').css({width: (100+(pctheightl/2)) + '%' });
 		//$('.cell').css({width: cellwidth + '%'});
@@ -72,16 +71,18 @@ $('#contentwindow').delegate('.box','click', function(){
 	 
 		$('.fade').hide().delay(250).fadeIn(200);  //remove the absolute link someday
 	
-	
+		var bnewh = biwh*0.7;
 		$('.boximage').delay(700).animate({
 			width: '70%',
+			height: bnewh + 'px',
 			'margin-left': '15%',
 			'margin-top': '5%',
-			'margin-bottom': '-90%'
- 			 }, 600, function() { 
+			'margin-bottom': '-60%'
+ 			 }, 600, function() {
     		// Animation complete.
 			}); 
 			
+
 			//SHADOWBOX FIXING
 			$('.box.inactive .gallery a').attr('rel', 'noshadowbox')			
 			Shadowbox.clearCache();

@@ -18,6 +18,11 @@ var newsize = function(){
 //RUN FUNCTIONS:
 $(document).ready(newsize);
 $(window).resize(newsize);
+$(window).resize(function () {
+		
+		//BOX SIZE
+		$('.boximage').css({height: 0 + 'px', 'padding-bottom': 70 + '%' });
+});
 
 
 //BOX ANIMATION

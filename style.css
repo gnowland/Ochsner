@@ -302,7 +302,7 @@ img#gradient-semicircle {
 	overflow: hidden;
 	border: 1px solid #fff;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-	background-color: #E3E3E3;
+	background-color: #FFF;
 }
 
 .box.active{
@@ -487,6 +487,12 @@ width: 27%;
 padding-bottom: 15%;
 background-size: 700%;
 }
+.sprite .drupal {
+background-position: 65% 67%;
+width: 24%;
+padding-bottom: 33%;
+background-size: 860%;
+}
 .sprite .google {
 background-position: 100% 32%;
 width: 55%;
@@ -498,7 +504,6 @@ background-position: 49% 36%;
 width: 27.3%;
 padding-bottom: 14%;
 background-size: 600%;
-vertical-align: top;
 }
 .sprite .html5 {
 background-position: 0% 0%;

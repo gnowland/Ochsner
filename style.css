@@ -8,7 +8,7 @@ html, body{
 }
 
 body {
-	background: url(img/white_carbonfiber.png) repeat top left scroll;
+	background: #FAFAFA /*url(img/white_carbonfiber.png) repeat top left scroll*/;
 	overflow:hidden;
 	font: .8em "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
 	position:relative;
@@ -135,13 +135,16 @@ p {
 
 
 /*HEADER --------------------------------------------------------------------------- */
-#header {
+header {
 	width: 100%;
 	height: 0;
 	min-height: 38px;
 	padding-bottom:4%;
 	position:relative;
 	min-width: 400px;
+	float:left;
+	z-index:3;
+	background-color:rgba(255,255,255,0.5);
 }
 .gradient-background {
 background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -211,36 +214,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00333333', e
 
 
 /*PLAX EFFECT --------------------------------------------------------------------------- */
-div#plax {
-	display: block;
+a#plax {
 	position: absolute;
-	width: 100%;
-    height:auto;
     bottom:0;
     top:0;
-    left:0;
-    right:0;
-	z-index: 5;
+	z-index: 6;
 	overflow: visible;
+	margin: 0 42%;
+	width: 142px;
+	height: 96px;
+	display: block;
 }
 
 img#plax-back {
 	position: absolute;
-	z-index: 6;
+	z-index: 7;
 	top: 0px;
 	left: 0px;
-	margin: 0 42%;
-	height:140%;
+	margin: 0;
+	height:100%;
 	width:auto;
 }
 
 img#plax-front {
 	position: absolute;
-	z-index: 5;
+	z-index: 6;
 	top: 0px;
 	left: -6px;
-	margin:0 42%;
-	height:140%;
+	margin:0;
+	height:100%;
 	width:auto;
 }
 
@@ -261,31 +263,11 @@ img#plax-front {
 	color: #adadad;
 }
 
-img#semicircle {
-	position: absolute;
-	z-index: 3;
-	top: 56%;
-	left: 0;
-	margin: 0 42%;
-	height: 92%;
-	width: auto;
-}
-
-img#gradient-semicircle {
-	position: absolute;
-	z-index: 3;
-	top: 98%;
-	left: 0;
-	margin: 0 42%;
-	height: 42%;
-	width: auto;
-}
-
 /*CONTENT --------------------------------------------------------------------------- */
 #contentwindow{
-	background: url(img/white_carbonfiber.png) repeat top left scroll;
 	width: 99%;
 	padding: .5%;
+	padding-top: 95px;
 	position: absolute;
 	overflow:auto;
 	min-width: 400px;
@@ -293,16 +275,27 @@ img#gradient-semicircle {
 
 /*BOXES --------------------------------------------------------------------------- */
 .box {
-	width: 23.6%;
-	padding-bottom: 23.6%;
+	width: 22%;
+	padding-bottom: 22%;
 	height: 0;
-	margin: .4%;
+	margin: 1.4%;
 	float: left;
 	z-index: 1;
 	overflow: hidden;
 	border: 1px solid #fff;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-	background-color: #E2E2E2;
+	transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease; /* Safari */
+}
+
+.box:hover {
+	width: 24%;
+	padding-bottom: 24%;
+	margin:0;
+}
+
+.jshiddenimage {
+	visibility:	hidden;
 }
 
 .box.active{
@@ -312,7 +305,6 @@ img#gradient-semicircle {
 	background-image: url(img/brillant.png);
 	background-repeat: repeat;
 	background-position: left top;
-	background-color:#E3E3E3;
 }
 
 .box.cloned.active {
@@ -383,7 +375,7 @@ padding: 1.1% 1% 0.3% 1%;
 background: rgba(0, 0, 0, 0.15);
 width: 98%;
 clear: both;
-margin-left:.4%;
+margin-left: .4%;
 display: block;
 position: relative;
 }

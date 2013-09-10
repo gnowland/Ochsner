@@ -36,17 +36,22 @@ $('#contentwindow').delegate('.box','click', function(){
 		
 		$(this).reveal
 	    
-        $('.box.onloadfadein').children('img').css({'display': 'none', 'visibility': 'hidden'});
+        $(this).children('img').addClass('jshiddenimage');
 		$(this).removeClass('uncloned');
 		$(this).addClass('cloned');
 		
+	//Variables
 		var biwh = $('.box').width();
 		var biwinwh = $(window).width()-biwh;
 		var pctheightl = (($(window).width() - biwinwh) / $(window).width()) * 100; 
 		var pctheightr = (100 - pctheightl)-1;
 		var cellwidth = ($('#rightcol').width()/$(window).width())*100;
 		var pb = pctheightr + pctheightl;
+	//Content Height
+		var mastheight = $('header').outerHeight()
+		var contentheight = (($(window).height() - mastheight) / $(window).height()) * 100;
 		
+	//Setups
 		$(this).find('#leftcol').css({width: pctheightl + '%' }); //remove the absolute link someday
 		$('.boximage').css({width: biwh + 'px', height: biwh + 'px'});
 		$(this).find('#rightcol').css({width: pctheightr + '%' });
@@ -65,8 +70,8 @@ $('#contentwindow').delegate('.box','click', function(){
 
         clone.css({left: pos.left + 'px', top: (pos.top + st) + 'px'}).animate({
             width: '100%', 
-            height : '100%',
-			padding : '0',
+            height : contentheight + '%',
+			padding : '95px 0 0 0',
 			margin : '0',
             top: $('#contentwindow').scrollTop(), //remove the absolute link someday
             left: $('#contentwindow').scrollLeft() //remove the absolute link someday
@@ -81,6 +86,7 @@ $('#contentwindow').delegate('.box','click', function(){
 	 
 		$('.fade').hide().delay(250).fadeIn(200);  //remove the absolute link someday
 	
+	//Second Animation (image) 
 		var bnewh = biwh*0.7;
 		$('.boximage').delay(700).animate({
 			width: '70%',
@@ -92,6 +98,8 @@ $('#contentwindow').delegate('.box','click', function(){
     		// Animation complete.
 			}); 
 			
+		$(this).children('img').removeClass('jshiddenimage');
+			
     } //CLOSE ifboxactive
 }); //CLOSE window load
 
@@ -101,8 +109,8 @@ $('#contentwindow').delegate('.box.active .boximage','click', function(){
 		$('.boximage').animate({
 			width : $('.box').width() + 'px',
 			height: $('.box').width() + 'px',
-			padding:0,
-			margin:0
+			padding : '0',
+			margin : '0',
  			 }, 500);
 			 
 		$('.fade').delay(600).fadeOut(400);  //remove the absolute link someday 
@@ -112,7 +120,7 @@ $('#contentwindow').delegate('.box.active .boximage','click', function(){
         var clone = $('.box.active');
 		var h = cloned.outerHeight(true);
         var w = cloned.outerWidth(true);
-		var st = parent.scrollTop();
+		var st = parent.scrollTop() - $('header').outerHeight(); //remove the absolute link someday 
 		var mar = (cloned.outerWidth(true) - cloned.width())/2;
 		var pos = cloned.position();
 
@@ -127,7 +135,6 @@ $('#contentwindow').delegate('.box.active .boximage','click', function(){
 			cloned.addClass('uncloned');
 			cloned.css({'visibility': 'visible'});
 			parent.css({'overflow':'auto'});
-			$('.box.onloadfadein').children('img').css({'display': 'inherit', 'visibility': 'visible'});
         });
 //	Shadowbox.clearCache();
 });

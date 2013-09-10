@@ -1,11 +1,16 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* Tell the browser to render HTML 5 elements as block */  
+header, footer, aside, nav, article {  
+    display: block;  
+}
+
 /*css3 styles --------------------------------------------------------------------------- */
 @media screen and (max-width:9999999px){
 		  .box.uncloned { 
-			width: 24%;
-			padding-bottom: 24%;}
+			width:;
+			padding-bottom:;}
 }
 @media screen and (max-width: 1122px){
    .timeline { margin-top: 0; }

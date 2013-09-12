@@ -93,7 +93,7 @@ $('#contentwindow').delegate('.box','click', function(){
 			height: bnewh + 'px',
 			'margin-left': '15%',
 			'margin-top': '5%',
-			'margin-bottom': '-60%'
+			'margin-bottom': '-45%'
  			 }, 600, function() {
     		// Animation complete.
 			}); 

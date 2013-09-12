@@ -284,18 +284,17 @@ img#plax-front {
 	overflow: hidden;
 	border: 1px solid #fff;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-	transition:all 0.3s ease;
-	-webkit-transition:all 0.3s ease; /* Safari */
 }
 
 .box:hover {
-	width: 24%;
-	padding-bottom: 24%;
-	margin:0;
+	width: 23%;
+	padding-bottom: 23%;
+	margin:.9%;
 }
 
 .jshiddenimage {
 	visibility:	hidden;
+	display: none;
 }
 
 .box.active{

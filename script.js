@@ -15,6 +15,9 @@ var newsize = function(){
 	$('#contentwindow').css({'height':(a-w) + 'px'});
 };
 
+$(document).ready(newsize);
+$(window).resize(newsize);
+
 //BOX ANIMATION
 //$('#btn').click(function(e){ 
 

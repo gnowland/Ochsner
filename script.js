@@ -41,13 +41,13 @@ $('#contentwindow').delegate('.box','click', function(){
 		var cellwidth = ($('#rightcol').width()/$(window).width())*100;
 		var pb = pctheightr + pctheightl;
 	//Content Height
-		var mastheight = $('header').outerHeight(true)
+		var mastheight = $('header').outerHeight(true);
 		var contentheight = (($(window).height() - mastheight) / $(window).height()) * 100;
 		
-	//Setups
-		$(this).find('#leftcol').css({width: pctheightl + '%' }); //remove the absolute link someday
+	//setting widths and heights and such
+		$(this).find('#leftcol').css({width: pctheightl + 0.5 + '%' }); //remove the absolute link someday
 		$('.boximage').css({width: biwh + 'px', height: biwh + 'px'});
-		$(this).find('#rightcol').css({width: pctheightr + '%' });
+		$(this).find('#rightcol').css({width: pctheightr - 0.5 + '%' });
 		$('.ribbon').css({width: (100+(pctheightl/2)) + '%' });
 		//$('.cell').css({width: cellwidth + '%'});
 	
@@ -64,13 +64,16 @@ $('#contentwindow').delegate('.box','click', function(){
         clone.css({left: pos.left + 'px', top: (pos.top + st) + 'px'}).animate({
             width: '100%', 
             height : contentheight + '%',
-			padding : '10px 0 0 0',  //REMEMBER THE ALAMO. Padding should not be hard-coded, remember to update the close action to reflect.
+			padding : mastheight + 'px 0 0 0',
 			margin : '0',
-            top: $('#contentwindow').scrollTop() + (mastheight + 'px'), //remove the absolute link someday
+            top: $('#contentwindow').scrollTop(), //remove the absolute link someday
             left: $('#contentwindow').scrollLeft() //remove the absolute link someday
-        },300);
+        },300, function(){
+			parent.css({'overflow':'hidden'});
+			$(this).css({'overflow':'auto'});
+			});
      	
-		parent.css({'overflow':'hidden'});
+		
 		
 			//SHADOWBOX FIXING
 			$('.box.inactive .gallery a').attr('rel', 'noshadowbox')			
@@ -97,37 +100,38 @@ $('#contentwindow').delegate('.box','click', function(){
 }); //CLOSE window load
 
 $('#contentwindow').delegate('.box.active .boximage','click', function(){
-		
-				
+			
 		$('.boximage').animate({
 			width : $('.box').width() + 'px',
 			height: $('.box').width() + 'px',
 			padding : '0',
 			margin : '0',
- 			 }, 500);
-			 
+ 			 }, 500, function(){
+				 cloned.css({'overflow':'hidden'});
+				 parent.css({'overflow-y':'auto', 'overflow-x':'hidden'});
+				 });
+		
 		$('.fade').delay(600).fadeOut(400);  //remove the absolute link someday 
-
+		
         var parent = $('.box.active').parent();
 		var cloned = $('.box.cloned');
         var clone = $('.box.active');
 		var h = cloned.outerHeight(true);
         var w = cloned.outerWidth(true);
-//		var st = parent.scrollTop() - $('header').outerHeight(true); //remove the absolute link someday 
-		var mar = (cloned.outerWidth(true) - cloned.width())/2;
+		var st = parent.scrollTop() - $('header').outerHeight(true); //remove the absolute link someday 
+		var mar = (w - cloned.width())/2;
 		var pos = cloned.position();
-
-        $('.box.active').delay(800).animate({
+		
+		$('.box.active').delay(800).animate({
             width: w + 'px', 
             height : h + 'px',
-            top: (pos.top + mar - 10) + 'px',
+            top: (pos.top + mar + st) + 'px',
             left: (pos.left + mar) + 'px',
-        },300, function(){
+        },400, function(){
             $('.box.active').remove();
             cloned.removeClass('cloned').removeClass('inactive');
 			cloned.addClass('uncloned');
 			cloned.css({'visibility': 'visible'});
-			parent.css({'overflow':'auto'});
         });
 //	Shadowbox.clearCache();
 });

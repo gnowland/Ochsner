@@ -17,15 +17,31 @@ header, footer, aside, nav, article {
 }
 @media screen and (max-width: 1005px){	  
 		.box.uncloned { 
-	  	width: 32% ; 
-		padding-bottom: 32% ;}
+	  	width: 28% ; 
+		padding-bottom: 28%;
+		margin:1.5%;}
+		.box:hover {
+		width: 29%;
+		padding-bottom: 29%;
+		margin: 1%;}
+		.right {letter-spacing:.2em;}
 }
 
 @media screen and (max-width: 880px){
    #name {padding-top: 1%; letter-spacing:.3em;}
    #plax {margin-left:-3.8%;}
-   img#semicircle, img#gradient-semicircle {margin-left: 38.5%;}
-   .year {margin-left:41.5%;margin-top:-.2%; font-size: 6px;}
+}
+
+@media screen and (max-width: 780px){	  
+		.box.uncloned { 
+	  	width: 45% ; 
+		padding-bottom: 45%;
+		margin:1.5%;}
+		.box:hover {
+		width: 46%;
+		padding-bottom: 46%;
+		margin: 1%;}
+		.right { letter-spacing:.15em;}
 }
 
 @media screen and (max-width: 619px){
@@ -35,10 +51,12 @@ header, footer, aside, nav, article {
 }
 
 @media screen and (max-width: 580px){
-   #name { padding-top:1.5%; padding-left: 10%; width:28%; letter-spacing:.4em; }
-   #plax {padding-left:48%;}
-   img#semicircle, img#gradient-semicircle {margin-left: 59%;}
-   .year {margin-left:62%; margin-top:-.2%; font-size: 5px;}
+    #name { bottom:7%; padding-left: 10%; width:28%; letter-spacing:.4em; }
+	.left {letter-spacing:.3em; margin-left:-4px; width:auto;}
+	a#plax {margin-left:57%;}
+}
+
+@media screen and (max-width: 450px){
    .box.uncloned { 
 	  	width: 88%;
 		padding-bottom: 88%;

@@ -221,8 +221,8 @@ a#plax {
 	z-index: 6;
 	overflow: visible;
 	margin: 0 42%;
-	width: 142px;
-	height: 96px;
+	width: 100%;
+	height: 100%;
 	display: block;
 }
 
@@ -271,25 +271,29 @@ img#plax-front {
 	position: absolute;
 	overflow:auto;
 	min-width: 400px;
+	text-align:center;
 }
 
 /*BOXES --------------------------------------------------------------------------- */
 .box {
-	width: 22%;
-	padding-bottom: 22%;
+	display: inline-block;
+	vertical-align: top;
+	width: 21%;
+	padding-bottom: 21%;
 	height: 0;
-	margin: 1.4%;
-	float: left;
+	margin: 1.5%;
 	z-index: 1;
 	overflow: hidden;
 	border: 1px solid #fff;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+/*	transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease; /* Safari */
 }
 
 .box:hover {
-	width: 23%;
-	padding-bottom: 23%;
-	margin:.9%;
+	width: 22%;
+	padding-bottom: 22%;
+	margin: 1%;
 }
 
 .jshiddenimage {

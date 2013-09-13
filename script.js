@@ -15,16 +15,6 @@ var newsize = function(){
 	$('#contentwindow').css({'height':(a-w) + 'px'});
 };
 
-//RUN FUNCTIONS:
-$(document).ready(newsize);
-$(window).resize(newsize);
-$(window).resize(function () {
-		
-		//BOX SIZE
-		$('.boximage').css({height: 0 + 'px', 'padding-bottom': 70 + '%' });
-});
-
-
 //BOX ANIMATION
 //$('#btn').click(function(e){ 
 
@@ -34,7 +24,7 @@ $('#contentwindow').delegate('.box','click', function(){
 
     if ($('.box.active').length <= 0){ 
 		
-		$(this).reveal
+		$(this).reveal;
 	    
         $(this).children('img').addClass('jshiddenimage');
 		$(this).removeClass('uncloned');

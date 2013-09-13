@@ -40,8 +40,10 @@ header, footer, aside, nav, article {
    img#semicircle, img#gradient-semicircle {margin-left: 59%;}
    .year {margin-left:62%; margin-top:-.2%; font-size: 5px;}
    .box.uncloned { 
-	  	width: 48% ; 
-		padding-bottom: 48% ;}
+	  	width: 88%;
+		padding-bottom: 88%;
+		margin: 5%;
+	}
 }
 
 @media screen and (min-width: 580px){

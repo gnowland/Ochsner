@@ -4,6 +4,36 @@
 
 //WINDOW RESIZE
 
+
+(function($,sr){
+
+  // debouncing function from John Hann
+  // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+  var debounce = function (func, threshold, execAsap) {
+      var timeout;
+
+      return function debounced () {
+          var obj = this, args = arguments;
+          function delayed () {
+              if (!execAsap)
+                  func.apply(obj, args);
+              timeout = null; 
+          };
+
+          if (timeout)
+              clearTimeout(timeout);
+          else if (execAsap)
+              func.apply(obj, args);
+
+          timeout = setTimeout(delayed, threshold || 100); 
+      };
+  }
+    // smartresize 
+    jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
+
+})(jQuery,'smartresize');
+
+
 var newsize = function(){
 	var b = $('#contentwindow').offset().top;
 	var y = $(window).height();
@@ -11,12 +41,15 @@ var newsize = function(){
 	var h = $('#contentwindow').height();
 	var w = z - h;
 	var a = y - b;
+	var e = a - w;
 	
-	$('#contentwindow').css({'height':(a-w) + 'px'});
+	$('#contentwindow').css({'height': e + 'px'});
 };
 
+// usage:
+$(window).smartresize(newsize);
 $(document).ready(newsize);
-$(window).resize(newsize);
+
 
 //BOX ANIMATION
 //$('#btn').click(function(e){ 
@@ -45,10 +78,10 @@ $('#contentwindow').delegate('.box','click', function(){
 		var contentheight = (($(window).height() - mastheight) / $(window).height()) * 100;
 		
 	//setting widths and heights and such
-		$(this).find('#leftcol').css({width: pctheightl + 0.5 + '%' }); //remove the absolute link someday
 		$('.boximage').css({width: biwh + 'px', height: biwh + 'px'});
-		$(this).find('#rightcol').css({'width':pctheightr - 0.5 + '%'});
 		
+		$(this).find('#leftcol').css({width: pctheightl + 0.5 + '%' }); //remove the absolute link someday
+		$(this).find('#rightcol').css({'width':pctheightr - 0.5 + '%'});
 		if (pctheightr<45) {$(this).find('#rightcol').css({'width':100+'%','float':'none'})};
 		
 //		$('.ribbon').css({width: (100+(pctheightl/2)) + '%' });

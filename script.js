@@ -47,8 +47,11 @@ $('#contentwindow').delegate('.box','click', function(){
 	//setting widths and heights and such
 		$(this).find('#leftcol').css({width: pctheightl + 0.5 + '%' }); //remove the absolute link someday
 		$('.boximage').css({width: biwh + 'px', height: biwh + 'px'});
-		$(this).find('#rightcol').css({width: pctheightr - 0.5 + '%' });
-		$('.ribbon').css({width: (100+(pctheightl/2)) + '%' });
+		$(this).find('#rightcol').css({'width':pctheightr - 0.5 + '%'});
+		
+		if (pctheightr<45) {$(this).find('#rightcol').css({'width':100+'%','float':'none'})};
+		
+//		$('.ribbon').css({width: (100+(pctheightl/2)) + '%' });
 		//$('.cell').css({width: cellwidth + '%'});
 	
 		

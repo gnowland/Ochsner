@@ -8,7 +8,7 @@ header, footer, aside, nav, article {
 
 /*css3 styles --------------------------------------------------------------------------- */
 @media screen and (max-width:9999999px){
-		  .box.uncloned { 
+		  .box { 
 			width:;
 			padding-bottom:;}
 }
@@ -16,7 +16,7 @@ header, footer, aside, nav, article {
    .timeline { margin-top: 0; }
 }
 @media screen and (max-width: 1005px){	  
-		.box.uncloned { 
+		.box { 
 	  	width: 28% ; 
 		padding-bottom: 28%;
 		margin:1.5%;}
@@ -33,7 +33,7 @@ header, footer, aside, nav, article {
 }
 
 @media screen and (max-width: 780px){	  
-		.box.uncloned { 
+		.box { 
 	  	width: 45% ; 
 		padding-bottom: 45%;
 		margin:1.5%;}
@@ -57,11 +57,16 @@ header, footer, aside, nav, article {
 }
 
 @media screen and (max-width: 450px){
-   .box.uncloned { 
+   .box { 
 	  	width: 88%;
 		padding-bottom: 88%;
-		margin: 5%;
+		margin: 4%;
 	}
+	.box:hover {
+		width: 88%;
+		padding-bottom: 88%;
+		margin: 4%;}
+	#rightcol{float:none;}
 }
 
 @media screen and (min-width: 580px){
@@ -69,7 +74,7 @@ header, footer, aside, nav, article {
 }
 
 @media screen and (max-width: 409px){
-    /* .box.uncloned { 
+    /* .box { 
 	  	width: 97% ; 
 		padding-bottom: 97% ;}*/
 	  h1 {font-size:3.5em;}

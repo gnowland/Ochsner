@@ -41,7 +41,7 @@ $('#contentwindow').delegate('.box','click', function(){
 		var cellwidth = ($('#rightcol').width()/$(window).width())*100;
 		var pb = pctheightr + pctheightl;
 	//Content Height
-		var mastheight = $('header').outerHeight()
+		var mastheight = $('header').outerHeight(true)
 		var contentheight = (($(window).height() - mastheight) / $(window).height()) * 100;
 		
 	//Setups
@@ -64,9 +64,9 @@ $('#contentwindow').delegate('.box','click', function(){
         clone.css({left: pos.left + 'px', top: (pos.top + st) + 'px'}).animate({
             width: '100%', 
             height : contentheight + '%',
-			padding : '95px 0 0 0',
+			padding : '10px 0 0 0',  //REMEMBER THE ALAMO. Padding should not be hard-coded, remember to update the close action to reflect.
 			margin : '0',
-            top: $('#contentwindow').scrollTop(), //remove the absolute link someday
+            top: $('#contentwindow').scrollTop() + (mastheight + 'px'), //remove the absolute link someday
             left: $('#contentwindow').scrollLeft() //remove the absolute link someday
         },300);
      	
@@ -113,14 +113,14 @@ $('#contentwindow').delegate('.box.active .boximage','click', function(){
         var clone = $('.box.active');
 		var h = cloned.outerHeight(true);
         var w = cloned.outerWidth(true);
-		var st = parent.scrollTop() - $('header').outerHeight(); //remove the absolute link someday 
+//		var st = parent.scrollTop() - $('header').outerHeight(true); //remove the absolute link someday 
 		var mar = (cloned.outerWidth(true) - cloned.width())/2;
 		var pos = cloned.position();
 
         $('.box.active').delay(800).animate({
             width: w + 'px', 
             height : h + 'px',
-            top: (pos.top + mar + st) + 'px',
+            top: (pos.top + mar - 10) + 'px',
             left: (pos.left + mar) + 'px',
         },300, function(){
             $('.box.active').remove();

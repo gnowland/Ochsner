@@ -270,6 +270,7 @@ img#plax-front {
 	position: absolute;
 	overflow:auto;
 	min-width:400px;
+	width: 100%;
 }
 
 /*BOXES --------------------------------------------------------------------------- */

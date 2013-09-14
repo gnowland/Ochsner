@@ -9,8 +9,11 @@ header, footer, aside, nav, article {
 /*css3 styles --------------------------------------------------------------------------- */
 @media screen and (max-width:9999999px){
 		  .box { 
-			width:;
-			padding-bottom:;}
+			width: 21%;
+			padding-bottom: 21%;
+			height: 0;
+			margin: 1.5%;
+			}
 }
 @media screen and (max-width: 1122px){
    .timeline { margin-top: 0; }

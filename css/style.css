@@ -141,7 +141,6 @@ header {
 	padding-bottom: 1%;
 	min-height: 42px;
 	position:relative;
-	min-width: 400px;
 	float:left;
 	z-index:3;
 	margin-top:1%;
@@ -170,7 +169,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 }
 
 .gradient-border { 
-width: 100%;
+width: 90%;
 height:1px;
 margin: 0;
 position: absolute;
@@ -231,14 +230,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00333333', e
 
 /*PLAX EFFECT --------------------------------------------------------------------------- */
 a#plax {
-	position: absolute;
+	position: inherit;
     bottom:0;
     top:0;
 	z-index: 6;
 	overflow: visible;
-	margin-left: 44%;
-	margin-top:-1%;
-	display: inline-block;
+	display: inline;
 	height: 130%;
 }
 
@@ -250,6 +247,7 @@ img#plax-back {
 	margin: 0;
 	height: 100%;
 	width:auto;
+	padding-left:45%;
 }
 
 img#plax-front {
@@ -260,6 +258,7 @@ img#plax-front {
 	margin: 0;
 	height: 100%;
 	width:auto;
+	padding-left:45%;
 }
 
 /*CONTENT --------------------------------------------------------------------------- */
@@ -311,7 +310,7 @@ img#plax-front {
 }
 
 .box.cloned.active {
-	overflow-x: auto;
+	overflow-x: hidden;
 	overflow-y: scroll;
 	border: none;
 	-webkit-box-shadow: none;

@@ -40,8 +40,11 @@ var newsize = function(){
 	var w = z - h;
 	var a = y - b;
 	var e = a - w;
+	var width = $(window).width();
 	
 	$('#contentwindow').css({'height': e + 'px'});
+	$('header').css({'width': width - 15 + 'px'});
+	$('#name').fitText(1.8, { minFontSize: '23px', maxFontSize: '80px' });
 };
 
 // usage:

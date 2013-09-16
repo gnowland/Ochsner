@@ -52,7 +52,7 @@ $('#contentwindow').delegate('.box','click', function(){
             left: $('#contentwindow').scrollLeft() //remove the absolute link someday
         },300, function(){
 			parent.css({'overflow':'hidden'});
-			$(this).css({'overflow-x':'auto','overflow-y':'scroll'});
+			$(this).css({'overflow-x':'hidden','overflow-y':'scroll'});
 			});
      	
 		

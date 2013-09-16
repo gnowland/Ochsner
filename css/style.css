@@ -260,7 +260,7 @@ img#plax-front {
 /*CONTENT --------------------------------------------------------------------------- */
 #contentwindow{
 	text-align:center;
-	padding: 6% 0 2% 0;
+	padding: 6% 0 0 0;
 	margin:0;
 	position: absolute;
 	overflow-x:hidden;

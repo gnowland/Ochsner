@@ -57,7 +57,7 @@ var newsize = function(){
 		// Delete the DIV 
 		document.body.removeChild(scrollDiv);
 	
-	$('#contentwindow').css({'height': e + 'px', 'width': width + 'px'});
+	$('#contentwindow').css({'height': e + 'px'});
 	$('header').css({'width': width - scrollbarWidth + 'px'});
 	$('#name').fitText(1.8, { minFontSize: '23px', maxFontSize: '80px' });
 			//HEADER HEIGHT

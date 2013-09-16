@@ -14,13 +14,9 @@ header, footer, aside, nav, article {
 			height: 0;
 			margin: 1.5%;
 		   }
-		header {max-width:9999999px;}
-		#contentwindow {max-width:9999999px;}
 }
 @media screen and (max-width: 1122px){
    .timeline { margin-top: 0; }
-   		header {max-width:1122px;}
-		#contentwindow {max-width:1122px;}
 }
 @media screen and (max-width: 1005px){	  
 		.box { 
@@ -31,16 +27,11 @@ header, footer, aside, nav, article {
 		width: 29%;
 		padding-bottom: 29%;
 		margin: 1%;}
-		.right {letter-spacing:.2em;}
-		header {max-width:1005px;}
-		#contentwindow {max-width:1005px;}
 }
 
 @media screen and (max-width: 880px){
    #name {padding-top: 1%; letter-spacing:.3em;}
    #plax {margin-left:-3.8%;}
-   header {max-width:880px;}
-	#contentwindow {max-width:880px;}
 }
 
 @media screen and (max-width: 780px){	  
@@ -52,28 +43,33 @@ header, footer, aside, nav, article {
 		width: 46%;
 		padding-bottom: 46%;
 		margin: 1%;}
-		.right { letter-spacing:.15em;}
-		header {max-width:780px;}
-		#contentwindow {max-width:780px;}
+		#rightcol{float:left;}
+  	 	#leftcol{float:left;}
 }
+
+/*@media screen and (max-width: 700px){
+	
+	img#plax-back {padding-left:43%;}
+	img#plax-front {padding-left:43%;}
+}*/
 
 @media screen and (max-width: 619px){
    .cell {width:97%;}
    .cell.cright {float:left;}
    .cell.divider {display:none;}
-   header {max-width:619px;}
-	#contentwindow {max-width:619px;}
+   .result h2.resulth2 {text-align:center;}
+   
 }
 
 @media screen and (max-width: 580px){
-    #name { bottom:7%; padding-left: 10%; width:28%; letter-spacing:.4em; }
+/*    #name { bottom:7%; padding-left: 10%; width:28%; letter-spacing:.4em; }
 	.left {letter-spacing:.3em; margin-left:-4px; width:auto;}
-	a#plax {margin-left:57%;}
-	header {max-width:580px;}
-	#contentwindow {max-width:580px;}
+	.right { letter-spacing:.15em;}
+	img#plax-back {padding-left:67%;}
+	img#plax-front {padding-left:67%;}*/
 }
 
-@media screen and (min-width: 580px){
+@media screen and (min-width: 0px){
    .rwd-break { display: none; }
 }
 
@@ -88,16 +84,8 @@ header, footer, aside, nav, article {
 		padding-bottom: 88%;
 		margin: 4%;}
 	#rightcol{float:none;}
-	header {max-width:450px;}
-	#contentwindow {max-width:450px;}
-}
-
-@media screen and (max-width: 409px){
-    /* .box { 
-	  	width: 97% ; 
-		padding-bottom: 97% ;}*/
-	  h1 {font-size:3.5em;}
-	  h4 {font-size:1.1em;}
-	  header {max-width:409px;}
-	  #contentwindow {max-width:409px;}
+	h1 {font-size:2.3em;}
+	h2 {font-size:2.2em;}
+	h4 {font-size:1em;}
+	p {font-size:1em;}
 }

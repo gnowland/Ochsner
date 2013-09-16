@@ -2,7 +2,7 @@
 
 //WINDOW RESIZE
 
-
+//DEBOUNCING RESIZE
 (function($,sr){
 
   // debouncing function from John Hann
@@ -32,7 +32,9 @@
 })(jQuery,'smartresize');
 
 
+//RESIZE VARIABLES
 var newsize = function(){
+	//MEASURING HEIGHT
 	var b = $('#contentwindow').offset().top;
 	var y = $(window).height();
 	var z = $('#contentwindow').outerHeight(true);
@@ -40,11 +42,25 @@ var newsize = function(){
 	var w = z - h;
 	var a = y - b;
 	var e = a - w;
+	//MEASURING WIDTH
 	var width = $(window).width();
+	//MEASURING SCROLLBAR
+		// Create the measurement node
+		var scrollDiv = document.createElement("div");
+		scrollDiv.className = "scrollbar-measure";
+		document.body.appendChild(scrollDiv);
+		// Get the scrollbar width
+		var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+		console.warn(scrollbarWidth); // Mac:  15
+		// Delete the DIV 
+		document.body.removeChild(scrollDiv);
 	
-	$('#contentwindow').css({'height': e + 'px'});
-	$('header').css({'width': width - 15 + 'px'});
+	$('#contentwindow').css({'height': e + 'px', 'width': width + 'px'});
+	$('header').css({'width': width - scrollbarWidth + 'px'});
 	$('#name').fitText(1.8, { minFontSize: '23px', maxFontSize: '80px' });
+			//HEADER HEIGHT
+		var headerheight = $('#name').outerHeight(true);
+		$('header').css({'height':headerheight+'px'});
 };
 
 // usage:

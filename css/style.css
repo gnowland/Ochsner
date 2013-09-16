@@ -99,6 +99,10 @@ font-variant: small-caps;
 color: #000;
 }
 
+.result h2.resulth2 {
+	text-align:left;
+}
+
 h3 {
 	font-family: 'Habibi', sans-serif;
 	font-size: 1.2em;
@@ -138,20 +142,16 @@ p {
 header {
 	width: 100%;
 	height: 0;
-	padding-bottom: 1%;
-	min-height: 42px;
+	/*min-height: 42px;*/
 	position:relative;
 	float:left;
 	z-index:3;
-	margin-top:1%;
 /*	background-color:rgba(255,255,255,0.5); /*obsolete now with relative positioning it covers the scrollbar*/
 }
 
 .gradient-background {
 	width: 100%;
 	height: 100%;
-	margin-top: -1%;
-	padding-bottom: 1%;
 	position: absolute;
 	top: 0;
 	left:0;
@@ -169,14 +169,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 }
 
 .gradient-border { 
-width: 90%;
+width: 100%;
 height:1px;
-margin: 0;
+margin: 0 0 0 10%;
 position: absolute;
 bottom: 0;
 left:0;
 display:inline-block;
-margin-left: 10%;
 z-index: 2;
 
 background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMzMzMzMyIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM1JSIgc3RvcC1jb2xvcj0iIzMzMzMzMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY1JSIgc3RvcC1jb2xvcj0iIzMzMzMzMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzMzMzMzMiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -197,8 +196,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00333333', e
 /*NAME --------------------------------------------------------------------------- */
 #name {
 	width: 100%;
-	margin-top:-1%;
-	bottom:0;
+	top:0;
 	height: auto;
 	display: inline-block;
 	position: absolute;
@@ -231,7 +229,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00333333', e
 /*PLAX EFFECT --------------------------------------------------------------------------- */
 a#plax {
 	position: inherit;
-    bottom:0;
     top:0;
 	z-index: 6;
 	overflow: visible;
@@ -247,7 +244,7 @@ img#plax-back {
 	margin: 0;
 	height: 100%;
 	width:auto;
-	padding-left:45%;
+	padding-left:43%;
 }
 
 img#plax-front {
@@ -258,18 +255,17 @@ img#plax-front {
 	margin: 0;
 	height: 100%;
 	width:auto;
-	padding-left:45%;
+	padding-left:43%;
 }
 
 /*CONTENT --------------------------------------------------------------------------- */
 #contentwindow{
 	text-align:center;
-	padding: 66px 0 0;
+	padding: 6% 0 0 0;
 	margin:0;
 	position: absolute;
 	overflow-x:hidden;
 	overflow-y:scroll;
-	min-width:400px;
 	width: 100%;
 }
 
@@ -639,4 +635,12 @@ display: none!important;
 	background-image:url(../img/brillant.png);
 	display:none;
 	visibility:hidden;
+}
+
+.scrollbar-measure {
+	width: 100px;
+	height: 100px;
+	overflow: scroll;
+	position: absolute;
+	top: -9999px;
 }

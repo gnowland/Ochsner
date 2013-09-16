@@ -268,7 +268,8 @@ img#plax-front {
 	padding: 66px 0 0;
 	margin:0;
 	position: absolute;
-	overflow:auto;
+	overflow-x:hidden;
+	overflow-y:scroll;
 	min-width:400px;
 	width: 100%;
 }
@@ -310,7 +311,8 @@ img#plax-front {
 }
 
 .box.cloned.active {
-	overflow: auto;
+	overflow-x: auto;
+	overflow-y: scroll;
 	border: none;
 	-webkit-box-shadow: none;
 }

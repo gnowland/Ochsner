@@ -52,7 +52,7 @@ $('#contentwindow').delegate('.box','click', function(){
             left: $('#contentwindow').scrollLeft() //remove the absolute link someday
         },300, function(){
 			parent.css({'overflow':'hidden'});
-			$(this).css({'overflow':'auto'});
+			$(this).css({'overflow-x':'auto','overflow-y':'scroll'});
 			});
      	
 		
@@ -90,7 +90,7 @@ $('#contentwindow').delegate('.box.active .boximage','click', function(){
 			margin : '0',
  			 }, 500, function(){
 				 cloned.css({'overflow':'hidden'});
-				 parent.css({'overflow-y':'auto', 'overflow-x':'hidden'});
+				 parent.css({'overflow-y':'scroll', 'overflow-x':'hidden'});
 				 });
 		
 		$('.fade').delay(600).fadeOut(400);  //remove the absolute link someday 

@@ -8,7 +8,7 @@ html, body{
 }
 
 body {
-	background: #FAFAFA /*url(img/white_carbonfiber.png) repeat top left scroll*/;
+	background: #FAFAFA /*url(../img/white_carbonfiber.png) repeat top left scroll*/;
 	font: .8em "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
 	position:relative;
 	overflow:hidden;
@@ -304,7 +304,7 @@ img#plax-front {
 	position: absolute;
 	z-index: 2;
 	background-attachment: scroll;
-	background-image: url(img/brillant.png);
+	background-image: url(../img/brillant.png);
 	background-repeat: repeat;
 	background-position: left top;
 }
@@ -343,35 +343,35 @@ img#plax-front {
 }
 
 .zero .boximage {
-	background-image:url(img/boxes/contact.jpg);
+	background-image:url(../img/boxes/contact.jpg);
 }
 
 .one .boximage {
-	background-image: url(img/boxes/whitehall.jpg);
+	background-image: url(../img/boxes/whitehall.jpg);
 }
 
 .two .boximage {
-	background-image: url(img/boxes/loso.jpg);
+	background-image: url(../img/boxes/loso.jpg);
 }
 
 .three .boximage {
-	background-image: url(img/boxes/delride.jpg);
+	background-image: url(../img/boxes/delride.jpg);
 }
 
 .four .boximage {
-	background-image: url(img/boxes/udress.jpg);
+	background-image: url(../img/boxes/udress.jpg);
 }
 
 .five .boximage {
-	background-image: url(img/boxes/csbs.jpg);
+	background-image: url(../img/boxes/csbs.jpg);
 }
 
 .six .boximage {
-	background-image: url(img/boxes/ecc.jpg);
+	background-image: url(../img/boxes/ecc.jpg);
 }
 
 .seven .boximage {
-	background-image:url(img/boxes/queen.jpg);
+	background-image:url(../img/boxes/queen.jpg);
 }
 
 .gallerywrap{
@@ -451,7 +451,7 @@ bottom: -.96em;
 float: left;
 display:inline-block;
 position:relative;
-background-image: url(img/tweed.png);
+background-image: url(../img/tweed.png);
 clear: both;
 width: 80%;
 margin: 8% 8%;
@@ -469,7 +469,7 @@ box-shadow:         inset 0 0 10px #000000;
 .sprite li {
 margin:3%;
 vertical-align: middle;
-background-image: url(img/langsprite.png);
+background-image: url(../img/langsprite.png);
 height:0;
 display:inline-block;
 }

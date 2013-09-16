@@ -42,9 +42,11 @@ var newsize = function(){
 	var w = z - h;
 	var a = y - b;
 	var e = a - w;
+	
 	//MEASURING WIDTH
 	var width = $(window).width();
-	//MEASURING SCROLLBAR
+	
+	//MEASURING SCROLLBAR WIDTH (for header subtraction)
 		// Create the measurement node
 		var scrollDiv = document.createElement("div");
 		scrollDiv.className = "scrollbar-measure";
@@ -59,8 +61,11 @@ var newsize = function(){
 	$('header').css({'width': width - scrollbarWidth + 'px'});
 	$('#name').fitText(1.8, { minFontSize: '23px', maxFontSize: '80px' });
 			//HEADER HEIGHT
-		var headerheight = $('#name').outerHeight(true);
-		$('header').css({'height':headerheight+'px'});
+		var nameheight = $('#name').outerHeight(true);
+		$('header').css({'height':nameheight+'px'});
+		var headerheight = $('header').outerHeight(true);
+		
+	$('#contentwindow').css({'padding-top':headerheight +5+'px'});
 };
 
 // usage:

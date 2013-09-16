@@ -59,6 +59,10 @@ header, footer, aside, nav, article {
 	a#plax {margin-left:57%;}
 }
 
+@media screen and (min-width: 580px){
+   .rwd-break { display: none; }
+}
+
 @media screen and (max-width: 450px){
    .box { 
 	  	width: 88%;
@@ -70,10 +74,6 @@ header, footer, aside, nav, article {
 		padding-bottom: 88%;
 		margin: 4%;}
 	#rightcol{float:none;}
-}
-
-@media screen and (min-width: 580px){
-   .rwd-break { display: none; }
 }
 
 @media screen and (max-width: 409px){

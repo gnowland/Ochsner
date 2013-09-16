@@ -635,3 +635,9 @@ display: none!important;
 	position: !important;
 	display: !important;
 }
+
+#preloadimages {
+	background-image:url(../img/brillant.png);
+	display:none;
+	visibility:hidden;
+}

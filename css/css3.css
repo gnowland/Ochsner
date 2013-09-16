@@ -58,13 +58,16 @@ header, footer, aside, nav, article {
    
 }
 
-@media screen and (max-width: 580px){
-
+@media screen and (max-width: 480px){
+		h1 {font-size:3em;}
+		.timeline {font-size:.9em;}
 }
 
 @media screen and (min-width: 0px){
    .rwd-break { display: none; }
 }
+
+
 
 @media screen and (max-width: 450px){
    .box { 

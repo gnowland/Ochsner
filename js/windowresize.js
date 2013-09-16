@@ -59,6 +59,7 @@ var newsize = function(){
 	
 	$('#contentwindow').css({'height': e + 'px'});
 	$('header').css({'width': width - scrollbarWidth + 'px'});
+	$('.gradient-border').css({'width':width - scrollbarWidth+'px'});
 	$('#name').fitText(1.8, { minFontSize: '23px', maxFontSize: '80px' });
 			//HEADER HEIGHT
 		var nameheight = $('#name').outerHeight(true);

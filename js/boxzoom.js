@@ -29,11 +29,10 @@ $('#contentwindow').delegate('.box','click', function(){
 	//setting widths and heights and such
 		$('.boximage').css({width: biwh + 'px', height: biwh + 'px'});
 		
-		$(this).find('#leftcol').css({width: pctheightl + 0.5 + '%' }); //remove the absolute link someday
+		$(this).find('#leftcol').css({width: pctheightl + 0.5 + '%' }); //remove the absolute link someday 
 		$(this).find('#rightcol').css({'width':pctheightr - 0.5 + '%'});
 		if (pctheightr<45) {$(this).find('#rightcol').css({'width':100+'%','float':'none'})};
 		
-//		$('.ribbon').css({width: (100+(pctheightl/2)) + '%' });
 		//$('.cell').css({width: cellwidth + '%'});
 	
 		
@@ -71,14 +70,14 @@ $('#contentwindow').delegate('.box','click', function(){
 			parent.css({'overflow':'hidden'});
 			$(this).css({'overflow-x':'hidden','overflow-y':'scroll'});
 //AJAXING
-			$(this).find("#rightcol").html(ajax_load).load(loadUrl);
+			$(this).find("#rightcol").html(ajax_load).load(loadUrl, function() {
+  				//SHADOWBOX FIXING			
+				Shadowbox.init({ skipSetup: true });
+				Shadowbox.clearCache();
+				Shadowbox.setup();
+  				});
 			});
 
-
-//SHADOWBOX FIXING			
-			Shadowbox.clearCache();
-			Shadowbox.setup();	
-			// function(){Shadowbox.init({ skipSetup: true }); Shadowbox.setup();}
 		
 //BOXANIMATE
 		$('.fade').hide().delay(250).fadeIn(200);  //display:none bug

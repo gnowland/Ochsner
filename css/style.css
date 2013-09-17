@@ -22,7 +22,7 @@ body {
 .content {
 	width: 98%;
 	margin:	0 auto 1%;
-	padding: 1%;
+	padding: 2% 1% 1% 2%;
 	display:inline-block;
 }
 
@@ -70,7 +70,7 @@ font-style:italic;
 h1 {
 font-family: 'Cinzel', serif;
 font-weight: 400;
-font-size: 4em;
+font-size: 3.3em;
 text-align:left;
 letter-spacing: .06em;
 line-height: .8em;

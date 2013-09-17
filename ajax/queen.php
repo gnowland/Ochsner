@@ -57,7 +57,7 @@
         <div class="content fade">
         	<div class="title">
 		    <h1>Light Up The Queen Foundation</h1>
-		    <h4>A non-profit theatre redevelopment and revitalization project in Wilmington, DE</h4>
+		    <h4>A non-profit theater redevelopment and revitalization project in Wilmington, DE</h4>
 		    <div class="timeline">Project Timeline: February 2009 &mdash; April 2009</div>
             </div>
 
@@ -85,4 +85,4 @@
             <h2>the result</h2>
 		    <p>The website was an important resource advocating for the redevelopment of the old theatre. WXPN radio station in Philadelphia announced that they would open a branch of their popular music dinner theatre, the World Café Live, in the queen. Wilmington real estate developers Buccini/Pollin Group and city officials soon joined in the initiative to restore the Queen Theater. In October 2009, six months after the launch of the website, the $25 million required for restoration was secured and the Light Up The Queen Foundation announced a Spring 2011 opening. The theatre remains a bastion of hope in the downtown Wilmington revitalization movement.</p>
            </div>
-    	</div>
+    	</div>  

@@ -50,7 +50,7 @@ $('#contentwindow').delegate('.box','click', function(){
 
 //AJAX VARIABLES
 		//LOADIMAGE
-		var ajax_load = "<img src='img/ajax_loader_blue_48.gif' alt='loading...' class='loadingimg' />";
+		var ajax_load = "<img src='img/loadspinner.gif' alt='loading...' class='loadingimg' />";
 		//FIND OUT WHICH BOX WAS CLICKED (FOR AJAXING)
 		var classnames = this.className.split(' ');
 		var boxclicked = classnames[1];
@@ -71,17 +71,17 @@ $('#contentwindow').delegate('.box','click', function(){
 			parent.css({'overflow':'hidden'});
 			$(this).css({'overflow-x':'hidden','overflow-y':'scroll'});
 //AJAXING
-			$(this).find(".content").html(ajax_load).load(loadUrl);
+			$(this).find("#rightcol").html(ajax_load).load(loadUrl);
 			});
 
 
-//SHADOWBOX FIXING
-			$('.box.inactive .gallery a').attr('rel', 'noshadowbox')			
+//SHADOWBOX FIXING			
 			Shadowbox.clearCache();
 			Shadowbox.setup();	
+			// function(){Shadowbox.init({ skipSetup: true }); Shadowbox.setup();}
 		
 //BOXANIMATE
-		$('.fade').hide().delay(250).fadeIn(200);  //remove the absolute link someday
+		$('.fade').hide().delay(250).fadeIn(200);  //display:none bug
 	
 	//Second Animation (image) 
 		var bnewh = biwh*0.7;

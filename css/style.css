@@ -644,3 +644,8 @@ display: none!important;
 	position: absolute;
 	top: -9999px;
 }
+
+.loadingimg {
+	margin-top: 20%;
+	position: absolute;
+}

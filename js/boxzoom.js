@@ -50,7 +50,7 @@ $('#contentwindow').delegate('.box','click', function(){
 
 //AJAX VARIABLES
 		//LOADIMAGE
-		var ajax_load = "<img src='img/ajax_loader_blue_48.gif' alt='loading...' />";
+		var ajax_load = "<img src='img/ajax_loader_blue_48.gif' alt='loading...' class='loadingimg' />";
 		//FIND OUT WHICH BOX WAS CLICKED (FOR AJAXING)
 		var classnames = this.className.split(' ');
 		var boxclicked = classnames[1];
@@ -71,7 +71,7 @@ $('#contentwindow').delegate('.box','click', function(){
 			parent.css({'overflow':'hidden'});
 			$(this).css({'overflow-x':'hidden','overflow-y':'scroll'});
 //AJAXING
-			$(this).find("#result").html(ajax_load).load(loadUrl);
+			$(this).find(".content").html(ajax_load).load(loadUrl);
 			});
 
 

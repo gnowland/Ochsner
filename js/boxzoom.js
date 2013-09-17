@@ -1,4 +1,7 @@
 // JavaScript Document
+$.ajaxSetup ({  
+    cache: false  //change this later
+});
 
 //BOX ANIMATION
 $(window).load(function(){
@@ -36,13 +39,27 @@ $('#contentwindow').delegate('.box','click', function(){
 		
         var parent = $(this).parent();
         var pos = $(this).position();
-		var st = parent.scrollTop()
+		var st = parent.scrollTop();
         var clone = $(this).clone().addClass('active');
 			
 		$(this).css({left: pos.left + 'px', top: (pos.top + st) + 'px', visibility: 'hidden' }).addClass('inactive');
 		
+		//ADD "ACTIVE" to end of parent class
         parent.append(clone);
+		
 
+//AJAX VARIABLES
+		//LOADIMAGE
+		var ajax_load = "<img src='img/ajax_loader_blue_48.gif' alt='loading...' />";
+		//FIND OUT WHICH BOX WAS CLICKED (FOR AJAXING)
+		var classnames = this.className.split(' ');
+		var boxclicked = classnames[1];
+		//FIND THE RIGHT PHP PAGE
+		var loadUrl = 'ajax/'+boxclicked+'.php';
+
+
+//BOXANIMATE		
+		//ANIMATE BOX
         clone.css({left: pos.left + 'px', top: (pos.top + st) + 'px'}).animate({
             width: '100%', 
             height : contentheight + '%',
@@ -53,15 +70,17 @@ $('#contentwindow').delegate('.box','click', function(){
         },300, function(){
 			parent.css({'overflow':'hidden'});
 			$(this).css({'overflow-x':'hidden','overflow-y':'scroll'});
+//AJAXING
+			$(this).find("#result").html(ajax_load).load(loadUrl);
 			});
-     	
-		
-		
-			//SHADOWBOX FIXING
+
+
+//SHADOWBOX FIXING
 			$('.box.inactive .gallery a').attr('rel', 'noshadowbox')			
 			Shadowbox.clearCache();
-			Shadowbox.setup();
-	 
+			Shadowbox.setup();	
+		
+//BOXANIMATE
 		$('.fade').hide().delay(250).fadeIn(200);  //remove the absolute link someday
 	
 	//Second Animation (image) 

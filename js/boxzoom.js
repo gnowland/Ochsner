@@ -1,5 +1,5 @@
 // JavaScript Document
-$.ajaxSetup({cache: false});
+$.ajaxSetup({cache: true});
 
 //BOX ANIMATION
 $(window).load(function () {

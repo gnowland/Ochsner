@@ -16,6 +16,7 @@ Contact: http://giffordnowland.com
 <link href="css/reset.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link href="css/css3.css" rel="stylesheet" type="text/css" />
+<link href="css/sprite.css" rel="stylesheet" type="text/css" />
 <link href="shadowbox/shadowbox.css" rel="stylesheet" type="text/css" />
 
 <!--GOOGLE WEBFONTS -->
@@ -235,55 +236,51 @@ Contact: http://giffordnowland.com
 
 <!-- LOAD SCRIPTS -->
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
-<script type="text/javascript" src="js/boxzoom.js"></script>
+<script type="text/javascript" src="js/windowresize.js"></script>
 <script type="text/javascript" src="js/plax.js"></script>
+<script type="text/javascript" src="js/boxzoom.js"></script>
 <script type="text/javascript" src="js/jquery.fittext.js"></script>
 <script type="text/javascript" src="shadowbox/shadowbox.js"></script>
-<script type="text/javascript" src="js/ajax.js"></script>
-<script type="text/javascript" src="js/windowresize.js"></script>
+<script type="text/javascript" src="js/jquery.address-1.5.min.js"></script>
 
 <!-- INLINE SCRIPTS -->
 <script type="text/javascript">
-	//SHADOWBOX
-	Shadowbox.init({
-		language: 'en'
-	  , players:  ['img', 'html', 'iframe', 'qt', 'wmp', 'swf', 'flv', 'gdoc']
-	  , skipSetup: true // delay running setup until you are ready
-	});
-	
-	//FITTTEXT:
-	//(moved to windowresize.js)
+//SHADOWBOX
+Shadowbox.init({
+    language: 'en',
+    players: ['img', 'html', 'iframe', 'qt', 'wmp', 'swf', 'flv', 'gdoc'],
+    skipSetup: true // delay running setup until you are ready
+});
 
+//FITTTEXT:
+//(moved to windowresize.js)
 
-	//ON PAGE LOAD RUN....
-	$(document).ready(function () {
-		
-		//BOX SIZE
-		var boxheight = $('.box').height();
-		$('.boximage').css({height: boxheight + 'px'});
-		
-		//FADE IN IMAGES:
-		$('.onloadfadein').each(function() {
-    		var src = $(this).data("src");
-    			if (src) {
-        			var img = new Image();
-        			img.style.display = "none";
-        			img.onload = function() {
-            			$(this).fadeIn(600);
-        				};
-        			$(this).append(img);            
-        			img.src = src;
-					}
-		});
-		
-		//PLAX:
-        $('#plax img').plaxify()
-        $.plax.enable()
-		
-    });//END ONPAGELOAD
-	
-	$(document).ready(newsize);
-	
+//ON PAGE LOAD RUN....
+$(document).ready(function () {
+
+    //BOX SIZE
+    var boxheight = $('.box').height();
+    $('.boximage').css({height: boxheight + 'px'});
+
+   //FADE IN IMAGES:
+    $('.onloadfadein').each(function () {
+        var src = $(this).data("src");
+        if (src) {
+            var img = new Image();
+            img.style.display = "none";
+            img.onload = function () {
+                $(this).fadeIn(600);
+            };
+            $(this).append(img);
+            img.src = src;
+        }
+    });
+
+   //PLAX:
+    $('#plax img').plaxify();
+    $.plax.enable();
+
+});//END ONPAGELOAD
 </script>
 
 <!-- GOOGLE ANALYTICS -->

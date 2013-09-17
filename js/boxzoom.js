@@ -65,9 +65,10 @@ $(window).load(function () {
             }, 300, function () {
                 parent.css({'overflow': 'hidden'});
                 $(this).css({'overflow-x': 'hidden', 'overflow-y': 'scroll'});
-    //AJAXING
+            //AJAXING
                 $(this).find("#rightcol").html(ajax_load).load(loadUrl, function () {
-                     //SHADOWBOX FIXING
+                    window.location.hash = 'web/' + boxclicked + '/';
+                    //SHADOWBOX FIXING
                     Shadowbox.init({ skipSetup: true });
                     Shadowbox.clearCache();
                     Shadowbox.setup();

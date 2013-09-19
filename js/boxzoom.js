@@ -1,5 +1,7 @@
 // JavaScript Document
+// AJAX Setup
 $.ajaxSetup({cache: true});
+
 
 //BOX ANIMATION
 $(window).load(function () {
@@ -51,6 +53,10 @@ $(window).load(function () {
             var boxclicked = classnames[1];
             //FIND THE RIGHT PHP PAGE
             var loadUrl = 'ajax/' + boxclicked + '.php';
+			
+            History.Adapter.bind(window,'statechange',function(){ // Note: We are using statechange instead of popstate
+            var State = History.getState(); // Note: We are using History.getState() instead of event.state
+            });
 
 
     //BOXANIMATE
@@ -67,7 +73,8 @@ $(window).load(function () {
                 $(this).css({'overflow-x': 'hidden', 'overflow-y': 'scroll'});
             //AJAXING
                 $(this).find("#rightcol").html(ajax_load).load(loadUrl, function () {
-                    window.location.hash = 'web/' + boxclicked + '/';
+                    History.pushState({page:boxclicked}, boxclicked, 'web/' + boxclicked + '/');
+                    //window.location.hash = 'web/' + boxclicked + '/';
                     //SHADOWBOX FIXING
                     Shadowbox.init({ skipSetup: true });
                     Shadowbox.clearCache();

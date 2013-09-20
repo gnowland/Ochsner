@@ -57,6 +57,8 @@ var newsize = function () {
         document.body.removeChild(scrollDiv);
 
         $('#contentwindow').css({'height': e + 'px'});
+		
+		//HEADER WIDTH
         $('header').css({'width': width - scrollbarWidth + 'px'});
         $('.gradient-border').css({'width': width - scrollbarWidth + 'px'});
         $('#name').fitText(1.8, { minFontSize: '23px', maxFontSize: '80px' });
@@ -64,10 +66,16 @@ var newsize = function () {
         var nameheight = $('#name').outerHeight(true);
         $('header').css({'height': nameheight + 'px'});
         var headerheight = $('header').outerHeight(true);
-
+		//CONTENT PADDING
         $('#contentwindow').css({'padding-top': headerheight + 5 + 'px'});
     };
 
 // usage:
 $(window).smartresize(newsize);
-$(document).ready(newsize); 
+$(document).ready(newsize);
+$(window).load(function () {
+	var ch = ($(window).height() - $('#contentwindow').offset().top) - ($('#contentwindow').outerHeight(true) - $('#contentwindow').height())
+	$('#contentwindow').css({'height': ch + 'px'});
+	$('.loadingimg').hide();
+	$('.onloadfadein').fadeIn(600).css({'display': 'inline-block'});
+});

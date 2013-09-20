@@ -37,17 +37,18 @@ Contact: http://giffordnowland.com
  --><br class="rwd-break"><div class="right">NOWLAND</div>
 	</div>
     <a href="/index.html" id="plax">
-      <img src="img/GNlogo_sketchy_back.png" data-xrange="10" data-yrange="-4" id="plax-back" />
-      <img src="img/GNlogo_sketchy_front.png" data-xrange="17" data-yrange="4" id="plax-front" />
+      <img src="img/GNlogo_sketchy_back.png" data-xrange="10" data-yrange="-4" id="plax-back" alt="N" />
+      <img src="img/GNlogo_sketchy_front.png" data-xrange="17" data-yrange="4" id="plax-front" alt="G"/>
     </a>
     <div class="gradient-border gradient"></div>
 </div></header>
 <!-- END MASTHEAD -->
 <!-- CONTENTWINDOW ============================================================================================================================== -->
 <div id="contentwindow">
-
+<div class="loadingimg" style="margin-left:48%"><img src="img/loadspinner.gif" alt="loading..." width="48" height="48" /></div>
 <!-- ======================= CONTACT ============================================================================================================ -->
-    <div class="box Contact uncloned onloadfadein" data-src="img/boxes/contact.jpg"><!--BOX 1 (WHITEHALL)-->
+    <a href="#!/contact">
+    <div class="box Contact uncloned onloadfadein"><!--BOX CONTACT-->
     	<div id="lock">
     		<div id="flyincontainer">
               <div id="leftcol">
@@ -65,7 +66,7 @@ Contact: http://giffordnowland.com
    s.parentNode.insertBefore(g, s);
 }(document, "script"));
 </script></li>
-						<li><span style="color:#FFF">Join me on LinkedIn:</span><br /><a href="http://www.linkedin.com/in/giffordnowland" target="_blank"><img src="img/linkedin.png" width="152" height="50" border="0" alt="View Gifford Nowland's profile on LinkedIn" style="background-color:#fff;"></a></li>
+						<li><span style="color:#FFF">Join me on LinkedIn:</span><br /><a href="http://www.linkedin.com/in/giffordnowland" target="_blank"><img src="img/linkedin.png" width="152" height="50" alt="View Gifford Nowland's profile on LinkedIn" style="background-color:#fff;"></a></li>
                         </ul>
                      </div>
             	 </div>
@@ -75,9 +76,9 @@ Contact: http://giffordnowland.com
         	</div><!-- /#flyincontainer -->
     	</div><!-- /#lock -->
 	</div><!-- /#box-->
-
+</a>
 <!-- ======================= WHITEHALL ============================================================================================================ -->
-    <div class="box Whitehall uncloned onloadfadein" data-src="img/boxes/whitehall.jpg"><!--BOX 1 (WHITEHALL)-->
+    <div class="box Whitehall uncloned onloadfadein"><!--BOX WHITEHALL-->
 	    <div id="lock">
     		<div id="flyincontainer">
         		<div id="leftcol">
@@ -98,7 +99,7 @@ Contact: http://giffordnowland.com
 	</div><!-- /#box-->
 
 <!-- ======================= LOSO ================================================================================================================ -->
-    <div class="box LOSO uncloned onloadfadein" data-src="img/boxes/loso.jpg"><!--BOX 2 (LOSO)-->
+    <div class="box LOSO uncloned onloadfadein"><!--BOX LOSO-->
     <div id="lock">
     	<div id="flyincontainer">
         <div id="leftcol">
@@ -119,7 +120,7 @@ Contact: http://giffordnowland.com
 	</div><!-- /#box-->
     
 	<!-- ======================= UDRESS ================================================================================================================ -->
-    <div class="box UDress uncloned onloadfadein" data-src="img/boxes/udress.jpg"><!--BOX 4 (UDRESS)-->
+    <div class="box UDress uncloned onloadfadein"><!--BOX UDRESS-->
     <div id="lock">
     	<div id="flyincontainer">
         <div id="leftcol">
@@ -140,7 +141,7 @@ Contact: http://giffordnowland.com
 	</div><!-- /#box-->
     
     <!-- ======================= DELRIDE ================================================================================================================ -->
-    <div class="box DelRide uncloned onloadfadein" data-src="img/boxes/delride.jpg"><!--BOX 3 (DELRIDE)-->
+    <div class="box DelRide uncloned onloadfadein"><!--BOX DELRIDE -->
     <div id="lock">
     	<div id="flyincontainer">
         <div id="leftcol">
@@ -161,7 +162,7 @@ Contact: http://giffordnowland.com
 	</div><!-- /#box-->
 
 	<!-- ======================= Backcountry ===================================================================================================== -->
-    <div class="box Backcountry uncloned onloadfadein" data-src="img/boxes/csbs.jpg"><!--BOX 5 (CSBS)-->
+    <div class="box Backcountry uncloned onloadfadein"><!--BOX CSBS-->
     <div id="lock">
     	<div id="flyincontainer">
         <div id="leftcol">
@@ -184,7 +185,7 @@ Contact: http://giffordnowland.com
 	</div><!-- /#box-->
     
 <!-- ======================= ECC ================================================================================================================ -->
-    <div class="box Edgemoor uncloned onloadfadein" data-src="img/boxes/ecc.jpg"><!--BOX 6 (ECC)-->
+    <div class="box Edgemoor uncloned onloadfadein"><!--BOX EDGEMOOR-->
     <div id="lock">
     	<div id="flyincontainer">
         <div id="leftcol">
@@ -205,7 +206,7 @@ Contact: http://giffordnowland.com
 	</div><!-- /#box-->
     
 <!-- ======================= QUEEN ================================================================================================================ -->
-    <div class="box Queen uncloned onloadfadein" data-src="img/boxes/queen.jpg"><!--BOX 7 (QUEEN)-->
+    <div class="box Queen uncloned onloadfadein"><!--BOX QUEEN-->
     <div id="lock">
     	<div id="flyincontainer">
         <div id="leftcol">
@@ -224,7 +225,7 @@ Contact: http://giffordnowland.com
     	</div><!-- /#lock -->
 	</div><!-- /#box-->
 
-<div id="preloadimages"></div> 
+<div id="preloadimages"></div>
 </div><!-- END CONTENTWINDOW -->
 
 <!-- LOAD SCRIPTS -->
@@ -248,23 +249,15 @@ $(document).ready(function () {
     $('.boximage').css({height: boxheight + 'px'});
 
    //FADE IN IMAGES:
-    $('.onloadfadein').each(function () {
-        var src = $(this).data("src");
-        if (src) {
-            var img = new Image();
-            img.style.display = "none";
-            img.onload = function () {
-                $(this).fadeIn(600);
-            };
-            $(this).append(img);
-            img.src = src;
-        }
-    });
+   //(moved to windowresize.js) 
 
    //PLAX:
     $('#plax img').plaxify();
     $.plax.enable();
-
+	
+	//SET ORIGINAL HISTORY STATE
+	history.replaceState({page:0}, null, "index.html");
+	
 });//END ONPAGELOAD
 </script>
 

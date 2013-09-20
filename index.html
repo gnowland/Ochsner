@@ -234,7 +234,6 @@ Contact: http://giffordnowland.com
 <script type="text/javascript" src="js/boxzoom.js"></script>
 <script type="text/javascript" src="js/jquery.fittext.js"></script>
 <script type="text/javascript" src="shadowbox/shadowbox.js"></script>
-<script type="text/javascript" src="//browserstate.github.io/history.js/scripts/bundled/html4+html5/jquery.history.js"></script>
 
 <!-- INLINE SCRIPTS -->
 <script type="text/javascript">
@@ -242,6 +241,7 @@ Contact: http://giffordnowland.com
 //(moved to windowresize.js)
 
 //ON PAGE LOAD RUN....
+$(document).ready(newsize);
 $(document).ready(function () {
 
     //BOX SIZE
@@ -265,28 +265,6 @@ $(document).ready(function () {
    //PLAX:
     $('#plax img').plaxify();
     $.plax.enable();
-	
-	//History Statechange
-	History.Adapter.bind(window,'statechange',function(){ // Note: We are using statechange instead of popstate
-	var State = History.getState(); // Note: We are using History.getState() instead of event.state
-	});
-	
-	//HISTORY PUSHSTATE
-	var file, n;
-		file = window.location.pathname;
-		n = file.lastIndexOf('/');
-		if (n >= 0) {
-    	file = file.substring(n + 1);
-		}
-		history.pushState({state: 1}, null, file);
-
-//	window.onpopstate = function(event) {
-//  		alert("location: " + document.location + ", state: " + JSON.stringify(event.state));
-//	};
-	window.addEventListener("popstate", function(event) {
-	if( event.state !== null )    
-		closeBox
-	});
 
 });//END ONPAGELOAD
 </script>

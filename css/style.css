@@ -307,6 +307,8 @@ img#plax-front {
 	overflow-y: scroll;
 	border: none;
 	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
 }
 
 #leftcol {
@@ -333,6 +335,8 @@ img#plax-front {
 	background-size: 100%;
 	border: 1px solid #fff;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	        box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 	display:block;
 	cursor:pointer;
 }
@@ -377,7 +381,7 @@ clear: both;
 margin-left: .4%;
 display: block;
 position: relative;
-height: 170px;
+height: 175px;
 -webkit-box-shadow: inset 0 0 10px #000000;
    -moz-box-shadow: inset 0 0 10px #000000;
         box-shadow: inset 0 0 10px #000000;
@@ -387,7 +391,7 @@ height: 170px;
 width: 100%;
 white-space: nowrap;
 overflow-x: scroll;
-height: 166px;
+height: 101%;
 }
 .gallery ul{
 
@@ -427,6 +431,8 @@ padding-bottom: 4%;
 text-align: center;
 margin: 0 -6% 5% -6%;
 -webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
+   -moz-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
 box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
 }
 .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {

@@ -51,7 +51,6 @@ $(window).load(function () {
             //FIND OUT WHICH BOX WAS CLICKED (FOR AJAXING)
             var classnames = this.className.split(' ');
             var boxclicked = classnames[1];
-			var boxnum = parseInt($(this).index() + 1);
             //FIND THE RIGHT PHP PAGE
             var loadUrl = 'ajax/' + boxclicked.toLowerCase() + '.php';
 
@@ -69,8 +68,6 @@ $(window).load(function () {
                 $(this).css({'overflow-x': 'hidden', 'overflow-y': 'scroll'});
             //AJAXING
                 $(this).find("#rightcol").html(ajax_load).load(loadUrl, function () {
-					History.pushState({state: boxnum}, 'GIFFORD NOWLAND - ' + boxclicked, loadUrl);
-                    //window.location.hash = loadUrl;
                     //SHADOWBOX FIXING
                     Shadowbox.init({
                         language: 'en',
@@ -135,7 +132,6 @@ $(window).load(function () {
             cloned.removeClass('cloned').removeClass('inactive');
             cloned.addClass('uncloned');
             cloned.css({'visibility': 'visible'});
-			History.back();
         });
     });// CLOSE boxopen
 });//window.load

@@ -12,15 +12,15 @@ clear: both;
 width: 80%;
 margin: 8% 8%;
 padding: 1% 2%;
-border-top-right-radius:1em;
 -webkit-border-top-right-radius: 1em;
--moz-border-top-right-radius: 1em;
-border-top-left-radius:1em;
+   -moz-border-top-right-radius: 1em;
+        border-top-right-radius: 1em;
 -webkit-border-top-left-radius: 1em;
--moz-border-top-left-radius: 1em;
--moz-box-shadow:    inset 0 0 10px #000000;
+   -moz-border-top-left-radius: 1em;
+        border-top-left-radius: 1em;
 -webkit-box-shadow: inset 0 0 10px #000000;
-box-shadow:         inset 0 0 10px #000000;
+   -moz-box-shadow: inset 0 0 10px #000000;
+        box-shadow: inset 0 0 10px #000000;
 }
 .sprite li {
 margin:3%;

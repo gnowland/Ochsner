@@ -1,23 +1,23 @@
         <div class="gallerywrap fade">
         <ul class="gallery"><!-- IMAGE GALLERY -->
-            <li><a href="img/work/whitehall/home1.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Homepage (1 of 3)" >
-            <img src="img/work/whitehall/home1_thumb.jpg" width="200" height="150" /></a></li>
-            <li><a href="img/work/whitehall/home3.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Homepage (2 of 3)" >
-            <img src="img/work/whitehall/home3_thumb.jpg" /></a></li>
-            <li><a href="img/work/whitehall/home2.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Homepage (3 of 3)" >
-            <img src="img/work/whitehall/home2_thumb.jpg" /></a></li>
-            <li><a href="img/work/whitehall/advisory.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Advisory" >
-            <img src="img/work/whitehall/advisory_thumb.jpg" /></a></li>
-            <li><a href="img/work/whitehall/equity.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Equity Solutions" >
-            <img src="img/work/whitehall/equity_thumb.jpg" /></a></li>
-            <li><a href="img/work/whitehall/careers.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Careers" >
-            <img src="img/work/whitehall/careers_thumb.jpg" /></a></li>
-            <li><a href="img/work/whitehall/mtm.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Monitoring the Markets (webpage)" >
-            <img src="img/work/whitehall/mtm_thumb.jpg" /></a></li>
-            <li><a href="img/work/whitehall/mtmemail.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Monitoring the Markets (email)" >
-            <img src="img/work/whitehall/mtmemail_thumb.jpg" /></a></li>
-            <li><a href="img/work/whitehall/mtm3.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Monitoring the Markets (document)" >
-            <img src="img/work/whitehall/mtm3_thumb.jpg" /></a></li>
+            <li><a href="/img/work/whitehall/home1.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Homepage (1 of 3)" >
+            <img src="/img/work/whitehall/home1_thumb.jpg" width="200" height="150" /></a></li>
+            <li><a href="/img/work/whitehall/home3.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Homepage (2 of 3)" >
+            <img src="/img/work/whitehall/home3_thumb.jpg" /></a></li>
+            <li><a href="/img/work/whitehall/home2.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Homepage (3 of 3)" >
+            <img src="/img/work/whitehall/home2_thumb.jpg" /></a></li>
+            <li><a href="/img/work/whitehall/advisory.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Advisory" >
+            <img src="/img/work/whitehall/advisory_thumb.jpg" /></a></li>
+            <li><a href="/img/work/whitehall/equity.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Equity Solutions" >
+            <img src="/img/work/whitehall/equity_thumb.jpg" /></a></li>
+            <li><a href="/img/work/whitehall/careers.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Careers" >
+            <img src="/img/work/whitehall/careers_thumb.jpg" /></a></li>
+            <li><a href="/img/work/whitehall/mtm.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Monitoring the Markets (webpage)" >
+            <img src="/img/work/whitehall/mtm_thumb.jpg" /></a></li>
+            <li><a href="/img/work/whitehall/mtmemail.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Monitoring the Markets (email)" >
+            <img src="/img/work/whitehall/mtmemail_thumb.jpg" /></a></li>
+            <li><a href="/img/work/whitehall/mtm3.jpg" rel="shadowbox[Whitehall Samples]" title="Whitehall - Monitoring the Markets (document)" >
+            <img src="/img/work/whitehall/mtm3_thumb.jpg" /></a></li>
         </ul>
         </div>
         <!-- END GALLERY -->

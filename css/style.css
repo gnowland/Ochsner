@@ -228,6 +228,7 @@ a#plax {
 	overflow: visible;
 	display: inline;
 	height: 130%;
+	text-decoration: none;
 }
 
 img#plax-back {
@@ -336,35 +337,35 @@ img#plax-front {
 	cursor:pointer;
 }
 
-.contact .boximage {
+.Contact .boximage {
 	background-image:url(../img/boxes/contact.jpg);
 }
 
-.whitehall .boximage {
+.Whitehall .boximage {
 	background-image: url(../img/boxes/whitehall.jpg);
 }
 
-.loso .boximage {
+.LOSO .boximage {
 	background-image: url(../img/boxes/loso.jpg);
 }
 
-.delride .boximage {
+.DelRide .boximage {
 	background-image: url(../img/boxes/delride.jpg);
 }
 
-.udress .boximage {
+.UDress .boximage {
 	background-image: url(../img/boxes/udress.jpg);
 }
 
-.backcountry .boximage {
+.Backcountry .boximage {
 	background-image: url(../img/boxes/csbs.jpg);
 }
 
-.edgemoor .boximage {
+.Edgemoor .boximage {
 	background-image: url(../img/boxes/ecc.jpg);
 }
 
-.queen .boximage {
+.Queen .boximage {
 	background-image:url(../img/boxes/queen.jpg);
 }
 

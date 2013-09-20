@@ -1,15 +1,15 @@
         <div class="gallerywrap fade">
         <ul class="gallery"><!-- IMAGE GALLERY -->
-            <li><a href="img/work/csbs/7.png" rel="shadowbox[CSBS Samples]" title="" >
-            <img src="img/work/csbs/7_thumb.jpg" /></a></li>
-            <li><a href="img/work/csbs/8.png" rel="shadowbox[CSBS Samples]" title="" >
-            <img src="img/work/csbs/8_thumb.jpg" /></a></li>
-            <li><a href="img/work/csbs/3.png" rel="shadowbox[CSBS Samples]" title="" >
-            <img src="img/work/csbs/3_thumb.jpg" /></a></li>
-            <li><a href="img/work/csbs/4.png" rel="shadowbox[CSBS Samples]" title="" >
-            <img src="img/work/csbs/4_thumb.jpg" /></a></li>
-            <li><a href="img/work/csbs/9.png" rel="shadowbox[CSBS Samples]" title="" >
-            <img src="img/work/csbs/9_thumb.jpg" /></a></li>
+            <li><a href="/img/work/csbs/7.png" rel="shadowbox[CSBS Samples]" title="" >
+            <img src="/img/work/csbs/7_thumb.jpg" /></a></li>
+            <li><a href="/img/work/csbs/8.png" rel="shadowbox[CSBS Samples]" title="" >
+            <img src="/img/work/csbs/8_thumb.jpg" /></a></li>
+            <li><a href="/img/work/csbs/3.png" rel="shadowbox[CSBS Samples]" title="" >
+            <img src="/img/work/csbs/3_thumb.jpg" /></a></li>
+            <li><a href="/img/work/csbs/4.png" rel="shadowbox[CSBS Samples]" title="" >
+            <img src="/img/work/csbs/4_thumb.jpg" /></a></li>
+            <li><a href="/img/work/csbs/9.png" rel="shadowbox[CSBS Samples]" title="" >
+            <img src="/img/work/csbs/9_thumb.jpg" /></a></li>
         </ul>
         </div>
         <!-- END GALLERY -->

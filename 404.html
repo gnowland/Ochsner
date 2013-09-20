@@ -1,0 +1,115 @@
+<!DOCTYPE html><head>
+<!-- THIS WEBSITE MADE WITH LOVE; BAKED FROM SCRATCH USING ONLY THE FINEST INGREDIENTS.
+ALL RIGHTS RESERVED GIFFORD NOWLAND (c) MMXIII, EXCEPT WHERE OTHERWISE CREDITED.
+Contact: http://giffordnowland.com
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>404 - PAGE NOT FOUND</title>
+<!--Icon Files-->
+<link rel="shortcut icon" type="image/x-icon" href="http://www.giffordnowland.com/img/icon/favicon.ico" />
+<link rel="apple-touch-icon" href="http://www.giffordnowland.com/img/icon/apple-touch-icon-iphone.png" /> 
+<link rel="apple-touch-icon" sizes="72x72" href="http://www.giffordnowland.com/img/icon/apple-touch-icon-ipad.png" /> 
+<link rel="apple-touch-icon" sizes="114x114" href="http://www.giffordnowland.com/img/icon/apple-touch-icon-iphone4.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="http://www.giffordnowland.com/img/icon/apple-touch-icon-ipad3.png" />
+<!--INTERNAL CSS-->
+<style type="text/css">
+#error404 {width: 390px; margin:10% auto 0 auto; }
+#error404 h1 {
+font-size: 41px;
+font-weight: 400;
+font-family: "Alfa Slab One", sans-serif;
+color: #4A4A4A;
+line-height: 100%;
+padding: 0 0 10% 0;
+margin: 0 auto;
+-webkit-text-shadow: 0px -1px 0px rgba(74, 74, 74, 0.75);
+   -moz-text-shadow: 0px -1px 0px rgba(74, 74, 74, 0.75);
+	    text-shadow: 0px -1px 0px rgba(74, 74, 74, 0.75);
+}
+#error404 p {
+text-align: center;
+font-family: Quicksand;
+font-size: 17px;
+font-weight: 400;
+padding: 1.5% 0;
+}
+
+.opaqueness {
+width: 100%;
+height: 100%;
+background: #FAFAFA;
+}
+
+@media screen and (max-width: 400px){
+	#error404 {width: 300px;}
+}
+</style>
+
+<!--CSS Files-->
+<link href="http://www.giffordnowland.com/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="http://www.giffordnowland.com/css/style.css" rel="stylesheet" type="text/css" />
+<link href="http://www.giffordnowland.com/css/css3.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One:400|Quicksand:400|Montserrat:700' rel='stylesheet' type='text/css' />
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+<!--[if gte IE 9]><style type="text/css"> .gradient {filter: none;}</style><![endif]-->
+</head>
+
+<body>
+<!--MASTHEAD ==================================================================================================================================== -->
+
+<header>
+	<div class="opaqueness">
+ 	<div id="name">
+    <div class="left">GIFFORD </div><!-- no space here
+ --><br class="rwd-break"><div class="right">NOWLAND</div>
+	</div>
+    <a href="/index.html" id="plax" style="position:static;">
+      <img src="http://www.giffordnowland.com/img/GNlogo_sketchy_back.png" style="position: absolute;" id="plax-back" />
+      <img src="http://www.giffordnowland.com/img/GNlogo_sketchy_front.png" style="position: absolute;" id="plax-front" />
+    </a>
+    <div class="gradient-border gradient"></div>
+</div></div></header>
+<!-- END MASTHEAD -->
+<!-- CONTENTWINDOW ============================================================================================================================== -->
+<div id="contentwindow" style="overflow:auto">
+<div id="error404">
+<h1>
+404 &mdash; <br />page not found.
+</h1>
+<p>Shoot, it looks like I missed a bug...</p>
+<p>Kindly <a href="/index.html">return to the homepage</a> &amp; try again.</p>
+<p>Feeling helpful? <i>Tell me about what happened!</i></p>
+</div>
+</div><!-- END CONTENTWINDOW -->
+
+<!-- LOAD SCRIPTS -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.giffordnowland.com/js/windowresize.js"></script>
+<script type="text/javascript" src="http://www.giffordnowland.com/js/jquery.fittext.js"></script>
+<script type="text/javascript" src="http://browserstate.github.io/history.js/scripts/bundled/html4+html5/jquery.history.js"></script>
+
+<!-- INLINE SCRIPTS -->
+<script type="text/javascript">
+//ON PAGE LOAD RUN....
+$(document).ready(function () {
+    //HISTORY PUSHSTATE
+    var home = '/404.html';
+    history.pushState({page:home}, null, home);
+});//END ONPAGELOAD
+</script>
+
+<!-- GOOGLE ANALYTICS -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43887306-1', 'giffordnowland.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

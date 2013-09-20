@@ -1,55 +1,55 @@
         <div class="gallerywrap fade">
         <ul class="gallery"><!-- IMAGE GALLERY -->
-            <li><a href="img/work/queen/2.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/2_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/3.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/3_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/03.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/03_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/4.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/4_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/6.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/6_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/7.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/7_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/8.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/8_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/9.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/9_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/16.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/16_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/12.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/12_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/19.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/19_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/13.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/13_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/17.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/17_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/18.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/18_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/20.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/20_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/21.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/21_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/22.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/22_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/23.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/23_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/24.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/24_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/25.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/25_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/26.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/26_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/27.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/27_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/28.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/28_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/29.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/29_thumb.jpg" /></a></li>
-            <li><a href="img/work/queen/30.jpg" rel="shadowbox[Queen Samples]" title="" >
-            <img src="img/work/queen/30_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/2.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/2_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/3.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/3_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/03.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/03_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/4.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/4_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/6.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/6_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/7.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/7_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/8.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/8_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/9.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/9_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/16.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/16_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/12.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/12_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/19.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/19_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/13.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/13_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/17.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/17_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/18.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/18_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/20.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/20_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/21.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/21_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/22.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/22_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/23.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/23_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/24.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/24_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/25.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/25_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/26.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/26_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/27.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/27_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/28.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/28_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/29.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/29_thumb.jpg" /></a></li>
+            <li><a href="/img/work/queen/30.jpg" rel="shadowbox[Queen Samples]" title="" >
+            <img src="/img/work/queen/30_thumb.jpg" /></a></li>
             
         </ul>
         </div>

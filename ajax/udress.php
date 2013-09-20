@@ -1,41 +1,41 @@
         <div class="gallerywrap fade">
         <ul class="gallery"><!-- IMAGE GALLERY -->
-            <li><a href="img/work/udress/14.jpg" rel="shadowbox[UDress Samples]" title="" >
-            <img src="img/work/udress/14_thumb.jpg" /></a></li>
-            <li><a href="img/work/udress/17.jpg" rel="shadowbox[UDress Samples]" title="" >
-            <img src="img/work/udress/17_thumb.jpg" /></a></li>
-            <li><a href="img/work/udress/7.jpg" rel="shadowbox[UDress Samples]" title="" >
-            <img src="img/work/udress/7_thumb.jpg" /></a></li>
-            <li><a href="img/work/udress/8.jpg" rel="shadowbox[UDress Samples]" title="" >
-            <img src="img/work/udress/8_thumb.jpg" /></a></li>
-            <li><a href="img/work/udress/9.jpg" rel="shadowbox[UDress Samples]" title="" >
-            <img src="img/work/udress/9_thumb.jpg" /></a></li>
-            <li><a href="img/work/udress/16.jpg" rel="shadowbox[UDress Samples]" title="" >
-            <img src="img/work/udress/16_thumb.jpg" /></a></li>
-            <li><a href="img/work/udress/10.jpg" rel="shadowbox[UDress Samples]" title="" >
-            <img src="img/work/udress/10_thumb.jpg" /></a></li>
-            <li><a href="img/work/udress/15.jpg" rel="shadowbox[UDress Samples]" title="" >
-            <img src="img/work/udress/15_thumb.jpg" /></a></li>
-            <li><a href="img/work/udress/13.jpg" rel="shadowbox[UDress Samples]" title="" >
-            <img src="img/work/udress/13_thumb.jpg" /></a></li>
-            <li><a href="img/work/udress/18.jpg" rel="shadowbox[UDress Samples]" title="" >
-            <img src="img/work/udress/18_thumb.jpg" /></a></li>
-            <li><a href="img/work/udress/11.jpg" rel="shadowbox[UDress Samples]" title="" >
-            <img src="img/work/udress/11_thumb.jpg" /></a></li>
-            <li><a href="img/work/udress/19.jpg" rel="shadowbox[UDress Samples]" title="" >
-            <img src="img/work/udress/19_thumb.jpg" /></a></li>
-            <li><a href="img/work/udress/6.png" rel="shadowbox[UDress Samples]" title="" >
-            <img src="img/work/udress/6_thumb.jpg" /></a></li>
-            <li><a href="img/work/udress/1.png" rel="shadowbox[UDress Samples]" title="" >
-            <img src="img/work/udress/1_thumb.jpg" /></a></li>
-            <li><a href="img/work/udress/2.png" rel="shadowbox[UDress Samples]" title="" >
-            <img src="img/work/udress/2_thumb.jpg" /></a></li>
-            <li><a href="img/work/udress/3.png" rel="shadowbox[UDress Samples]" title="" >
-            <img src="img/work/udress/3_thumb.jpg" /></a></li>
-            <li><a href="img/work/udress/4.png" rel="shadowbox[UDress Samples]" title="" >
-            <img src="img/work/udress/4_thumb.jpg" /></a></li>
-            <li><a href="img/work/udress/5.png" rel="shadowbox[UDress Samples]" title="" >
-            <img src="img/work/udress/5_thumb.jpg" /></a></li>
+            <li><a href="/img/work/udress/14.jpg" rel="shadowbox[UDress Samples]" title="" >
+            <img src="/img/work/udress/14_thumb.jpg" /></a></li>
+            <li><a href="/img/work/udress/17.jpg" rel="shadowbox[UDress Samples]" title="" >
+            <img src="/img/work/udress/17_thumb.jpg" /></a></li>
+            <li><a href="/img/work/udress/7.jpg" rel="shadowbox[UDress Samples]" title="" >
+            <img src="/img/work/udress/7_thumb.jpg" /></a></li>
+            <li><a href="/img/work/udress/8.jpg" rel="shadowbox[UDress Samples]" title="" >
+            <img src="/img/work/udress/8_thumb.jpg" /></a></li>
+            <li><a href="/img/work/udress/9.jpg" rel="shadowbox[UDress Samples]" title="" >
+            <img src="/img/work/udress/9_thumb.jpg" /></a></li>
+            <li><a href="/img/work/udress/16.jpg" rel="shadowbox[UDress Samples]" title="" >
+            <img src="/img/work/udress/16_thumb.jpg" /></a></li>
+            <li><a href="/img/work/udress/10.jpg" rel="shadowbox[UDress Samples]" title="" >
+            <img src="/img/work/udress/10_thumb.jpg" /></a></li>
+            <li><a href="/img/work/udress/15.jpg" rel="shadowbox[UDress Samples]" title="" >
+            <img src="/img/work/udress/15_thumb.jpg" /></a></li>
+            <li><a href="/img/work/udress/13.jpg" rel="shadowbox[UDress Samples]" title="" >
+            <img src="/img/work/udress/13_thumb.jpg" /></a></li>
+            <li><a href="/img/work/udress/18.jpg" rel="shadowbox[UDress Samples]" title="" >
+            <img src="/img/work/udress/18_thumb.jpg" /></a></li>
+            <li><a href="/img/work/udress/11.jpg" rel="shadowbox[UDress Samples]" title="" >
+            <img src="/img/work/udress/11_thumb.jpg" /></a></li>
+            <li><a href="/img/work/udress/19.jpg" rel="shadowbox[UDress Samples]" title="" >
+            <img src="/img/work/udress/19_thumb.jpg" /></a></li>
+            <li><a href="/img/work/udress/6.png" rel="shadowbox[UDress Samples]" title="" >
+            <img src="/img/work/udress/6_thumb.jpg" /></a></li>
+            <li><a href="/img/work/udress/1.png" rel="shadowbox[UDress Samples]" title="" >
+            <img src="/img/work/udress/1_thumb.jpg" /></a></li>
+            <li><a href="/img/work/udress/2.png" rel="shadowbox[UDress Samples]" title="" >
+            <img src="/img/work/udress/2_thumb.jpg" /></a></li>
+            <li><a href="/img/work/udress/3.png" rel="shadowbox[UDress Samples]" title="" >
+            <img src="/img/work/udress/3_thumb.jpg" /></a></li>
+            <li><a href="/img/work/udress/4.png" rel="shadowbox[UDress Samples]" title="" >
+            <img src="/img/work/udress/4_thumb.jpg" /></a></li>
+            <li><a href="/img/work/udress/5.png" rel="shadowbox[UDress Samples]" title="" >
+            <img src="/img/work/udress/5_thumb.jpg" /></a></li>
         </ul>
         </div>
         <!-- END GALLERY -->

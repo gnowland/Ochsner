@@ -1,27 +1,27 @@
         <div class="gallerywrap fade">
         <ul class="gallery"><!-- IMAGE GALLERY -->
-        	<li><a href="img/work/delride/10.jpg" rel="shadowbox[Delride Samples]" title="" >
-            <img src="img/work/delride/10_thumb.jpg" /></a></li>
-        	<li><a href="img/work/delride/11.jpg" rel="shadowbox[Delride Samples]" title="Current placeholder site" >
-            <img src="img/work/delride/11_thumb.jpg" /></a></li>
-        	<li><a href="img/work/delride/12.jpg" rel="shadowbox[Delride Samples]" title="Second Drupal iteration" >
-            <img src="img/work/delride/12_thumb.jpg" /></a></li>
-        	<li><a href="img/work/delride/13.jpg" rel="shadowbox[Delride Samples]" title="Second Drupal iteration" >
-            <img src="img/work/delride/13_thumb.jpg" /></a></li>
-        	<li><a href="img/work/delride/14.jpg" rel="shadowbox[Delride Samples]" title="Second Drupal iteration" >
-            <img src="img/work/delride/14_thumb.jpg" /></a></li>                        
-            <li><a href="img/work/delride/8.jpg" rel="shadowbox[Delride Samples]" title="Second Drupal iteration" >
-            <img src="img/work/delride/8_thumb.jpg" /></a></li>
+        	<li><a href="/img/work/delride/10.jpg" rel="shadowbox[Delride Samples]" title="" >
+            <img src="/img/work/delride/10_thumb.jpg" /></a></li>
+        	<li><a href="/img/work/delride/11.jpg" rel="shadowbox[Delride Samples]" title="Current placeholder site" >
+            <img src="/img/work/delride/11_thumb.jpg" /></a></li>
+        	<li><a href="/img/work/delride/12.jpg" rel="shadowbox[Delride Samples]" title="Second Drupal iteration" >
+            <img src="/img/work/delride/12_thumb.jpg" /></a></li>
+        	<li><a href="/img/work/delride/13.jpg" rel="shadowbox[Delride Samples]" title="Second Drupal iteration" >
+            <img src="/img/work/delride/13_thumb.jpg" /></a></li>
+        	<li><a href="/img/work/delride/14.jpg" rel="shadowbox[Delride Samples]" title="Second Drupal iteration" >
+            <img src="/img/work/delride/14_thumb.jpg" /></a></li>                        
+            <li><a href="/img/work/delride/8.jpg" rel="shadowbox[Delride Samples]" title="Second Drupal iteration" >
+            <img src="/img/work/delride/8_thumb.jpg" /></a></li>
             <li><a rel="shadowbox[Delride Samples];width=576;height=324;player=swf" title="Intro Flash video" href="http://www.youtube.com/v/8rXyjzk2uxI">
-            <img src="img/work/delride/udsnowintro_thumb.jpg" /></a></li>
-            <li><a href="img/work/delride/4.jpg" rel="shadowbox[Delride Samples]" title="First Drupal iteration" >
-            <img src="img/work/delride/4_thumb.jpg" /></a></li>
-            <li><a href="img/work/delride/2.jpg" rel="shadowbox[Delride Samples]" title="First Drupal iteration" >
-            <img src="img/work/delride/2_thumb.jpg" /></a></li>
-            <li><a href="img/work/delride/3.jpg" rel="shadowbox[Delride Samples]" title="First Drupal iteration" >
-            <img src="img/work/delride/3_thumb.jpg" /></a></li>
-            <li><a href="img/work/delride/1.png" rel="shadowbox[Delride Samples]" title="First Drupal iteration" >
-            <img src="img/work/delride/1_thumb.jpg" /></a></li>
+            <img src="/img/work/delride/udsnowintro_thumb.jpg" /></a></li>
+            <li><a href="/img/work/delride/4.jpg" rel="shadowbox[Delride Samples]" title="First Drupal iteration" >
+            <img src="/img/work/delride/4_thumb.jpg" /></a></li>
+            <li><a href="/img/work/delride/2.jpg" rel="shadowbox[Delride Samples]" title="First Drupal iteration" >
+            <img src="/img/work/delride/2_thumb.jpg" /></a></li>
+            <li><a href="/img/work/delride/3.jpg" rel="shadowbox[Delride Samples]" title="First Drupal iteration" >
+            <img src="/img/work/delride/3_thumb.jpg" /></a></li>
+            <li><a href="/img/work/delride/1.png" rel="shadowbox[Delride Samples]" title="First Drupal iteration" >
+            <img src="/img/work/delride/1_thumb.jpg" /></a></li>
         </ul>
         </div>
         <!-- END GALLERY -->

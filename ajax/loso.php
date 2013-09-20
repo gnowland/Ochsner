@@ -1,25 +1,25 @@
         <div class="gallerywrap fade">
         <ul class="gallery"><!-- IMAGE GALLERY -->
-            <li><a href="img/work/loso/8.jpg" rel="shadowbox[Loso Samples]" title="Original LoSo app" >
-            <img src="img/work/loso/8_thumb.jpg" /></a></li>
+            <li><a href="/img/work/loso/8.jpg" rel="shadowbox[Loso Samples]" title="Original LoSo app" >
+            <img src="/img/work/loso/8_thumb.jpg" /></a></li>
 			<li><a rel="shadowbox[Loso Samples];width=576;height=324;player=swf" title="LoSo News Coverage" href="http://www.youtube.com/v/Dc4vjexIFYc">
-            <img src="img/work/loso/vid1_thumb.jpg" /></a></li>
-            <li><a href="img/work/loso/1.jpg" rel="shadowbox[Loso Samples]" title="Original LoSo explanation" >
-            <img src="img/work/loso/1_thumb.jpg" /></a></li>
-            <li><a href="img/work/loso/2.jpg" rel="shadowbox[Loso Samples]" title="QRewards explanation" >
-            <img src="img/work/loso/2_thumb.jpg" /></a></li>
-            <li><a href="img/work/loso/9.jpg" rel="shadowbox[Loso Samples]" title="App screens" >
-            <img src="img/work/loso/9_thumb.jpg" /></a></li>
-            <li><a href="img/work/loso/3.jpg" rel="shadowbox[Loso Samples]" title="App explanation" >
-            <img src="img/work/loso/3_thumb.jpg" /></a></li>
-            <li><a href="img/work/loso/4.jpg" rel="shadowbox[Loso Samples]" title="In-depth app explanation" >
-            <img src="img/work/loso/4_thumb.jpg" /></a></li>
-            <li><a href="img/work/loso/6.jpg" rel="shadowbox[Loso Samples]" title="Rewards explained" >
-            <img src="img/work/loso/6_thumb.jpg" /></a></li>
-            <li><a href="img/work/loso/7.jpg" rel="shadowbox[Loso Samples]" title="Code snippet from video sumbission form" >
-            <img src="img/work/loso/7_thumb.jpg" /></a></li>
-			<li><a href="img/work/loso/5.jpg" rel="shadowbox[Loso Samples]" title="Restaurant Dashboard (part of original LoSo restaurant marketing package)" >
-            <img src="img/work/loso/5_thumb.jpg" /></a></li>
+            <img src="/img/work/loso/vid1_thumb.jpg" /></a></li>
+            <li><a href="/img/work/loso/1.jpg" rel="shadowbox[Loso Samples]" title="Original LoSo explanation" >
+            <img src="/img/work/loso/1_thumb.jpg" /></a></li>
+            <li><a href="/img/work/loso/2.jpg" rel="shadowbox[Loso Samples]" title="QRewards explanation" >
+            <img src="/img/work/loso/2_thumb.jpg" /></a></li>
+            <li><a href="/img/work/loso/9.jpg" rel="shadowbox[Loso Samples]" title="App screens" >
+            <img src="/img/work/loso/9_thumb.jpg" /></a></li>
+            <li><a href="/img/work/loso/3.jpg" rel="shadowbox[Loso Samples]" title="App explanation" >
+            <img src="/img/work/loso/3_thumb.jpg" /></a></li>
+            <li><a href="/img/work/loso/4.jpg" rel="shadowbox[Loso Samples]" title="In-depth app explanation" >
+            <img src="/img/work/loso/4_thumb.jpg" /></a></li>
+            <li><a href="/img/work/loso/6.jpg" rel="shadowbox[Loso Samples]" title="Rewards explained" >
+            <img src="/img/work/loso/6_thumb.jpg" /></a></li>
+            <li><a href="/img/work/loso/7.jpg" rel="shadowbox[Loso Samples]" title="Code snippet from video sumbission form" >
+            <img src="/img/work/loso/7_thumb.jpg" /></a></li>
+			<li><a href="/img/work/loso/5.jpg" rel="shadowbox[Loso Samples]" title="Restaurant Dashboard (part of original LoSo restaurant marketing package)" >
+            <img src="/img/work/loso/5_thumb.jpg" /></a></li>
         </ul>
         </div>
         <!-- END GALLERY -->

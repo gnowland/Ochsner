@@ -5,7 +5,7 @@ $.ajaxSetup({cache: true});
 
 //BOX ANIMATION
 $(window).load(function () {
-    $('#contentwindow').delegate('.box', 'click', function () {
+    $('#contentwindow').delegate('.box', 'click', function openBox () {
 
         if ($('.box.active').length <= 0) {
             $(this).reveal;
@@ -51,13 +51,9 @@ $(window).load(function () {
             //FIND OUT WHICH BOX WAS CLICKED (FOR AJAXING)
             var classnames = this.className.split(' ');
             var boxclicked = classnames[1];
+			var boxnum = parseInt($(this).index() + 1);
             //FIND THE RIGHT PHP PAGE
-            var loadUrl = 'ajax/' + boxclicked + '.php';
-			
-            History.Adapter.bind(window,'statechange',function(){ // Note: We are using statechange instead of popstate
-            var State = History.getState(); // Note: We are using History.getState() instead of event.state
-            });
-
+            var loadUrl = 'ajax/' + boxclicked.toLowerCase() + '.php';
 
     //BOXANIMATE
             //ANIMATE BOX
@@ -73,16 +69,19 @@ $(window).load(function () {
                 $(this).css({'overflow-x': 'hidden', 'overflow-y': 'scroll'});
             //AJAXING
                 $(this).find("#rightcol").html(ajax_load).load(loadUrl, function () {
-                    History.pushState({page:boxclicked}, boxclicked, 'web/' + boxclicked + '/');
-                    //window.location.hash = 'web/' + boxclicked + '/';
+					History.pushState({state: boxnum}, 'GIFFORD NOWLAND - ' + boxclicked, loadUrl);
+                    //window.location.hash = loadUrl;
                     //SHADOWBOX FIXING
-                    Shadowbox.init({ skipSetup: true });
+                    Shadowbox.init({
+                        language: 'en',
+                        players: ['img', 'html', 'iframe', 'qt', 'wmp', 'swf', 'flv', 'gdoc'],
+                        skipSetup: true // delay running setup until you are ready
+                    });
                     Shadowbox.clearCache();
                     Shadowbox.setup();
                 });
             });
-
-
+		 
     //BOXANIMATE
             $('.fade').hide().delay(250).fadeIn(200);  //display:none bug
 
@@ -98,11 +97,14 @@ $(window).load(function () {
 
             $(this).children('img').removeClass('jshiddenimage');
 
-        } //CLOSE ifboxactive
-    }); //CLOSE window load
+        } //CLOSE if boxactive
+    }); //CLOSE boxopen
 
-    $('#contentwindow').delegate('.box.active .boximage', 'click', function () {
 
+	
+    $('#contentwindow').delegate('.box.active .boximage', 'click', function closeBox () {
+		
+		
         var parent = $('.box.active').parent();
         var cloned = $('.box.cloned');
         var h = cloned.outerHeight(true);
@@ -133,6 +135,7 @@ $(window).load(function () {
             cloned.removeClass('cloned').removeClass('inactive');
             cloned.addClass('uncloned');
             cloned.css({'visibility': 'visible'});
+			History.back();
         });
-    });
-});
+    });// CLOSE boxopen
+});//window.load

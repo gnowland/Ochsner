@@ -1,25 +1,25 @@
         <div class="gallerywrap fade">
    <ul class="gallery"><!-- IMAGE GALLERY -->
-        	<li><a rel="shadowbox[ECC Samples];width=798;height=120;player=swf" title="" href="img/work/ecc/header.swf">
-            <img src="img/work/ecc/header_thumb.jpg" /></a></li>
-            <li><a href="img/work/ecc/1.jpg" rel="shadowbox[ECC Samples]" title="" >
-            <img src="img/work/ecc/1_thumb.jpg" /></a></li>
-			<li><a href="img/work/ecc/2.jpg" rel="shadowbox[ECC Samples]" title="" >
-            <img src="img/work/ecc/2_thumb.jpg" /></a></li>
-			<li><a href="img/work/ecc/4.jpg" rel="shadowbox[ECC Samples]" title="" >
-            <img src="img/work/ecc/4_thumb.jpg" /></a></li>
-			<li><a href="img/work/ecc/6.jpg" rel="shadowbox[ECC Samples]" title="" >
-            <img src="img/work/ecc/6_thumb.jpg" /></a></li>
-			<li><a href="img/work/ecc/7.jpg" rel="shadowbox[ECC Samples]" title="" >
-            <img src="img/work/ecc/7_thumb.jpg" /></a></li>
-			<li><a href="img/work/ecc/8.jpg" rel="shadowbox[ECC Samples]" title="" >
-            <img src="img/work/ecc/8_thumb.jpg" /></a></li>
-			<li><a href="img/work/ecc/9.png" rel="shadowbox[ECC Samples]" title="" >
-            <img src="img/work/ecc/9_thumb.jpg" /></a></li>
-			<li><a href="img/work/ecc/10.png" rel="shadowbox[ECC Samples]" title="" >
-            <img src="img/work/ecc/10_thumb.jpg" /></a></li>
-			<li><a href="img/work/ecc/11.png" rel="shadowbox[ECC Samples]" title="" >
-            <img src="img/work/ecc/11_thumb.jpg" /></a></li>
+        	<li><a rel="shadowbox[ECC Samples];width=798;height=120;player=swf" title="" href="/img/work/ecc/header.swf">
+            <img src="/img/work/ecc/header_thumb.jpg" /></a></li>
+            <li><a href="/img/work/ecc/1.jpg" rel="shadowbox[ECC Samples]" title="" >
+            <img src="/img/work/ecc/1_thumb.jpg" /></a></li>
+			<li><a href="/img/work/ecc/2.jpg" rel="shadowbox[ECC Samples]" title="" >
+            <img src="/img/work/ecc/2_thumb.jpg" /></a></li>
+			<li><a href="/img/work/ecc/4.jpg" rel="shadowbox[ECC Samples]" title="" >
+            <img src="/img/work/ecc/4_thumb.jpg" /></a></li>
+			<li><a href="/img/work/ecc/6.jpg" rel="shadowbox[ECC Samples]" title="" >
+            <img src="/img/work/ecc/6_thumb.jpg" /></a></li>
+			<li><a href="/img/work/ecc/7.jpg" rel="shadowbox[ECC Samples]" title="" >
+            <img src="/img/work/ecc/7_thumb.jpg" /></a></li>
+			<li><a href="/img/work/ecc/8.jpg" rel="shadowbox[ECC Samples]" title="" >
+            <img src="/img/work/ecc/8_thumb.jpg" /></a></li>
+			<li><a href="/img/work/ecc/9.png" rel="shadowbox[ECC Samples]" title="" >
+            <img src="/img/work/ecc/9_thumb.jpg" /></a></li>
+			<li><a href="/img/work/ecc/10.png" rel="shadowbox[ECC Samples]" title="" >
+            <img src="/img/work/ecc/10_thumb.jpg" /></a></li>
+			<li><a href="/img/work/ecc/11.png" rel="shadowbox[ECC Samples]" title="" >
+            <img src="/img/work/ecc/11_thumb.jpg" /></a></li>
         </ul>
         </div>
         <!-- END GALLERY -->

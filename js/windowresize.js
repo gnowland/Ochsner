@@ -70,3 +70,4 @@ var newsize = function () {
 
 // usage:
 $(window).smartresize(newsize);
+$(document).ready(newsize); 

@@ -71,13 +71,16 @@ var newsize = function () {
 		//BOXIMAGE Resize
 		var leftcolw = $('.active').find('#leftcol').outerWidth(true);
 		var spleftcolw = leftcolw * .7;
-		$('.boximage').css({'height': leftcolw * .7 + 'px'});
+		$('.boximage').css({'height': spleftcolw + 'px'});
+		$('.active').find('#backarrow').css({'width': spleftcolw * .3 + 'px','height': spleftcolw * .3 + 'px'});
 		 
     };
 
 // usage:
 $(window).smartresize(newsize);
 $(document).ready(newsize);
+window.addEventListener("orientationchange", newsize);
+
 $(window).load(function () {
 	var ch = ($(window).height() - $('#contentwindow').offset().top) - ($('#contentwindow').outerHeight(true) - $('#contentwindow').height())
 	$('#contentwindow').css({'height': ch + 'px'});

@@ -69,33 +69,39 @@ $(window).load(function () {
                 $(this).css({'overflow-x': 'hidden', 'overflow-y': 'scroll'});
             //AJAXING
                 $(this).find("#rightcol").html(ajax_load).load(loadUrl, function () {
-					history.replaceState({state:1}, 'GIFFORD NOWLAND - ' + boxclicked, "index.html#!" + boxclicklc)
+					history.replaceState({state:1}, 'GIFFORD NOWLAND - ' + boxclicked, "index.html#!" + boxclicklc);
 					//window.location.hash = '#!/' + boxclicklc;
-                    //SHADOWBOX FIXING
-                    Shadowbox.init({
-                        language: 'en',
-                        players: ['img', 'html', 'iframe', 'qt', 'wmp', 'swf', 'flv', 'gdoc'],
-                        skipSetup: true // delay running setup until you are ready
+                //SHADOWBOX FIXING
+                Shadowbox.init({
+                    language: 'en',
+                    players: ['img', 'html', 'iframe', 'qt', 'wmp', 'swf', 'flv', 'gdoc'],
+                    skipSetup: true // delay running setup until you are ready
                     });
-                    Shadowbox.clearCache();
-                    Shadowbox.setup();
+                Shadowbox.clearCache();
+                Shadowbox.setup();
                 });
             });
 		 
     //BOXANIMATE
-            $('.fade').hide().delay(250).fadeIn(200);  //display:none bug
-
-        //Second Animation (image) 
-            var bnewh = biwh * 0.7;
+            $('.fade').hide().delay(250).fadeIn(200);  //display:none bug MUST KEEP
+	
+        //BOX SIZE VARIABLES
+	        var bnewh = biwh * 0.7;
+            var backwh = bnewh * 0.3;
 			
+        //Second Animation (image) 
             $('.boximage').delay(700).animate({
                 'width': 70 + '%',
                 'height': bnewh + 'px',
                 'margin-left': '15%',
                 'margin-top': '5%',
                 'margin-bottom': '-45%'
-            }, 600);
-
+            }, 600, function () {
+			//ADD BACKARROW
+			$(this).find('#backarrow').fadeIn(300).css({'width': backwh + 'px','height': backwh + 'px', 'display': 'block'});
+			});
+			
+				
             $(this).children('img').removeClass('jshiddenimage');
 
         } //CLOSE if boxactive
@@ -104,7 +110,6 @@ $(window).load(function () {
 
 	
     $('#contentwindow').delegate('.box.active .boximage', 'click', function closeBox () {
-		
 		
         var parent = $('.box.active').parent();
         var cloned = $('.box.cloned');
@@ -120,6 +125,7 @@ $(window).load(function () {
             padding : '0',
             margin : '0'
         }, 500, function () {
+			$(this).find('#backarrow').css({'display': 'none'});
             cloned.css({'overflow': 'hidden'});
             parent.css({'overflow-y': 'scroll', 'overflow-x': 'hidden'});
         });

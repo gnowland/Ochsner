@@ -429,8 +429,31 @@ height: 171px;
 
 .sitelink {word-wrap:break-word;}
 
-/*IFRAME --------------------------------------------------------------------------- */
 .iframe {width:100%;}
+
+.iframe.resume {
+	padding: 0 2%;
+	width: 96%;
+}
+
+.loadingimg {
+	margin: 20% auto;
+	width:48px;
+	position: ;
+}
+
+#backarrow {
+display:none;
+background-image:url(../img/pagecurl.png);
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: top left;
+width: 30%;
+height: 51px;
+float: right;
+margin-right: -6px;
+background-color: transparent;
+}
 
 /*RIBBON --------------------------------------------------------------------------- */
 .ribbon {
@@ -494,9 +517,4 @@ display: none!important;
 	overflow: scroll;
 	position: absolute;
 	top: -9999px;
-}
-
-.loadingimg {
-	margin-top: 20%;
-	position: absolute;
 }

@@ -79,11 +79,11 @@ header, footer, aside, nav, article {
 		margin: 4%;}
 	
 	/*HEADER*/
-	#name { bottom:7%; padding-left: 10%; width:28%; letter-spacing:.4em; }
+	#name { bottom:7%; padding-left: 10%; padding-top:0.5%; width:28%; letter-spacing:.4em; }
 	.left {letter-spacing:.3em; margin-left:-4px; width:auto;}
 	.right { letter-spacing:.15em;}
 	img#plax-back {padding-left:67%;}
-	img#plax-front {padding-left:67%;}
+	img#plax-front {padding-left:67%; padding-right:0;}
 	header {min-height: 45px;}
 	
 	/*CONTENTWINDOW*/

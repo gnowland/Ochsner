@@ -68,6 +68,11 @@ var newsize = function () {
         var headerheight = $('header').outerHeight(true);
 		//CONTENT PADDING
         $('#contentwindow').css({'padding-top': headerheight + 5 + 'px'});
+		//BOXIMAGE Resize
+		var leftcolw = $('.active').find('#leftcol').outerWidth(true);
+		var spleftcolw = leftcolw * .7;
+		$('.boximage').css({'height': leftcolw * .7 + 'px'});
+		 
     };
 
 // usage:

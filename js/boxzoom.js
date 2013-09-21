@@ -25,9 +25,9 @@ $(window).load(function () {
             var contentheight = (($(window).height() - mastheight) / $(window).height()) * 100;
 
        //setting widths and heights and such
-            $('.boximage').css({width: biwh + 'px', height: biwh + 'px'});
+            $('.boximage').css({'width': biwh + 'px', 'height': biwh + 'px'});
 
-            $(this).find('#leftcol').css({width: pctheightl + 0.5 + '%' }); //remove the absolute link someday 
+            $(this).find('#leftcol').css({'width': pctheightl + 0.5 + '%' }); //remove the absolute link someday 
             $(this).find('#rightcol').css({'width': pctheightr - 0.5 + '%'});
             if (pctheightr < 45) {$(this).find('#rightcol').css({'width': 100 + '%', 'float' : 'none'}); }
 
@@ -89,8 +89,8 @@ $(window).load(function () {
             var bnewh = biwh * 0.7;
 			
             $('.boximage').delay(700).animate({
-                width: '70%',
-                height: bnewh + 'px',
+                'width': 70 + '%',
+                'height': bnewh + 'px',
                 'margin-left': '15%',
                 'margin-top': '5%',
                 'margin-bottom': '-45%'

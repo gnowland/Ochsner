@@ -40,8 +40,7 @@ header, footer, aside, nav, article {
 		width: 46%;
 		padding-bottom: 46%;
 		margin: 1%;}
-		#rightcol{float:left;}
-  	 	#leftcol{float:left;}
+
 }
 
 /*@media screen and (max-width: 700px){

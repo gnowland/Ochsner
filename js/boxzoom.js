@@ -87,6 +87,7 @@ $(window).load(function () {
 
         //Second Animation (image) 
             var bnewh = biwh * 0.7;
+			
             $('.boximage').delay(700).animate({
                 width: '70%',
                 height: bnewh + 'px',

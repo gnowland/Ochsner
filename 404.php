@@ -128,70 +128,12 @@ opacity: 0.8;
 	#error404 {width: 300px;}
 }
 </style>
-
-<?php
-    $name = Trim(stripslashes($_POST['name']));
-    $email = Trim(stripslashes($_POST['email']));
-    $message = Trim(stripslashes($_POST['message']));
-    $EmailFrom = "404 Page <404@giffordnowland.com>";
-    $EmailTo = "Gifford Nowland <404@giffordnowland.com>"; 
-    $subject = "404 Error";
-    $human = $_POST['human'];
-	
-	// validation
-	$validationOK=true;
-	if (!$validationOK) {
-	  ?>
-	    <script type="text/javascript">
-		  alert("Something went wrong, please try submitting again.");
-		  history.back();
-	    </script>
-	  <?php 
-	  exit;
-	}
-			
-    $body = "From: $name\nE-Mail: $email\nMessage:\n $message";
-				
-    if ($_POST['submit']) {
-    if ($name != '' && $email != '') {
-        if ($human == '12') {				 
-            if (mail ($EmailTo, $subject, $body, "From: <$EmailFrom>")) { 
-			?>
-			  <script type="text/javascript">
-                alert("Your message has been sent!\nYou will now be taken to the homepage.");
-				window.location = '/';
-              </script>
-			<?php
-	    } else { 
-	        ?>
-			  <script type="text/javascript">
-                alert("Something went wrong, please try submitting again.");
-				history.back();
-              </script>
-			<?php 
-	    } 
-	} else if ($_POST['submit'] && $human != '12') {
-	    ?>
-		  <script type="text/javascript">
-            alert("The anti-spam question was answered incorrectly!");
-			history.back();
-          </script>
-        <?php
-	}
-    } else {
-	    ?>
-		  <script type="text/javascript">
-            alert("Please fill in all required fields.");
-			history.back();
-          </script>
-        <?php
-    }
-    }
-?>
 </head>
 
 <body>
-
+<?php 
+$thispage='http://'.$_SERVER[HTTP_HOST]."".$_SERVER["REQUEST_URI"];
+?>
 
 
 <!--MASTHEAD ==================================================================================================================================== -->
@@ -218,19 +160,22 @@ opacity: 0.8;
 <p>Shoot, it looks like I missed a bug...</p>
 <p>Kindly <a href="/index.html">return to the homepage</a> &amp; try again.</p>
 <p>Feeling helpful? <i>Tell me about what happened!</i></p>
-<form method="post" action="404.php">
+<form method="post" action="/php/sendmail.php">
         
     <label class="required">Name</label>
-    <input name="name" placeholder="First and Last Name">
+    <input name="name" placeholder="First and Last Name" type="text" maxlength="50">
             
     <label class="required">Email Address</label>
-    <input name="email" type="email" placeholder="Your Email Address">
+    <input name="email" type="email" placeholder="Your Email Address" maxlength="50">
             
     <label class="required">Message</label>
-    <textarea name="message" placeholder="Type Here"></textarea>
+    <textarea name="message" placeholder="Type Here" maxlength="1000"></textarea>
     
     <label class="required">What is 10+2? (anti-spam)</label>
-	<input name="human" placeholder="Type Answer">
+	<input name="human" placeholder="Type Answer" maxlength="2">
+    
+    <input type="hidden" name="currentpage" value="<?php echo $thispage; ?>">
+    <input type="hidden" name="formname" value="404">
 
     <legend>Fields marked with * are required.</legend>        
     <input id="submit" name="submit" type="submit" value="Submit">

@@ -92,6 +92,14 @@ input:focus, textarea:focus {
     border:1px solid #97d6eb;
 }
 
+input[readonly] {
+border: none;
+background: transparent;
+padding: 0 0 2% 0;
+width: 100%;
+color: #8e8e8e;
+}
+
 .required {
  color: black;       
 }
@@ -101,10 +109,9 @@ input:focus, textarea:focus {
  font-weight:700;
 }
 
-
 legend {
 font-style:italic;
-color:#999;
+color:#8e8e8e;
 margin:10px auto 0;
 font-size:10px;
 }
@@ -171,10 +178,12 @@ $thispage='http://'.$_SERVER[HTTP_HOST]."".$_SERVER["REQUEST_URI"];
     <label class="required">Message</label>
     <textarea name="message" placeholder="Type Here" maxlength="1000"></textarea>
     
+    <label>Missing Page's URL:</label>
+    <input type="text" name="currentpage" value="<?php echo $thispage; ?>" readonly>
+    
     <label class="required">What is 10+2? (anti-spam)</label>
 	<input name="human" placeholder="Type Answer" maxlength="2">
     
-    <input type="hidden" name="currentpage" value="<?php echo $thispage; ?>">
     <input type="hidden" name="formname" value="404">
 
     <legend>Fields marked with * are required.</legend>        

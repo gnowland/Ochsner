@@ -77,8 +77,8 @@ $headers =
 @mail($email_to, $email_subject, $email_message, $headers);  
 ?>
 <script type="text/javascript">
-  alert("Thank you for contacting me, your message has been successfully sent!\nYou will now be taken back to the homepage.");
- window.location = '/';
+  window.location = '/';
+  alert("Thank you for contacting me, your message has been successfully sent!");
 </script>
 <?php
 }
